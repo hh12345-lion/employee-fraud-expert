@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@theme inline {
+  --breakpoint-xs: 30rem;
+  --color-primary: #6b1a1a;
+  --color-highlight: #d97706;
+  --color-accent: #374151;
+  --color-section-alt: #fdf8f8;
+  --color-border: #f0d5d5;
+  --color-heading: #6b1a1a;
+  --color-body: #374151;
+  --font-sans: var(--font-inter);
+  --radius-card: 8px;
+  --radius-sm: 4px;
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: #ffffff;
+  color: #374151;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+  min-width: 0;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.prose-content {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.prose-content .table-scroll {
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.prose-content .table-scroll table {
+  margin: 0;
+  min-width: 32rem;
+}
+
+.prose-content h2 {
+  color: #6b1a1a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose-content h3 {
+  color: #6b1a1a;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-content p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.prose-content ul,
+.prose-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.prose-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.prose-content a {
+  color: #d97706;
+  text-decoration: underline;
+}
+
+.prose-content a:hover {
+  color: #b45309;
+}
+
+.prose-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9375rem;
+}
+
+.prose-content th,
+.prose-content td {
+  border: 1px solid #f0d5d5;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.prose-content th {
+  background: #fdf8f8;
+  color: #6b1a1a;
+  font-weight: 600;
+}
+
+.prose-content tr:nth-child(even) td {
+  background: #fdf8f8;
+}
+
+@media (max-width: 359px) {
+  .prose-content h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@supports (padding: max(0px)) {
+  header {
+    padding-left: max(0px, env(safe-area-inset-left));
+    padding-right: max(0px, env(safe-area-inset-right));
+  }
+}
