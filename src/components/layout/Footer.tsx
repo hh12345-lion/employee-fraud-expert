@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CookieSettingsButton } from "@/components/cookies/CookieSettingsButton";
-import { SITE_EMAIL } from "@/lib/site";
+import { SITE_EMAIL, SITE_REGION_LABEL } from "@/lib/site";
 
 const servicesCol = [
   { href: "/services/fraud-investigation", label: "Fraud Investigation" },
@@ -122,9 +122,10 @@ export function Footer() {
 
         <div className="mt-10 border-t border-white/20 pt-8">
           <p className="text-sm text-white/70">
-            EmployeeFraudExpert.com connects employers and solicitors with
-            employee fraud expert witnesses. We are not a law firm and do not
-            provide legal advice.
+            EmployeeFraudExpert.com connects UK employers and solicitors with
+            employee fraud expert witnesses in the United Kingdom only. We are
+            not a law firm and do not provide legal advice. Enquiries outside{" "}
+            {SITE_REGION_LABEL.toLowerCase()} cannot be accepted.
           </p>
           <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-white/60">
             <span>© 2025 EmployeeFraudExpert. England and Wales.</span>

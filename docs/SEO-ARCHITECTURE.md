@@ -573,7 +573,7 @@ Inject via `JsonLd` component (`src/components/JsonLd.tsx`):
       "@id": "https://www.employeefraudexpert.com/#organization",
       "name": "EmployeeFraudExpert",
       "url": "https://www.employeefraudexpert.com",
-      "email": "info@employeefraudexpert.com",
+      "email": "contact@employeefraudexpert.com",
       "address": { "@type": "PostalAddress", "addressCountry": "GB" },
       "areaServed": "United Kingdom"
     },

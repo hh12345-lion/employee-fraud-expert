@@ -5,11 +5,12 @@ import { CTASection } from "@/components/CTASection";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
+import { SITE_EMAIL, SITE_REGION_LABEL } from "@/lib/site";
 
 export const metadata = createMetadata({
   title: "Get Employee Fraud Expert Help | EmployeeFraudExpert.com UK",
   description:
-    "Suspected employee fraud? Submit your details to be matched with a qualified UK employee fraud expert. Employers and solicitors welcome. Response within 1 business day.",
+    "UK-only service. Submit your details to be matched with a qualified employee fraud expert in the United Kingdom. Employers and solicitors in England, Wales, Scotland, and Northern Ireland welcome.",
   path: "/contact",
 });
 
@@ -39,6 +40,23 @@ export default function ContactPage() {
       <Section>
         <div className="grid gap-10 lg:grid-cols-3">
           <div className="lg:col-span-2">
+            <div className="mb-6 rounded-lg border border-primary/30 bg-section-alt p-4">
+              <h2 className="font-semibold text-heading">
+                {SITE_REGION_LABEL} service
+              </h2>
+              <p className="mt-1 text-sm text-body">
+                We only accept enquiries from employers and solicitors based in
+                the United Kingdom (England, Wales, Scotland, and Northern
+                Ireland). For help, email{" "}
+                <a
+                  href={`mailto:${SITE_EMAIL}`}
+                  className="font-medium text-highlight underline hover:text-[#b45309]"
+                >
+                  {SITE_EMAIL}
+                </a>
+                .
+              </p>
+            </div>
             <div className="mb-6 rounded-lg border-l-4 border-highlight bg-[#FEF3C7] p-4">
               <h2 className="font-semibold text-[#92400E]">
                 Discovered suspected fraud?

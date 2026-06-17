@@ -30,8 +30,10 @@ export default function TermsPage() {
           <p>
             EmployeeFraudExpert.com is a referral service that connects UK employers
             and solicitors with qualified employee fraud expert witnesses and
-            forensic accountants. We are not a law firm and do not provide legal
-            advice. We do not provide forensic accounting services directly.
+            forensic accountants in the United Kingdom only. We do not accept
+            enquiries from outside England, Wales, Scotland, or Northern Ireland.
+            We are not a law firm and do not provide legal advice. We do not
+            provide forensic accounting services directly.
           </p>
 
           <h2>No Client Relationship</h2>

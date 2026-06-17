@@ -3,7 +3,8 @@ export const SITE_URL =
   "https://www.employeefraudexpert.com";
 
 export const SITE_NAME = "EmployeeFraudExpert";
-export const SITE_EMAIL = "info@employeefraudexpert.com";
+export const SITE_EMAIL = "contact@employeefraudexpert.com";
+export const SITE_REGION_LABEL = "United Kingdom only";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/company/employee-fraud-expert";
 
