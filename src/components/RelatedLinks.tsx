@@ -18,7 +18,7 @@ export function RelatedLinks({
           <li key={link.href}>
             <Link
               href={link.href}
-              className="text-highlight underline hover:text-[#b45309]"
+              className="text-accent hover:text-primary"
             >
               {link.label}
             </Link>

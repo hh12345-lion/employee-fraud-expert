@@ -51,14 +51,9 @@ async function test() {
     const row = buildLeadSheetRow({
       fullName: "Test Entry",
       email: "test@example.com",
-      phone: "+447700900000",
-      organisation: "Test Employer Ltd",
+      phone: "+15555550100",
+      organisation: "Test Employer Inc",
       audience: "Employer / HR / Finance",
-      fraudTypes: "Payroll / Ghost Employees",
-      proceedings: "No proceedings yet - just discovered",
-      lossValue: "£50k–£250k",
-      suspectEmployed: "Yes",
-      urgent: "",
       description: "Test row from scripts/test-sheets.ts",
     });
     const result = await appendRow(row);

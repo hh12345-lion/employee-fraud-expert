@@ -85,11 +85,11 @@ export const organizationSchema = {
   email: SITE_EMAIL,
   address: {
     "@type": "PostalAddress",
-    addressCountry: "GB",
+    addressCountry: "US",
   },
   areaServed: {
     "@type": "Country",
-    name: "United Kingdom",
+    name: "United States",
   },
   sameAs: [LINKEDIN_URL],
 };
@@ -102,7 +102,7 @@ export function professionalServiceSchema(
     "@id": `${SITE_URL}/#service`,
     name: "Employee Fraud Expert Witness",
     provider: { "@id": `${SITE_URL}/#organization` },
-    areaServed: "United Kingdom",
+    areaServed: "United States",
     serviceType: "Employee Fraud Expert Witness",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -146,7 +146,7 @@ export function serviceNode(
     name,
     description,
     provider: { "@id": `${SITE_URL}/#organization` },
-    areaServed: "United Kingdom",
+    areaServed: "United States",
   };
 }
 

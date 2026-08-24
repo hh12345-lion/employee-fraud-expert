@@ -8,32 +8,37 @@ interface CTASectionProps {
 }
 
 export function CTASection({
-  title = "Suspected employee fraud? Get expert help today.",
-  description = "Submit your details and we will match you with a qualified UK employee fraud expert witness. Employers and solicitors welcome. Response within 1 business day.",
-  buttonLabel = "Get Expert Help",
+  title = "Need a forensic accountant for employee fraud?",
+  description = "Tell us about your matter and we will connect you with a qualified expert witness. Response within one business day.",
+  buttonLabel = "Request Expert",
 }: CTASectionProps) {
   return (
-    <section className="bg-highlight py-12 sm:py-14 md:py-16">
-      <div className="mx-auto min-w-0 max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-        <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
-          {title}
-        </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-white/90">{description}</p>
-        <Link
-          href="/contact"
-          className="mt-8 inline-flex min-h-[44px] items-center justify-center rounded bg-white px-8 py-3 font-semibold text-highlight transition-colors hover:bg-white/90"
-        >
-          {buttonLabel}
-        </Link>
-        <p className="mt-6 text-sm text-white/90">
-          Or email{" "}
-          <a
-            href={`mailto:${SITE_EMAIL}`}
-            className="font-semibold text-white underline decoration-white/50 underline-offset-2 hover:decoration-white"
-          >
-            {SITE_EMAIL}
-          </a>
-        </p>
+    <section className="border-y border-border bg-primary py-14 md:py-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+          <div className="max-w-xl">
+            <h2 className="font-serif text-2xl font-semibold text-white md:text-3xl">
+              {title}
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-white/75 sm:text-base">
+              {description}
+            </p>
+          </div>
+          <div className="flex shrink-0 flex-col gap-3 sm:flex-row sm:items-center">
+            <Link
+              href="/contact"
+              className="inline-flex min-h-11 items-center justify-center border border-accent bg-accent px-8 py-3 text-sm font-medium text-primary transition-colors hover:bg-transparent hover:text-accent"
+            >
+              {buttonLabel}
+            </Link>
+            <a
+              href={`mailto:${SITE_EMAIL}`}
+              className="text-center text-sm text-white/60 transition-colors hover:text-accent sm:text-left"
+            >
+              {SITE_EMAIL}
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

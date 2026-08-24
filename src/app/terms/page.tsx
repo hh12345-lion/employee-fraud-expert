@@ -28,12 +28,10 @@ export default function TermsPage() {
 
           <h2>About This Service</h2>
           <p>
-            EmployeeFraudExpert.com is a referral service that connects UK employers
-            and solicitors with qualified employee fraud expert witnesses and
-            forensic accountants in the United Kingdom only. We do not accept
-            enquiries from outside England, Wales, Scotland, or Northern Ireland.
-            We are not a law firm and do not provide legal advice. We do not
-            provide forensic accounting services directly.
+            EmployeeFraudExpert.com is a referral service that connects employers
+            and attorneys with qualified employee fraud expert witnesses and
+            forensic accountants. We are not a law firm and do not provide legal
+            advice. We do not provide forensic accounting services directly.
           </p>
 
           <h2>No Client Relationship</h2>
@@ -48,7 +46,7 @@ export default function TermsPage() {
           <p>
             We match enquiries with qualified experts based on the fraud type,
             proceedings, and urgency described in your submission. We do not
-            guarantee a particular outcome, response time, or fee level. Expert
+            guarantee a particular outcome or response time. Expert
             availability varies.
           </p>
 
@@ -57,7 +55,7 @@ export default function TermsPage() {
             Content on this website is provided for general information only and
             does not constitute legal or professional advice. While we strive for
             accuracy, we make no warranties about the completeness or currentness
-            of information, including legal references and fee ranges.
+            of information, including legal references.
           </p>
 
           <h2>Limitation of Liability</h2>
@@ -76,8 +74,9 @@ export default function TermsPage() {
 
           <h2>Governing Law</h2>
           <p>
-            These terms are governed by the laws of England and Wales. The courts
-            of England and Wales have exclusive jurisdiction.
+            These terms are governed by the laws of the State of Delaware. Disputes
+            shall be resolved in the state or federal courts located in Delaware,
+            except where prohibited by applicable law.
           </p>
 
           <h2>Contact</h2>

@@ -1,24 +1,29 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans, Source_Serif_4 } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { UkRegionBanner } from "@/components/layout/UkRegionBanner";
 import { ConsentDefaultsScript } from "@/components/cookies/ConsentDefaultsScript";
 import { CookieConsentRoot } from "@/components/cookies/CookieConsentRoot";
 import { createMetadata } from "@/lib/metadata";
 import "./globals.css";
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-source-serif",
   display: "swap",
 });
 
 export const metadata: Metadata = createMetadata({
   title:
-    "Employee Fraud Expert Witness UK | Forensic Accountants for Workplace Fraud",
+    "Employee Fraud Expert Witness | Forensic Accountants for Workplace Fraud",
   description:
-    "UK-only employee fraud expert witness referral service. Find qualified forensic accountants in the United Kingdom for embezzlement, payroll fraud, expense fraud, and civil recovery. Employers and solicitors in England, Wales, Scotland, and Northern Ireland welcome.",
+    "Connect with qualified forensic accountants for employee fraud investigation and expert witness services. Embezzlement, payroll fraud, expense fraud, and civil recovery support for employers and attorneys.",
   path: "/",
 });
 
@@ -28,11 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB" className={`${inter.variable} h-full`}>
+    <html lang="en-US" className={`${dmSans.variable} ${sourceSerif.variable} h-full`}>
       <body className="flex min-h-full flex-col antialiased">
         <ConsentDefaultsScript />
         <CookieConsentRoot>
-          <UkRegionBanner />
           <Header />
           <main className="min-w-0 flex-1">{children}</main>
           <Footer />

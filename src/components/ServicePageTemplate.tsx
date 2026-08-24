@@ -79,7 +79,7 @@ export function ServicePageTemplate({
             <p className="mt-6">
               <Link
                 href={service.relatedCaseType}
-                className="font-medium text-highlight underline hover:text-[#b45309]"
+                className="font-medium text-accent hover:text-primary"
               >
                 Related case type →
               </Link>

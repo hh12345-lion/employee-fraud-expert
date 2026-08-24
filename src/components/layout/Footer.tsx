@@ -1,147 +1,98 @@
 import Link from "next/link";
 import { CookieSettingsButton } from "@/components/cookies/CookieSettingsButton";
-import { SITE_EMAIL, SITE_REGION_LABEL } from "@/lib/site";
+import { SITE_EMAIL, SITE_NAME } from "@/lib/site";
 
-const servicesCol = [
-  { href: "/services/fraud-investigation", label: "Fraud Investigation" },
-  { href: "/services/asset-tracing", label: "Asset Tracing" },
-  { href: "/services/loss-quantification", label: "Loss Quantification" },
-  { href: "/services/payroll-fraud-analysis", label: "Payroll Fraud Analysis" },
-  {
-    href: "/services/expense-procurement-review",
-    label: "Expense Fraud Review",
-  },
-  {
-    href: "/services/invoice-supplier-investigation",
-    label: "Invoice Fraud Investigation",
-  },
-  { href: "/services/expert-witness-reports", label: "Expert Witness Reports" },
-  { href: "/services/ftpf-advisory", label: "FTPF Advisory" },
-];
-
-const caseTypesCol = [
-  { href: "/case-types/civil-fraud-recovery", label: "Civil Fraud Recovery" },
-  { href: "/case-types/poca-confiscation-proceedings", label: "POCA Confiscation" },
-  { href: "/case-types/payroll-fraud-ghost-employees", label: "Payroll Fraud" },
-  { href: "/case-types/invoice-supplier-fraud", label: "Invoice Fraud" },
-  {
-    href: "/case-types/director-misconduct-misappropriation",
-    label: "Director Misconduct",
-  },
-  { href: "/case-types", label: "View all 10 →" },
-];
-
-const resourcesCol = [
-  { href: "/guides", label: "Solicitor Guides" },
-  { href: "/glossary", label: "Glossary" },
+const footerTrail = [
+  { href: "/services", label: "Services" },
+  { href: "/fraud-types", label: "Fraud Types" },
+  { href: "/case-types", label: "Case Types" },
+  { href: "/who-we-help", label: "Who We Help" },
   { href: "/investigation-process", label: "Investigation Process" },
-  { href: "/what-is-employee-fraud", label: "What is Employee Fraud?" },
-];
-
-const whoWeHelpCol = [
-  { href: "/who-we-help/employers-hr", label: "Employers & HR Teams" },
-  { href: "/who-we-help/solicitors-law-firms", label: "Solicitors & Law Firms" },
+  { href: "/how-to-instruct", label: "How to Instruct" },
+  { href: "/guides", label: "Guides" },
+  { href: "/glossary", label: "Glossary" },
   { href: "/qualifications", label: "Qualifications" },
   { href: "/contact", label: "Contact" },
 ];
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-primary text-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/80">
-              Services
-            </h3>
-            <ul className="space-y-2">
-              {servicesCol.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/70 transition-colors hover:text-white"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/80">
-              Case Types
-            </h3>
-            <ul className="space-y-2">
-              {caseTypesCol.map((link) => (
-                <li key={link.href + link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/70 transition-colors hover:text-white"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/80">
-              Resources
-            </h3>
-            <ul className="space-y-2">
-              {resourcesCol.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/70 transition-colors hover:text-white"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/80">
-              Who We Help
-            </h3>
-            <ul className="space-y-2">
-              {whoWeHelpCol.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/70 transition-colors hover:text-white"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+    <footer className="mt-auto border-t-4 border-accent bg-primary text-white">
+      <div className="border-b border-white/10 bg-accent px-4 py-5 sm:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-serif text-lg font-semibold text-primary">
+            Need a forensic accountant for employee fraud?
+          </p>
+          <div className="flex flex-col gap-2 sm:items-end">
+            <Link
+              href="/contact"
+              className="inline-flex min-h-11 items-center gap-2 self-start bg-primary px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-primary/90 sm:self-auto"
+            >
+              Start an enquiry
+              <span aria-hidden>→</span>
+            </Link>
+            <a
+              href={`mailto:${SITE_EMAIL}`}
+              className="text-sm text-primary/80 hover:text-primary"
+            >
+              {SITE_EMAIL}
+            </a>
           </div>
         </div>
+      </div>
 
-        <div className="mt-10 border-t border-white/20 pt-8">
-          <p className="text-sm text-white/70">
-            EmployeeFraudExpert.com connects UK employers and solicitors with
-            employee fraud expert witnesses in the United Kingdom only. We are
-            not a law firm and do not provide legal advice. Enquiries outside{" "}
-            {SITE_REGION_LABEL.toLowerCase()} cannot be accepted.
-          </p>
-          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-white/60">
-            <span>© 2025 EmployeeFraudExpert. England and Wales.</span>
-            <Link href="/privacy" className="hover:text-white">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+        <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+          <span className="font-serif text-lg font-semibold text-accent">EF</span>
+          <span className="text-white/40" aria-hidden>
+            ·
+          </span>
+          <span className="font-serif text-lg text-white">{SITE_NAME}</span>
+        </div>
+
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/65">
+          Referral network for employers and attorneys seeking qualified forensic
+          accountants in employee fraud investigation and expert witness work. Not
+          a law firm — we do not provide legal advice.
+        </p>
+
+        <nav
+          aria-label="Footer"
+          className="mt-8 text-sm leading-loose text-white/75"
+        >
+          {footerTrail.map((link, index) => (
+            <span key={link.href}>
+              {index > 0 && (
+                <span className="mx-2 text-white/25 select-none" aria-hidden>
+                  |
+                </span>
+              )}
+              <Link
+                href={link.href}
+                className="transition-colors hover:text-accent"
+              >
+                {link.label}
+              </Link>
+            </span>
+          ))}
+        </nav>
+
+        <div className="mt-10 border-t border-white/10 pt-6 text-center text-xs text-white/50">
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
+            <span>&copy; {new Date().getFullYear()} {SITE_NAME}</span>
+            <span className="hidden text-white/25 sm:inline" aria-hidden>
+              |
+            </span>
+            <Link href="/privacy" className="hover:text-accent">
               Privacy
             </Link>
-            <Link href="/terms" className="hover:text-white">
+            <Link href="/terms" className="hover:text-accent">
               Terms
             </Link>
-            <Link href="/cookies" className="hover:text-white">
+            <Link href="/cookies" className="hover:text-accent">
               Cookies
             </Link>
             <CookieSettingsButton />
-            <a href={`mailto:${SITE_EMAIL}`} className="hover:text-white">
-              {SITE_EMAIL}
-            </a>
           </div>
         </div>
       </div>

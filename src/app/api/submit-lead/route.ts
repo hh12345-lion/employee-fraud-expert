@@ -2,25 +2,25 @@ import { NextResponse } from "next/server";
 import { isGoogleSheetsConfigured } from "@/lib/google-sheets";
 import {
   appendLeadToSheet,
+  isLeadDeliveryConfigured,
   notifyLeadWebhook,
   parseLeadBody,
 } from "@/lib/lead-submission";
 
 export async function POST(request: Request) {
-  const webhookUrl =
-    process.env.Lead_notification_url || process.env.LEAD_NOTIFICATION_URL;
-  const sheetsConfigured = isGoogleSheetsConfigured();
-
-  if (!sheetsConfigured && !webhookUrl) {
+  if (!isLeadDeliveryConfigured()) {
     return NextResponse.json(
       {
-        error: "NOT_CONFIGURED",
-        message:
-          "Set Google Sheets env vars and/or Lead_notification_url.",
+        error:
+          "Lead delivery is not configured. Set Google Sheets env vars and/or Lead_notification_url in Netlify.",
       },
       { status: 503 }
     );
   }
+
+  const webhookUrl =
+    process.env.Lead_notification_url || process.env.LEAD_NOTIFICATION_URL;
+  const sheetsConfigured = isGoogleSheetsConfigured();
 
   let body: unknown;
   try {
@@ -32,14 +32,16 @@ export async function POST(request: Request) {
   const lead = parseLeadBody(body);
   if (!lead) {
     return NextResponse.json(
-      { error: "fullName and email are required" },
+      { error: "Name and email are required" },
       { status: 400 }
     );
   }
 
+  let sheetsOk = false;
   if (sheetsConfigured) {
     try {
       await appendLeadToSheet(lead);
+      sheetsOk = true;
     } catch (err) {
       console.error("Google Sheets write failed:", {
         message: err instanceof Error ? err.message : "Unknown error",
@@ -47,23 +49,19 @@ export async function POST(request: Request) {
         tab: process.env.GOOGLE_SHEET_TAB_NAME,
         timestamp: new Date().toISOString(),
       });
-      if (!webhookUrl) {
-        return NextResponse.json(
-          { error: "Failed to save submission" },
-          { status: 502 }
-        );
-      }
     }
   }
 
+  let webhookOk = false;
   if (webhookUrl) {
-    const webhookOk = await notifyLeadWebhook(lead, webhookUrl);
-    if (!webhookOk && !sheetsConfigured) {
-      return NextResponse.json(
-        { error: "Failed to deliver lead" },
-        { status: 502 }
-      );
-    }
+    webhookOk = await notifyLeadWebhook(lead, webhookUrl);
+  }
+
+  if (!sheetsOk && !webhookOk) {
+    return NextResponse.json(
+      { error: "Failed to save your enquiry. Please email us directly." },
+      { status: 502 }
+    );
   }
 
   return NextResponse.json({ ok: true });

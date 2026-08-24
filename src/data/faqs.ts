@@ -54,11 +54,6 @@ export const faqs: FAQ[] = [
       "Look for CFE (Certified Fraud Examiner) from the ACFE, ACA or FCA from ICAEW, and membership of the Academy of Experts or Expert Witness Institute. Experience in both civil and criminal proceedings, CPR Part 35 report history, POCA knowledge, and professional indemnity insurance are essential.",
   },
   {
-    question: "How much does an employee fraud expert witness cost?",
-    answer:
-      "UK employee fraud expert witnesses typically charge £150–£300/hour regionally or £250–£450/hour in London for senior experts. Preliminary assessments cost £1,500–£5,000. Full investigation plus expert report ranges from £5,000–£20,000 for standard cases to £20,000–£75,000+ for complex multi-type fraud in High Court proceedings.",
-  },
-  {
     question:
       "What is a freezing injunction and how does a forensic accountant support one?",
     answer:

@@ -4,17 +4,18 @@ export const SITE_URL =
 
 export const SITE_NAME = "EmployeeFraudExpert";
 export const SITE_EMAIL = "contact@employeefraudexpert.com";
-export const SITE_REGION_LABEL = "United Kingdom only";
+export const SITE_REGION = "US";
+export const SITE_REGION_LABEL = "Domestic referrals";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/company/employee-fraud-expert";
 
 export const COLORS = {
-  primary: "#6B1A1A",
-  highlight: "#D97706",
-  accent: "#374151",
+  primary: "#2D3436",
+  accent: "#C17F59",
+  highlight: "#5C7A6B",
   background: "#FFFFFF",
-  sectionAlt: "#FDF8F8",
-  border: "#F0D5D5",
-  heading: "#6B1A1A",
-  body: "#374151",
+  sectionAlt: "#F5F1EB",
+  border: "#E0D6CC",
+  heading: "#1A1F1E",
+  body: "#4A5568",
 } as const;

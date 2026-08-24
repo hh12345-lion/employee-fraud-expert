@@ -25,7 +25,7 @@ const employerFaqs = [
   faqs[5],
   faqs[8],
   faqs[10],
-];
+].filter(Boolean);
 
 export default function EmployersHRPage() {
   return (

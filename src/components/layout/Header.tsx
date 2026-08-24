@@ -1,155 +1,148 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { NavDropdown } from "./NavDropdown";
-import {
-  navServiceDropdownLinks,
-  navFraudTypeLinks,
-  navCaseTypeLinks,
-  whoWeHelpItems,
-  navResourcesDropdownLinks,
-  mobileGroups,
-} from "@/data/nav";
+import { useEffect, useState } from "react";
+
+const navLinks = [
+  { href: "/services", label: "Services" },
+  { href: "/fraud-types", label: "Fraud Types" },
+  { href: "/case-types", label: "Case Types" },
+  { href: "/who-we-help", label: "Who We Help" },
+  { href: "/investigation-process", label: "Process" },
+  { href: "/guides", label: "Guides" },
+  { href: "/glossary", label: "Glossary" },
+  { href: "/qualifications", label: "Qualifications" },
+];
 
 export function Header() {
   const [open, setOpen] = useState(false);
-  const closeMobile = () => setOpen(false);
+  const close = () => setOpen(false);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-white shadow-sm">
-      <div className="mx-auto flex min-w-0 max-w-7xl items-center justify-between gap-2 px-4 py-3 sm:gap-4 sm:px-6 lg:px-8">
-        <Link
-          href="/"
-          className="min-w-0 shrink truncate text-base font-bold text-primary sm:text-lg"
-          onClick={closeMobile}
-        >
-          Employee<span className="text-highlight">Fraud</span>Expert
-        </Link>
-
-        <nav
-          className="hidden min-w-0 flex-1 items-center justify-center gap-0.5 xl:flex"
-          aria-label="Main"
-        >
+    <>
+      <header className="sticky top-0 z-50 bg-white">
+        <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-4 sm:px-6 lg:gap-8 lg:py-5">
           <Link
             href="/"
-            className="rounded px-2 py-2 text-sm text-body transition-colors hover:bg-section-alt hover:text-primary"
+            className="flex min-w-0 shrink-0 items-center gap-3"
+            onClick={close}
           >
-            Home
+            <span
+              className="flex h-11 w-11 shrink-0 items-center justify-center bg-accent font-serif text-sm font-bold leading-none text-white"
+              aria-hidden
+            >
+              EF
+            </span>
+            <span className="min-w-0 leading-tight">
+              <span className="block truncate font-serif text-base font-semibold text-heading sm:text-lg">
+                Employee Fraud Expert
+              </span>
+              <span className="block text-[0.65rem] text-body/70 sm:text-xs">
+                Forensic referral network
+              </span>
+            </span>
           </Link>
-          <NavDropdown
-            label="Services"
-            href="/services"
-            items={navServiceDropdownLinks}
-          />
-          <NavDropdown
-            label="Fraud Types"
-            href="/fraud-types"
-            items={navFraudTypeLinks}
-          />
-          <NavDropdown
-            label="Who We Help"
-            href="/who-we-help"
-            items={whoWeHelpItems}
-          />
-          <Link
-            href="/investigation-process"
-            className="rounded px-2 py-2 text-sm text-body transition-colors hover:bg-section-alt hover:text-primary"
-          >
-            Investigation Process
-          </Link>
-          <NavDropdown
-            label="Case Types"
-            href="/case-types"
-            items={navCaseTypeLinks}
-          />
-          <NavDropdown
-            label="Resources"
-            href="/guides"
-            items={navResourcesDropdownLinks}
-          />
-        </nav>
 
-        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
-          <Link
-            href="/contact"
-            className="hidden min-h-[44px] items-center rounded bg-highlight px-3 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#b45309] sm:px-4 lg:inline-flex"
+          <nav
+            className="ml-auto hidden flex-wrap items-center justify-end gap-x-1 gap-y-1 text-sm lg:flex"
+            aria-label="Main"
           >
-            Contact Us
-          </Link>
+            {navLinks.map((item, index) => (
+              <span key={item.href} className="inline-flex items-center">
+                {index > 0 && (
+                  <span className="mx-1.5 text-border select-none" aria-hidden>
+                    ·
+                  </span>
+                )}
+                <Link
+                  href={item.href}
+                  className="whitespace-nowrap text-body transition-colors hover:text-accent"
+                >
+                  {item.label}
+                </Link>
+              </span>
+            ))}
+            <span className="mx-3 text-border select-none" aria-hidden>
+              |
+            </span>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-1 whitespace-nowrap font-medium text-accent transition-colors hover:text-primary"
+            >
+              Enquire
+              <span aria-hidden>→</span>
+            </Link>
+          </nav>
 
           <button
             type="button"
-            className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded border border-border p-2 xl:hidden"
+            className="ml-auto inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center bg-section-alt px-3 text-xs font-semibold uppercase tracking-wider text-heading lg:hidden"
             aria-expanded={open}
-            aria-controls="mobile-menu"
+            aria-controls="site-menu"
             aria-label={open ? "Close menu" : "Open menu"}
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen((value) => !value)}
           >
-            <svg
-              className="h-6 w-6 text-primary"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden
-            >
-              {open ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
+            {open ? "Close" : "Menu"}
           </button>
         </div>
-      </div>
+
+        <div className="h-1 bg-accent" aria-hidden />
+      </header>
 
       {open && (
-        <nav
-          id="mobile-menu"
-          className="border-t border-border bg-white xl:hidden"
-          aria-label="Mobile"
+        <div
+          id="site-menu"
+          className="fixed inset-0 z-[60] flex flex-col bg-primary lg:hidden"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Site navigation"
         >
-          <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
-            {mobileGroups.map((group) => (
-              <div key={group.title} className="mb-4">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-primary">
-                  {group.title}
-                </p>
-                <ul className="space-y-1">
-                  {group.links.map((link) => (
-                    <li key={link.href + link.label}>
-                      <Link
-                        href={link.href}
-                        className="block min-h-[44px] rounded px-3 py-2.5 text-sm text-body hover:bg-section-alt"
-                        onClick={closeMobile}
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="flex items-center justify-between border-b border-white/10 px-4 py-4 sm:px-6">
+            <p className="font-serif text-lg text-white">Navigate</p>
+            <button
+              type="button"
+              className="min-h-11 px-3 text-sm font-medium text-accent"
+              onClick={close}
+            >
+              Close
+            </button>
+          </div>
+
+          <nav className="flex-1 overflow-y-auto px-4 py-6 sm:px-6" aria-label="Mobile">
+            <ul className="space-y-1">
+              {navLinks.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="flex min-h-14 items-center border-b border-white/10 font-serif text-2xl text-white/90 transition-colors hover:text-accent"
+                    onClick={close}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="border-t border-white/10 px-4 py-6 sm:px-6">
             <Link
               href="/contact"
-              className="mt-2 flex min-h-[44px] w-full items-center justify-center rounded bg-highlight px-4 py-3 text-sm font-semibold text-white hover:bg-[#b45309]"
-              onClick={closeMobile}
+              className="flex min-h-14 items-center justify-between bg-accent px-5 font-medium text-primary"
+              onClick={close}
             >
-              Contact Us
+              Start an enquiry
+              <span aria-hidden>→</span>
             </Link>
           </div>
-        </nav>
+        </div>
       )}
-    </header>
+    </>
   );
 }

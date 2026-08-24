@@ -2,7 +2,6 @@ import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { CTASection } from "@/components/CTASection";
-import { FTPFAlertBanner } from "@/components/FTPFAlertBanner";
 import { JsonLd } from "@/components/JsonLd";
 import {
   graphSchema,
@@ -14,38 +13,33 @@ import { services, serviceNames } from "@/data/services";
 
 const stats = [
   {
-    fact: "Annual fraud cost to UK economy",
-    figure: "£219 billion",
-    source: "Annual Fraud Indicator 2023",
+    fact: "Organizations experiencing fraud annually",
+    figure: "49%",
+    source: "ACFE Report to the Nations 2024",
   },
   {
-    fact: "Financial fraud losses in 2023",
-    figure: "£1.17 billion",
-    source: "UK Finance 2024",
+    fact: "Median loss per occupational fraud case",
+    figure: "$145,000",
+    source: "ACFE Report to the Nations 2024",
   },
   {
-    fact: "Fraud as % of all UK crime",
-    figure: "41%",
-    source: "Home Office 2024",
-  },
-  {
-    fact: "FTPF offence in force",
-    figure: "1 September 2025",
-    source: "ECCTA 2023",
-  },
-  {
-    fact: "FTPF maximum penalty",
-    figure: "Unlimited fine",
-    source: "ECCTA 2023",
-  },
-  {
-    fact: "% of fraud committed by employees",
+    fact: "Fraud committed by employees",
     figure: "Over 50%",
     source: "ACFE Report to the Nations 2024",
   },
   {
-    fact: "Median employee fraud loss",
-    figure: "£100,000+",
+    fact: "Average fraud duration before detection",
+    figure: "12 months",
+    source: "ACFE Report to the Nations 2024",
+  },
+  {
+    fact: "Cases detected by tip or whistleblower",
+    figure: "43%",
+    source: "ACFE Report to the Nations 2024",
+  },
+  {
+    fact: "Asset misappropriation as fraud type",
+    figure: "Most common",
     source: "ACFE Report to the Nations 2024",
   },
 ];
@@ -61,40 +55,39 @@ export default function HomePage() {
     <>
       <JsonLd data={schemas} />
       <PageHero
-        title="Employee Fraud Expert Witness Services for UK Employers & Solicitors"
-        subtitle="Whether you've just discovered suspected fraud or you're preparing for civil or criminal proceedings, you need an expert who moves fast and builds airtight evidence. EmployeeFraudExpert.com connects UK employers and solicitors with qualified forensic accountants specialising in employee fraud investigation and expert witness services."
+        title="Employee Fraud Expert Witness Services"
+        subtitle="Whether you've just discovered suspected fraud or you're preparing for civil or criminal proceedings, you need a forensic accountant who moves fast and builds defensible evidence. We connect employers and attorneys with qualified experts in employee fraud investigation and expert witness work."
       />
-      <FTPFAlertBanner />
 
       <Section>
-        <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+        <div className="flex flex-col gap-4 sm:flex-row">
           <Link
             href="/who-we-help/employers-hr"
-            className="inline-flex min-h-[44px] items-center justify-center rounded bg-highlight px-8 py-3 font-semibold text-white transition-colors hover:bg-[#b45309]"
+            className="inline-flex min-h-11 items-center justify-center border border-accent bg-accent px-8 py-3 text-sm font-medium text-primary transition-colors hover:bg-transparent hover:text-accent"
           >
             I&apos;m an Employer
           </Link>
           <Link
             href="/who-we-help/solicitors-law-firms"
-            className="inline-flex min-h-[44px] items-center justify-center rounded border-2 border-primary px-8 py-3 font-semibold text-primary transition-colors hover:bg-section-alt"
+            className="inline-flex min-h-11 items-center justify-center border border-primary px-8 py-3 text-sm font-medium text-primary transition-colors hover:bg-section-alt"
           >
-            I&apos;m a Solicitor
+            I&apos;m an Attorney
           </Link>
         </div>
       </Section>
 
       <Section alt>
-        <h2 className="text-2xl font-bold text-heading md:text-3xl">
-          What Our Employee Fraud Expert Witnesses Cover
+        <h2 className="font-serif text-2xl font-semibold text-heading md:text-3xl">
+          What Our Expert Witnesses Cover
         </h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service) => (
             <Link
               key={service.id}
               href={`/services/${service.id}`}
-              className="rounded-lg border border-border bg-white p-6 shadow-[var(--shadow-card)] transition-shadow hover:shadow-md"
+              className="border border-border bg-white p-5 shadow-[var(--shadow-card)] transition-shadow hover:shadow-md"
             >
-              <h3 className="font-semibold text-heading">{service.title}</h3>
+              <h3 className="font-medium text-heading">{service.title}</h3>
               <p className="mt-2 text-sm text-body">{service.shortDescription}</p>
             </Link>
           ))}
@@ -102,8 +95,8 @@ export default function HomePage() {
       </Section>
 
       <Section>
-        <h2 className="text-2xl font-bold text-heading md:text-3xl">
-          Employee Fraud in the UK: Key Facts
+        <h2 className="font-serif text-2xl font-semibold text-heading md:text-3xl">
+          Employee Fraud: Key Facts
         </h2>
         <div className="table-scroll mt-8 overflow-x-auto">
           <table className="w-full min-w-[32rem] border-collapse text-sm">
@@ -138,58 +131,56 @@ export default function HomePage() {
           </table>
         </div>
         <p className="mt-4 text-xs text-body/70">
-          Sources: Annual Fraud Indicator 2023; UK Finance Annual Fraud Report
-          2024; Home Office Crime Statistics 2024; ACFE Report to the Nations
-          2024; Economic Crime and Corporate Transparency Act 2023.
+          Source: ACFE Report to the Nations 2024.
         </p>
       </Section>
 
       <Section alt>
-        <h2 className="text-2xl font-bold text-heading md:text-3xl">
-          Who Uses Our Employee Fraud Expert Services?
+        <h2 className="font-serif text-2xl font-semibold text-heading md:text-3xl">
+          Who Uses Our Services?
         </h2>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          <div className="rounded-lg border border-border bg-white p-6 shadow-[var(--shadow-card)]">
-            <h3 className="text-lg font-semibold text-heading">
+          <div className="border border-border bg-white p-6 shadow-[var(--shadow-card)]">
+            <h3 className="font-serif text-lg font-semibold text-heading">
               Employers &amp; HR
             </h3>
             <p className="mt-3 text-body leading-relaxed">
-              You&apos;ve discovered suspected fraud in your organisation. You
+              You&apos;ve discovered suspected fraud in your organization. You
               need to move quickly, preserve evidence, and understand what has
-              been taken - before engaging solicitors or the police.
+              been taken — before engaging counsel or law enforcement.
             </p>
             <Link
               href="/who-we-help/employers-hr"
-              className="mt-4 inline-flex min-h-[44px] items-center text-sm font-semibold text-highlight underline hover:text-[#b45309]"
+              className="mt-4 inline-flex min-h-11 items-center text-sm font-medium text-accent hover:text-primary"
             >
               Help for employers →
             </Link>
           </div>
-          <div className="rounded-lg border border-border bg-white p-6 shadow-[var(--shadow-card)]">
-            <h3 className="text-lg font-semibold text-heading">
-              Solicitors &amp; Law Firms
+          <div className="border border-border bg-white p-6 shadow-[var(--shadow-card)]">
+            <h3 className="font-serif text-lg font-semibold text-heading">
+              Attorneys &amp; Law Firms
             </h3>
             <p className="mt-3 text-body leading-relaxed">
-              You need a forensic accountant who produces CPR Part 35 compliant
-              expert reports, traces assets, and gives credible evidence in civil
+              You need a forensic accountant who produces Daubert-compliant
+              expert reports, traces assets, and gives credible testimony in civil
               or criminal proceedings.
             </p>
             <Link
               href="/who-we-help/solicitors-law-firms"
-              className="mt-4 inline-flex min-h-[44px] items-center text-sm font-semibold text-highlight underline hover:text-[#b45309]"
+              className="mt-4 inline-flex min-h-11 items-center text-sm font-medium text-accent hover:text-primary"
             >
-              Help for solicitors →
+              Help for attorneys →
             </Link>
           </div>
         </div>
         <p className="mt-8 text-body leading-relaxed">
           Employee fraud is financial crime committed by a person in a position
-          of trust against the organisation that employs them.{" "}
+          of trust against the organization that employs them.{" "}
           <Link
             href="/what-is-employee-fraud"
-            className="font-medium text-highlight underline hover:text-[#b45309]"
+            className="font-medium text-accent hover:text-primary"
           >
-            Learn what employee fraud is and how UK law applies →
+            Learn what employee fraud is →
           </Link>
         </p>
       </Section>

@@ -68,7 +68,7 @@ export const whoWeHelpItems = [
   { href: "/who-we-help/employers-hr", label: "Employers & HR Teams" },
   {
     href: "/who-we-help/solicitors-law-firms",
-    label: "Solicitors & Law Firms",
+    label: "Attorneys & Law Firms",
   },
 ];
 
@@ -99,7 +99,7 @@ export const mobileGroups = [
       { href: "/who-we-help/employers-hr", label: "Employers & HR" },
       {
         href: "/who-we-help/solicitors-law-firms",
-        label: "Solicitors & Law Firms",
+        label: "Attorneys & Law Firms",
       },
       { href: "/investigation-process", label: "Investigation Process" },
     ],

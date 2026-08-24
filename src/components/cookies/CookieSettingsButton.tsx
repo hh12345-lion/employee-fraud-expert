@@ -13,7 +13,7 @@ export function CookieSettingsButton() {
     <button
       type="button"
       onClick={ctx.openPreferences}
-      className="min-h-[44px] text-sm text-white/60 transition-colors hover:text-white hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+      className="min-h-11 text-xs text-white/50 transition-colors hover:text-accent hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
     >
       Cookie Settings
     </button>

@@ -6,7 +6,7 @@ export function buildHreflangAlternates(path: string = "") {
   return {
     canonical: url,
     languages: {
-      "en-GB": url,
+      "en-US": url,
       "x-default": url,
     },
   };
@@ -43,7 +43,7 @@ export function createMetadata({
       description,
       url: `${SITE_URL}${path}`,
       siteName: SITE_NAME,
-      locale: "en_GB",
+      locale: "en_US",
       type: "website",
     },
     twitter: {
