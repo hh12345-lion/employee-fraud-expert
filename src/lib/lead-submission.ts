@@ -1,6 +1,7 @@
 import { appendRow, type CellValue } from "@/lib/google-sheets";
+import { BRAND_NAME, isLeadWebhookConfigured } from "@/lib/leadNotification";
 
-export const BRAND_NAME = "Employee Fraud Expert";
+export { BRAND_NAME };
 
 /** Row 1 on GOOGLE_SHEET_TAB_NAME - must match buildLeadSheetRow column order */
 export const LEAD_SHEET_HEADERS = [
@@ -18,6 +19,7 @@ export interface LeadSubmission {
   fullName: string;
   email: string;
   phone: string;
+  formType?: string;
   organisation?: string;
   audience?: string;
   description?: string;
@@ -54,6 +56,7 @@ export function parseLeadBody(body: unknown): LeadSubmission | null {
     fullName,
     email,
     phone: b.phone != null ? String(b.phone).trim() : "",
+    formType: opt(b.formType),
     organisation: opt(b.organisation ?? b.organization ?? b.lawFirm),
     audience: opt(b.audience ?? b.audienceType),
     description: opt(b.description),
@@ -73,41 +76,13 @@ export function buildLeadSheetRow(lead: LeadSubmission): CellValue[] {
   ];
 }
 
-/** n8n webhook - four keys only */
-export function buildWebhookPayload(lead: LeadSubmission) {
-  return {
-    "Full Name": lead.fullName,
-    Email: lead.email,
-    "Phone Number": lead.phone,
-    "Brand name": BRAND_NAME,
-  };
-}
-
 export async function appendLeadToSheet(lead: LeadSubmission): Promise<void> {
   await appendRow(buildLeadSheetRow(lead));
 }
 
-export async function notifyLeadWebhook(
-  lead: LeadSubmission,
-  webhookUrl: string
-): Promise<boolean> {
-  try {
-    const res = await fetch(webhookUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(buildWebhookPayload(lead)),
-    });
-    return res.ok;
-  } catch (err) {
-    console.error("Lead webhook failed:", err);
-    return false;
-  }
-}
-
 export function isLeadDeliveryConfigured(): boolean {
   return Boolean(
-    process.env.Lead_notification_url ||
-      process.env.LEAD_NOTIFICATION_URL ||
+    isLeadWebhookConfigured() ||
       (process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL &&
         process.env.GOOGLE_PRIVATE_KEY &&
         process.env.GOOGLE_SHEET_ID)

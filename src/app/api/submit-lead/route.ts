@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 import { isGoogleSheetsConfigured } from "@/lib/google-sheets";
 import {
+  getLeadWebhookUrl,
+  notifyLeadWebhook,
+} from "@/lib/leadNotification";
+import {
   appendLeadToSheet,
   isLeadDeliveryConfigured,
-  notifyLeadWebhook,
   parseLeadBody,
 } from "@/lib/lead-submission";
 
@@ -12,14 +15,13 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error:
-          "Lead delivery is not configured. Set Google Sheets env vars and/or Lead_notification_url in Netlify.",
+          "Lead delivery is not configured. Set Lead_notification_url and/or Google Sheets env vars in Netlify.",
       },
       { status: 503 }
     );
   }
 
-  const webhookUrl =
-    process.env.Lead_notification_url || process.env.LEAD_NOTIFICATION_URL;
+  const webhookUrl = getLeadWebhookUrl();
   const sheetsConfigured = isGoogleSheetsConfigured();
 
   let body: unknown;

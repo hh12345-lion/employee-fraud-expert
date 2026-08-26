@@ -31,6 +31,7 @@ export function ContactForm() {
       fullName: String(data.get("name") || "").trim(),
       email: String(data.get("email") || "").trim(),
       phone: String(data.get("phone") || "").trim(),
+      formType: "contact" as const,
       organisation: String(data.get("organisation") || "").trim(),
       audience: String(data.get("audience") || "").trim(),
       description: String(data.get("description") || "").trim(),
