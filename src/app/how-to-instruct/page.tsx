@@ -3,6 +3,7 @@ import { createMetadata } from "@/lib/metadata";
 import { PageHero } from "@/components/PageHero";
 import { Section } from "@/components/Section";
 import { CTASection } from "@/components/CTASection";
+import { InstructForm } from "@/components/forms/InstructForm";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/schema";
 
@@ -157,6 +158,17 @@ export default function HowToInstructPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-heading">Submit an instruction</h2>
+            <p className="mt-4 text-body">
+              Use the form below to send a confidential engagement brief. We respond
+              within one business day.
+            </p>
+            <div className="mt-6 max-w-xl">
+              <InstructForm />
             </div>
           </div>
 

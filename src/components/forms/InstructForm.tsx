@@ -4,17 +4,10 @@ import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { SITE_EMAIL } from "@/lib/site";
 
-const audienceOptions = [
-  "Employer / HR / Finance",
-  "Attorney / Law Firm",
-  "Insurer",
-  "Other",
-];
-
 /**
- * POST /api/contact (Sheets soft-fail) then fire-and-forget /api/submit-lead (webhook).
+ * POST /api/instruct (Sheets soft-fail) then fire-and-forget /api/submit-lead (webhook).
  */
-export function ContactForm() {
+export function InstructForm() {
   const router = useRouter();
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -36,14 +29,14 @@ export function ContactForm() {
       description: String(data.get("description") || "").trim(),
     };
 
-    if (!payload.fullName || !payload.email) {
+    if (!payload.fullName || !payload.email || !payload.description) {
       setStatus("error");
-      setErrorMessage("Please enter your name and email.");
+      setErrorMessage("Please enter your name, email, and case brief.");
       return;
     }
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("/api/instruct", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -71,11 +64,11 @@ export function ContactForm() {
           fullName: payload.fullName,
           email: payload.email,
           phone: payload.phone,
-          formType: "contact",
+          formType: "instruct",
         }),
       }).catch(() => {
         console.warn(
-          "Lead webhook notification failed; inquiry was still logged."
+          "Lead webhook notification failed; instruction was still logged."
         );
       });
 
@@ -94,11 +87,11 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="min-w-0 space-y-5">
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div className="min-w-0">
-          <label htmlFor="name" className={labelClass}>
+          <label htmlFor="instruct-name" className={labelClass}>
             Full Name *
           </label>
           <input
-            id="name"
+            id="instruct-name"
             name="name"
             type="text"
             required
@@ -107,11 +100,11 @@ export function ContactForm() {
           />
         </div>
         <div className="min-w-0">
-          <label htmlFor="email" className={labelClass}>
+          <label htmlFor="instruct-email" className={labelClass}>
             Email *
           </label>
           <input
-            id="email"
+            id="instruct-email"
             name="email"
             type="email"
             required
@@ -123,11 +116,11 @@ export function ContactForm() {
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div className="min-w-0">
-          <label htmlFor="phone" className={labelClass}>
+          <label htmlFor="instruct-phone" className={labelClass}>
             Phone
           </label>
           <input
-            id="phone"
+            id="instruct-phone"
             name="phone"
             type="tel"
             autoComplete="tel"
@@ -135,11 +128,11 @@ export function ContactForm() {
           />
         </div>
         <div className="min-w-0">
-          <label htmlFor="organisation" className={labelClass}>
-            Organisation
+          <label htmlFor="instruct-organisation" className={labelClass}>
+            Firm / Organisation
           </label>
           <input
-            id="organisation"
+            id="instruct-organisation"
             name="organisation"
             type="text"
             autoComplete="organization"
@@ -149,28 +142,33 @@ export function ContactForm() {
       </div>
 
       <div className="min-w-0">
-        <label htmlFor="audience" className={labelClass}>
+        <label htmlFor="instruct-audience" className={labelClass}>
           You are
         </label>
-        <select id="audience" name="audience" className={inputClass} defaultValue="">
+        <select
+          id="instruct-audience"
+          name="audience"
+          className={inputClass}
+          defaultValue=""
+        >
           <option value="">Select one (optional)</option>
-          {audienceOptions.map((opt) => (
-            <option key={opt} value={opt}>
-              {opt}
-            </option>
-          ))}
+          <option value="Solicitor / Law Firm">Solicitor / Law Firm</option>
+          <option value="Employer / HR / Finance">Employer / HR / Finance</option>
+          <option value="Insurer">Insurer</option>
+          <option value="Other">Other</option>
         </select>
       </div>
 
       <div className="min-w-0">
-        <label htmlFor="description" className={labelClass}>
-          Brief description
+        <label htmlFor="instruct-description" className={labelClass}>
+          Case brief *
         </label>
         <textarea
-          id="description"
+          id="instruct-description"
           name="description"
           rows={4}
-          placeholder="What type of fraud, approximate timeline, and whether proceedings have started."
+          required
+          placeholder="Matter type, stage, deadlines, and documents available."
           className={`${inputClass} min-h-[100px] resize-y`}
         />
       </div>
@@ -189,7 +187,7 @@ export function ContactForm() {
         disabled={status === "loading"}
         className="inline-flex min-h-11 w-full items-center justify-center border border-accent bg-accent px-8 py-3 text-sm font-medium text-primary transition-colors hover:bg-transparent hover:text-accent disabled:opacity-60 sm:w-auto"
       >
-        {status === "loading" ? "Submitting…" : "Submit Enquiry"}
+        {status === "loading" ? "Submitting…" : "Submit instruction"}
       </button>
     </form>
   );

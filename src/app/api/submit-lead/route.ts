@@ -1,28 +1,25 @@
 import { NextResponse } from "next/server";
-import { isGoogleSheetsConfigured } from "@/lib/google-sheets";
 import {
   getLeadWebhookUrl,
   notifyLeadWebhook,
 } from "@/lib/leadNotification";
-import {
-  appendLeadToSheet,
-  isLeadDeliveryConfigured,
-  parseLeadBody,
-} from "@/lib/lead-submission";
+import { parseLeadBody } from "@/lib/lead-submission";
 
+/**
+ * Webhook-only lead path. Sheets are written by /api/contact and /api/instruct
+ * (shared tab + Form Type) so we do not double-append here.
+ */
 export async function POST(request: Request) {
-  if (!isLeadDeliveryConfigured()) {
+  const webhookUrl = getLeadWebhookUrl();
+  if (!webhookUrl) {
     return NextResponse.json(
       {
-        error:
-          "Lead delivery is not configured. Set Lead_notification_url and/or Google Sheets env vars in Netlify.",
+        error: "WEBHOOK_MISSING",
+        message: "Lead_notification_url / LEAD_NOTIFICATION_URL is not set.",
       },
       { status: 503 }
     );
   }
-
-  const webhookUrl = getLeadWebhookUrl();
-  const sheetsConfigured = isGoogleSheetsConfigured();
 
   let body: unknown;
   try {
@@ -39,32 +36,25 @@ export async function POST(request: Request) {
     );
   }
 
-  let sheetsOk = false;
-  if (sheetsConfigured) {
-    try {
-      await appendLeadToSheet(lead);
-      sheetsOk = true;
-    } catch (err) {
-      console.error("Google Sheets write failed:", {
-        message: err instanceof Error ? err.message : "Unknown error",
-        sheetId: `${process.env.GOOGLE_SHEET_ID?.slice(0, 8)}...`,
-        tab: process.env.GOOGLE_SHEET_TAB_NAME,
-        timestamp: new Date().toISOString(),
-      });
-    }
-  }
+  const result = await notifyLeadWebhook(
+    {
+      fullName: lead.fullName,
+      email: lead.email,
+      phone: lead.phone,
+    },
+    webhookUrl
+  );
 
-  let webhookOk = false;
-  if (webhookUrl) {
-    webhookOk = await notifyLeadWebhook(lead, webhookUrl);
-  }
-
-  if (!sheetsOk && !webhookOk) {
+  if (!result.ok) {
     return NextResponse.json(
-      { error: "Failed to save your enquiry. Please email us directly." },
+      { error: "Lead notification dispatch failed" },
       { status: 502 }
     );
   }
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({
+    ok: true,
+    success: true,
+    forwarded: result.forwarded,
+  });
 }

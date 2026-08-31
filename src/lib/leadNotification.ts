@@ -30,9 +30,19 @@ export function getLeadWebhookUrl(): string {
 export async function notifyLeadWebhook(
   lead: LeadWebhookInput,
   webhookUrl?: string
-): Promise<boolean> {
+): Promise<{ forwarded: boolean; ok: boolean }> {
   const url = webhookUrl || getLeadWebhookUrl();
-  if (!url) return false;
+  if (!url) {
+    console.warn(
+      "Lead_notification_url not configured — lead logged but not forwarded."
+    );
+    console.log("Lead submission:", {
+      ...lead,
+      brand: BRAND_NAME,
+      domain: getSiteDomain(),
+    });
+    return { forwarded: false, ok: true };
+  }
 
   try {
     const res = await fetch(url, {
@@ -40,10 +50,14 @@ export async function notifyLeadWebhook(
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(buildWebhookPayload(lead)),
     });
-    return res.ok;
+    if (!res.ok) {
+      console.error("Webhook POST failed:", res.status, await res.text());
+      return { forwarded: false, ok: false };
+    }
+    return { forwarded: true, ok: true };
   } catch (err) {
     console.error("Lead webhook failed:", err);
-    return false;
+    return { forwarded: false, ok: false };
   }
 }
 

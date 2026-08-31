@@ -116,3 +116,27 @@ export function isGoogleSheetsConfigured(): boolean {
       process.env.GOOGLE_SHEET_ID
   );
 }
+
+export async function appendRowWithRetry(
+  values: CellValue[],
+  maxRetries = 2,
+  target?: SheetTarget
+): Promise<AppendResult> {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      return await appendRow(values, target);
+    } catch (error: unknown) {
+      const err = error as { code?: number };
+      const isRetryable =
+        err?.code === 429 || err?.code === 503 || err?.code === 500;
+
+      if (isRetryable && attempt < maxRetries) {
+        const delay = Math.pow(2, attempt) * 1000;
+        await new Promise((resolve) => setTimeout(resolve, delay));
+        continue;
+      }
+      throw error;
+    }
+  }
+  throw new Error("Max retries exceeded");
+}

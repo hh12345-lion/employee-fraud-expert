@@ -9,7 +9,7 @@ import {
   getSpreadsheetInfo,
   readRows,
 } from "../src/lib/google-sheets";
-import { BRAND_NAME, buildLeadSheetRow } from "../src/lib/lead-submission";
+import { BRAND_NAME, LEAD_SHEET_HEADERS } from "../src/lib/lead-submission";
 
 function loadEnvLocal() {
   try {
@@ -37,6 +37,7 @@ function loadEnvLocal() {
 async function test() {
   loadEnvLocal();
   console.log("--- Testing Google Sheets Connection ---\n");
+  console.log("Expected headers:", LEAD_SHEET_HEADERS.join(" | "));
 
   try {
     const info = await getSpreadsheetInfo();
@@ -48,17 +49,21 @@ async function test() {
   }
 
   try {
-    const row = buildLeadSheetRow({
-      fullName: "Test Entry",
-      email: "test@example.com",
-      phone: "+15555550100",
-      organisation: "Test Employer Inc",
-      audience: "Employer / HR / Finance",
-      description: "Test row from scripts/test-sheets.ts",
-    });
+    const phone = "+15555550100";
+    const row = [
+      new Date().toISOString(),
+      BRAND_NAME,
+      "Contact",
+      "Test Entry",
+      "test@example.com",
+      phone.startsWith("+") ? `'${phone}` : phone,
+      "Test Employer Inc",
+      "Employer / HR / Finance",
+      "Test row from scripts/test-sheets.ts",
+    ];
     const result = await appendRow(row);
     console.log("✅ Row written:", result.updatedRange);
-    console.log("   Brand:", BRAND_NAME);
+    console.log("   Brand:", BRAND_NAME, "| Form Type: Contact");
   } catch (error) {
     console.error("❌ Failed to write row:", error);
     process.exit(1);
