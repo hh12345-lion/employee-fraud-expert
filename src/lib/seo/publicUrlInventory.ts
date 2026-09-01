@@ -8,7 +8,7 @@ import { serviceSlugs } from "@/data/services";
  */
 export const CANONICAL_HOST =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://www.employeefraudexpert.com";
+  "https://employeefraudexpert.com";
 
 /**
  * Indexable static marketing routes.
