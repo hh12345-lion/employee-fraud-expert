@@ -1,6 +1,19 @@
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://www.employeefraudexpert.com";
+function resolveSiteUrl(): string {
+  const fallback = "https://employeefraudexpert.com";
+  const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/$/, "");
+  if (!raw) return fallback;
+  try {
+    const u = new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`);
+    if (u.hostname === "localhost" || u.hostname === "127.0.0.1") return fallback;
+    // Prefer apex — www redirects to non-www in production.
+    u.hostname = u.hostname.replace(/^www\./i, "");
+    return u.origin;
+  } catch {
+    return fallback;
+  }
+}
+
+export const SITE_URL = resolveSiteUrl();
 
 export const SITE_NAME = "EmployeeFraudExpert";
 export const SITE_EMAIL = "contact@employeefraudexpert.com";

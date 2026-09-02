@@ -2,13 +2,13 @@ import { caseTypeSlugs } from "@/data/case-types";
 import { guideSlugs } from "@/data/guides";
 import { serviceSlugs } from "@/data/services";
 
+import { SITE_URL } from "@/lib/site";
+
 /**
  * Canonical host for sitemap, robots.txt, and schema @id values.
- * Must match middleware apex → www redirect (employeefraudexpert.com → www).
+ * Must match production www → apex redirect.
  */
-export const CANONICAL_HOST =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://employeefraudexpert.com";
+export const CANONICAL_HOST = SITE_URL;
 
 /**
  * Indexable static marketing routes.

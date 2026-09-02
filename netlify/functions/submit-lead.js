@@ -15,7 +15,7 @@ function getLeadWebhookUrl() {
 
 function getSiteDomain() {
   const raw =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://www.employeefraudexpert.com";
+    process.env.NEXT_PUBLIC_SITE_URL || "https://employeefraudexpert.com";
 
   try {
     return new URL(raw).hostname.replace(/^www\./i, "");
