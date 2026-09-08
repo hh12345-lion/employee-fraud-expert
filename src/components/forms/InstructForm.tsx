@@ -3,6 +3,7 @@
 import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { SITE_EMAIL } from "@/lib/site";
+import { submitNetlifyForm } from "@/lib/submitNetlifyForm";
 
 /**
  * POST /api/instruct (Sheets soft-fail) then fire-and-forget /api/submit-lead (webhook).
@@ -72,6 +73,19 @@ export function InstructForm() {
         );
       });
 
+      try {
+        await submitNetlifyForm("instruct", {
+          name: payload.fullName,
+          email: payload.email,
+          phone: payload.phone,
+          organisation: payload.organisation,
+          audience: payload.audience,
+          description: payload.description,
+        });
+      } catch {
+        // Netlify form is secondary; don't block the visitor.
+      }
+
       router.push("/thank-you");
     } catch {
       setStatus("error");
@@ -84,7 +98,20 @@ export function InstructForm() {
   const labelClass = "mb-1 block text-sm font-medium text-heading";
 
   return (
-    <form onSubmit={handleSubmit} className="min-w-0 space-y-5">
+    <form
+      name="instruct"
+      method="POST"
+      action="/__forms.html"
+      onSubmit={handleSubmit}
+      className="min-w-0 space-y-5"
+    >
+      <input type="hidden" name="form-name" value="instruct" />
+      <p className="hidden" aria-hidden="true">
+        <label>
+          Do not fill this out:{" "}
+          <input name="bot-field" tabIndex={-1} autoComplete="off" />
+        </label>
+      </p>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div className="min-w-0">
           <label htmlFor="instruct-name" className={labelClass}>

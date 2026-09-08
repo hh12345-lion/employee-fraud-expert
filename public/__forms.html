@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form detection</title>
+  </head>
+  <body>
+    <!-- Static blueprint for Netlify form detection. Not linked in the UI. -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="organisation" />
+      <select name="audience">
+        <option value="Employer / HR / Finance">Employer / HR / Finance</option>
+        <option value="Attorney / Law Firm">Attorney / Law Firm</option>
+        <option value="Insurer">Insurer</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea name="description"></textarea>
+    </form>
+
+    <form name="instruct" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="instruct" />
+      <input name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="organisation" />
+      <select name="audience">
+        <option value="Solicitor / Law Firm">Solicitor / Law Firm</option>
+        <option value="Employer / HR / Finance">Employer / HR / Finance</option>
+        <option value="Insurer">Insurer</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea name="description"></textarea>
+    </form>
+  </body>
+</html>
