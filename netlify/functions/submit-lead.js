@@ -1,29 +1,3 @@
-/**
- * POST /api/submit-lead (via netlify.toml redirect) → n8n / webhook.
- * Env: Lead_notification_url or LEAD_NOTIFICATION_URL, NEXT_PUBLIC_SITE_URL.
- * Outbound JSON: Full Name, Email, Phone Number, Brand name, domain, message.
- */
-const BRAND_NAME = "Employee Fraud Expert";
-
-function getLeadWebhookUrl() {
-  return (
-    process.env.Lead_notification_url ||
-    process.env.LEAD_NOTIFICATION_URL ||
-    ""
-  );
-}
-
-function getSiteDomain() {
-  const raw =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://employeefraudexpert.com";
-
-  try {
-    return new URL(raw).hostname.replace(/^www\./i, "");
-  } catch {
-    return "employeefraudexpert.com";
-  }
-}
-
 /** Map site-specific free-text field names to universal `message`. */
 function resolveLeadMessage(body) {
   if (!body || typeof body !== "object") return "";
