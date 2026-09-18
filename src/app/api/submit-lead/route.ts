@@ -41,6 +41,7 @@ export async function POST(request: Request) {
       fullName: lead.fullName,
       email: lead.email,
       phone: lead.phone,
+      message: lead.message ?? lead.description ?? "",
     },
     webhookUrl
   );

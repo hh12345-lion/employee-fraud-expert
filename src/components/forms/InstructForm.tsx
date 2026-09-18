@@ -66,6 +66,7 @@ export function InstructForm() {
           email: payload.email,
           phone: payload.phone,
           formType: "instruct",
+          message: payload.description,
         }),
       }).catch(() => {
         console.warn(

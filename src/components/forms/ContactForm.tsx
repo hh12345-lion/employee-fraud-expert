@@ -73,6 +73,7 @@ export function ContactForm() {
           email: payload.email,
           phone: payload.phone,
           formType: "contact",
+          message: payload.description,
         }),
       }).catch(() => {
         console.warn(

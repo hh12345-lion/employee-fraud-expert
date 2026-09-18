@@ -28,6 +28,8 @@ export interface LeadSubmission {
   organisation?: string;
   audience?: string;
   description?: string;
+  /** Universal free-text field for n8n (`message`). */
+  message?: string;
 }
 
 function sanitize(str: string): string {
@@ -64,6 +66,17 @@ export function parseLeadBody(body: unknown): LeadSubmission | null {
 
   if (!fullName || !email) return null;
 
+  const freeText = opt(
+    b.message ??
+      b.Message ??
+      b.description ??
+      b.enquiry ??
+      b.details ??
+      b.summary ??
+      b.notes ??
+      b.matter
+  );
+
   return {
     fullName,
     email,
@@ -71,7 +84,8 @@ export function parseLeadBody(body: unknown): LeadSubmission | null {
     formType: opt(b.formType),
     organisation: opt(b.organisation ?? b.organization ?? b.lawFirm),
     audience: opt(b.audience ?? b.audienceType),
-    description: opt(b.description ?? b.message),
+    description: freeText || opt(b.description ?? b.message),
+    message: freeText,
   };
 }
 
