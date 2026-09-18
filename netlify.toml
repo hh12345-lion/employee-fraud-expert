@@ -18,9 +18,31 @@
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
-    Content-Type = "application/xml"
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/robots.txt"
   [headers.values]
-    Content-Type = "text/plain"
+    Content-Type = "text/plain; charset=utf-8"
+    X-Content-Type-Options = "nosniff"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Canonical host: apex only
+[[redirects]]
+  from = "https://www.employeefraudexpert.com/*"
+  to = "https://employeefraudexpert.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.employeefraudexpert.com/*"
+  to = "https://employeefraudexpert.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://employeefraudexpert.com/*"
+  to = "https://employeefraudexpert.com/:splat"
+  status = 301
+  force = true

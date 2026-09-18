@@ -10,4 +10,11 @@ Disallow: /terms
 Disallow: /api/
 Disallow: /_next/
 
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: AhrefsSiteAudit
+Allow: /
+
+Host: employeefraudexpert.com
 Sitemap: https://employeefraudexpert.com/sitemap.xml
