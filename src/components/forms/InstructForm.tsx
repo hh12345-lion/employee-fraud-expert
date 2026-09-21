@@ -58,7 +58,8 @@ export function InstructForm() {
         return;
       }
 
-      void fetch("/api/submit-lead", {
+      try {
+        const leadRes = await fetch("/api/submit-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -68,11 +69,13 @@ export function InstructForm() {
           formType: "instruct",
           message: payload.description,
         }),
-      }).catch(() => {
-        console.warn(
-          "Lead webhook notification failed; instruction was still logged."
-        );
       });
+        if (!leadRes.ok) {
+          console.warn("Lead webhook notification failed; continuing.");
+        }
+      } catch (err) {
+        console.warn("Lead webhook notification failed;", err);
+      }
 
       try {
         await submitNetlifyForm("instruct", {
