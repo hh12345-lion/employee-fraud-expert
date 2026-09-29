@@ -1,6 +1,7 @@
 import { caseTypeSlugs } from "@/data/case-types";
 import { guideSlugs } from "@/data/guides";
 import { serviceSlugs } from "@/data/services";
+import { getBlogSlugs } from "@/lib/blog";
 
 import { SITE_URL } from "@/lib/site";
 
@@ -27,6 +28,7 @@ export const APP_STATIC_PATHS = [
   "/qualifications",
   "/how-to-instruct",
   "/guides",
+  "/blog",
   "/glossary",
   "/cookies",
 ] as const;
@@ -70,9 +72,15 @@ export function buildPublicUrlInventory(): PublicUrlInventory {
   const caseTypePaths = caseTypeSlugs.map((slug) => `/case-types/${slug}`);
   const guidePaths = guideSlugs.map((slug) => `/guides/${slug}`);
   const servicePaths = serviceSlugs.map((slug) => `/services/${slug}`);
+  const blogPaths = getBlogSlugs().map((slug) => `/blog/${slug}`);
 
   const staticPaths = [...APP_STATIC_PATHS];
-  const dynamicPaths = [...caseTypePaths, ...guidePaths, ...servicePaths];
+  const dynamicPaths = [
+    ...caseTypePaths,
+    ...guidePaths,
+    ...servicePaths,
+    ...blogPaths,
+  ];
 
   const excluded = new Set<string>(SITEMAP_EXCLUDED_PATHS);
   const allPaths = [...new Set([...staticPaths, ...dynamicPaths])]
@@ -118,8 +126,8 @@ export function getSitemapPriority(path: string): number {
   if (path.startsWith("/services/")) return 0.9;
   if (path === "/qualifications" || path === "/how-to-instruct") return 0.88;
   if (path.startsWith("/case-types/")) return 0.88;
-  if (path === "/guides") return 0.87;
-  if (path.startsWith("/guides/")) return 0.8;
+  if (path === "/guides" || path === "/blog") return 0.87;
+  if (path.startsWith("/guides/") || path.startsWith("/blog/")) return 0.8;
   if (path === "/glossary" || path === "/cookies") return 0.75;
   return 0.7;
 }

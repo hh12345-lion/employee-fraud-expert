@@ -1,5 +1,6 @@
 import { appendRow, type CellValue } from "@/lib/google-sheets";
 import { BRAND_NAME, isLeadWebhookConfigured } from "@/lib/leadNotification";
+import { resolveLeadMessage } from "@/lib/resolveLeadMessage";
 
 export { BRAND_NAME };
 
@@ -66,16 +67,7 @@ export function parseLeadBody(body: unknown): LeadSubmission | null {
 
   if (!fullName || !email) return null;
 
-  const freeText = opt(
-    b.message ??
-      b.Message ??
-      b.description ??
-      b.enquiry ??
-      b.details ??
-      b.summary ??
-      b.notes ??
-      b.matter
-  );
+  const freeText = resolveLeadMessage(b);
 
   return {
     fullName,

@@ -10,6 +10,7 @@ const footerTrail = [
   { href: "/investigation-process", label: "Investigation Process" },
   { href: "/how-to-instruct", label: "How to Instruct" },
   { href: "/guides", label: "Guides" },
+  { href: "/blog", label: "Blog" },
   { href: "/glossary", label: "Glossary" },
   { href: "/qualifications", label: "Qualifications" },
   { href: "/contact", label: "Contact" },

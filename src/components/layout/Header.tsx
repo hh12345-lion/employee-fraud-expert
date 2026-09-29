@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/who-we-help", label: "Who We Help" },
   { href: "/investigation-process", label: "Process" },
   { href: "/guides", label: "Guides" },
+  { href: "/blog", label: "Blog" },
   { href: "/glossary", label: "Glossary" },
   { href: "/qualifications", label: "Qualifications" },
 ];
