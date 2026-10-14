@@ -1,0 +1,2341 @@
+{
+  "mode": "execute",
+  "excludedBlog": [
+    "Iran-Country-Expert"
+  ],
+  "noSite": [
+    "asia-court-reports",
+    "ads-for-openai",
+    "aigeos-web",
+    "case-assistant",
+    "ceed",
+    "expert-witness-uae",
+    "forensic-accountant-ae",
+    "randd",
+    "witness-consulting",
+    "witness-forensic"
+  ],
+  "skipped": [
+    {
+      "repo": "employment-loss-expert",
+      "siteName": "employment-loss-expert",
+      "siteId": "fa4a7ae8-b9d1-4b53-9ac8-8a152dd226b2",
+      "url": "https://employmentlossexpert.com",
+      "skip": true,
+      "reason": "current not message-related: \"Register enquiry forms for Netlify form detection via a static HTML blueprint. C\"",
+      "current": {
+        "id": "6aa01f996e2b5e000864d9cb",
+        "at": "2026-09-08T14:45:45.705Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      }
+    },
+    {
+      "repo": "Latin-america-expert",
+      "siteName": "latin-america-expert",
+      "siteId": "21cb47a6-d626-44e7-ac07-0f1ce28ac75d",
+      "url": "https://latinamericaexpert.com",
+      "skip": true,
+      "reason": "current not message-related: \"Refactor configuration and styles for improved consistency and performance. Upda\"",
+      "current": {
+        "id": "6aad446662f9100008e8678d",
+        "at": "2026-09-18T14:02:14.269Z",
+        "title": "Refactor configuration and styles for improved consistency and performance. Update Next.js image formats, streamline Tailwind CSS color palette, and enhance global styles. Add new icons and adjust metadata for various pages to improve SEO and user experience."
+      }
+    },
+    {
+      "repo": "legal-aid-expert",
+      "siteName": "legal-aid-expert-uk",
+      "siteId": "f130349a-14b9-4859-94ed-de896829cf6f",
+      "url": "https://legalaidexpert.co.uk",
+      "skip": true,
+      "reason": "current not message-related: \"Fix robots.txt Host syntax and harden Netlify Content-Type headers. Co-authored-\"",
+      "current": {
+        "id": "6aacf661c7133e0008269148",
+        "at": "2026-09-18T08:29:21.157Z",
+        "title": "Fix robots.txt Host syntax and harden Netlify Content-Type headers. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      }
+    },
+    {
+      "repo": "legal-aid-expert-witness",
+      "siteName": "legal-aid-expert-witness",
+      "siteId": "ecf89ea6-cce1-4982-80a6-7120f69be80c",
+      "url": "https://legalaidexpertwitness.com",
+      "skip": true,
+      "reason": "current not message-related: \"Implement new brief submission page and update routing; replace \"Instruct\" refer\"",
+      "current": {
+        "id": "6a7f0a7677ca9a000800183b",
+        "at": "2026-08-14T12:30:46.161Z",
+        "title": "Implement new brief submission page and update routing; replace \"Instruct\" references with \"Submit a Brief\" across the application for consistency. Adjust Tailwind CSS configurations and enhance component styling for improved layout and responsiveness."
+      }
+    },
+    {
+      "repo": "legalaid-expert-witness",
+      "siteName": "legal-aid-expert-witness",
+      "siteId": "ecf89ea6-cce1-4982-80a6-7120f69be80c",
+      "url": "https://legalaidexpertwitness.com",
+      "skip": true,
+      "reason": "current not message-related: \"Implement new brief submission page and update routing; replace \"Instruct\" refer\"",
+      "current": {
+        "id": "6a7f0a7677ca9a000800183b",
+        "at": "2026-08-14T12:30:46.161Z",
+        "title": "Implement new brief submission page and update routing; replace \"Instruct\" references with \"Submit a Brief\" across the application for consistency. Adjust Tailwind CSS configurations and enhance component styling for improved layout and responsiveness."
+      }
+    },
+    {
+      "repo": "loss-of-earnings-expert",
+      "siteName": "loss-of-earnings-expert",
+      "siteId": "85db5281-ab44-4b60-8a43-90daad5f5dd5",
+      "url": "https://lossofearningsexpert.com",
+      "skip": true,
+      "reason": "current not message-related: \"Fix sitemap host to lossofearningsexpert.com instead of .co.uk. Co-authored-by: \"",
+      "current": {
+        "id": "6aa7bf442e22a0000838a183",
+        "at": "2026-09-14T09:32:52.112Z",
+        "title": "Fix sitemap host to lossofearningsexpert.com instead of .co.uk. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      }
+    },
+    {
+      "repo": "negligence-loss-expert",
+      "siteName": "negligence-loss-expert",
+      "siteId": "907d8a6d-e78d-49d8-9bc9-4f5fa376537b",
+      "url": "https://negligencelossexpert.com",
+      "skip": true,
+      "reason": "current not message-related: \"Replace broken Unsplash image URLs that were returning 404. Co-authored-by: Curs\"",
+      "current": {
+        "id": "6aa82125e9667200089284b0",
+        "at": "2026-09-14T16:30:29.768Z",
+        "title": "Replace broken Unsplash image URLs that were returning 404. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      }
+    }
+  ],
+  "planned": [
+    {
+      "repo": "asylum-court-reports",
+      "siteName": "asylum-court-reports",
+      "siteId": "1db41fed-c2c6-4cde-be6c-4d5453f424fb",
+      "url": "https://asylumcourtreports.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3fb07071af0008f4b1d4",
+        "at": "2026-09-18T13:42:08.307Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa2ecc770338400081223d1",
+        "at": "2026-09-10T17:45:43.336Z",
+        "title": "Add blog section with country information asylum claim article. Wire /blog into nav, footer, and sitemap with the sourced post and hero image. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad3fb07071af0008f4b1d4",
+          "at": "2026-09-18T13:42:08.307Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad1979feedd300084b46e4",
+          "at": "2026-09-18T10:59:05.114Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad156e48f3d40008529307",
+          "at": "2026-09-18T10:41:50.385Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "asylum-expert-witness-org",
+      "siteName": "asylum-expert-witness",
+      "siteId": "253a8a63-1cf3-40f1-97e8-125defbf24e1",
+      "url": "https://asylumexpertwitness.net",
+      "skip": false,
+      "current": {
+        "id": "6aad3fba20a5310008269455",
+        "at": "2026-09-18T13:42:18.771Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa7c169730e8f000709abff",
+        "at": "2026-09-14T09:42:01.691Z",
+        "title": "Lock sitemap host to asylumexpertwitness.net (ignore env overrides). Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad3fba20a5310008269455",
+          "at": "2026-09-18T13:42:18.771Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad198041580b00083881d3",
+          "at": "2026-09-18T10:59:12.871Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad158003081400089b7fa0",
+          "at": "2026-09-18T10:42:08.090Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "business-interruption-expert",
+      "siteName": "business-interruption-expert",
+      "siteId": "6b190678-45da-463e-af66-619aa4e0d02f",
+      "url": "https://businessinterruptionexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3fc9ad9db00009575c07",
+        "at": "2026-09-18T13:42:33.563Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa2ed880a444600095b22f0",
+        "at": "2026-09-10T17:48:56.238Z",
+        "title": "Add app icon and update lead notification setup notes. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3fc9ad9db00009575c07",
+          "at": "2026-09-18T13:42:33.563Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2dd29430c4000809c576",
+          "at": "2026-09-18T12:25:54.561Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad198f41580b00083881ee",
+          "at": "2026-09-18T10:59:27.434Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15a9c7133e00082df104",
+          "at": "2026-09-18T10:42:49.581Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "business-valuation-expert",
+      "siteName": "businessvaluationexpertuk",
+      "siteId": "004d30f6-e1b6-4340-aeaf-63b37a327701",
+      "url": "https://businessvaluationexperts.co.uk",
+      "skip": false,
+      "current": {
+        "id": "6ab0f4a3fa773c000884cb3c",
+        "at": "2026-09-21T09:10:59.196Z",
+        "title": "Fix n8n lead message delivery for canary deploy. Ensure free-text reaches outbound message and Netlify submit-lead is intact."
+      },
+      "target": {
+        "id": "6aa01ec2a0aa14000804b023",
+        "at": "2026-09-08T14:42:10.748Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 5,
+      "messageDeploys": [
+        {
+          "id": "6ab0f4a3fa773c000884cb3c",
+          "at": "2026-09-21T09:10:59.196Z",
+          "title": "Fix n8n lead message delivery for canary deploy. Ensure free-text reaches outbound message and Netlify submit-lead is intact."
+        },
+        {
+          "id": "6aad3fcd1b0a150008176d8c",
+          "at": "2026-09-18T13:42:37.127Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2dd8b09fde0008e51bce",
+          "at": "2026-09-18T12:26:00.692Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad199696885a000764d7c3",
+          "at": "2026-09-18T10:59:34.131Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15b0c17d30000833a265",
+          "at": "2026-09-18T10:42:56.792Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "case-boost",
+      "siteName": "caseboost",
+      "siteId": "9c7a52a1-e698-4b0c-a63d-c7e65d879780",
+      "url": "https://caseboost.io",
+      "skip": false,
+      "current": {
+        "id": "6aad3fd1bf9963000812e85a",
+        "at": "2026-09-18T13:42:41.954Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aabd8a96756130008aaf647",
+        "at": "2026-09-17T12:10:17.285Z",
+        "title": "Switch public contact email to info@caseboost.io. Update footer, schema, careers, privacy, and terms so the site uses a single info@ address. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3fd1bf9963000812e85a",
+          "at": "2026-09-18T13:42:41.954Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2dde9430c4000809c58e",
+          "at": "2026-09-18T12:26:06.461Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad199d254392000844f387",
+          "at": "2026-09-18T10:59:41.643Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15ba050bf500077e93fd",
+          "at": "2026-09-18T10:43:06.676Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "damages-expert-loss",
+      "siteName": "damagesexpertloss",
+      "siteId": "b8be9f12-f556-4267-ae22-a2a74a5c79a9",
+      "url": "https://damagesexpertwitness.co.uk",
+      "skip": false,
+      "current": {
+        "id": "6aad3ff3b8d37800082211fd",
+        "at": "2026-09-18T13:43:15.150Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aaad03db93a4a00087a8041",
+        "at": "2026-09-16T17:22:05.211Z",
+        "title": "Add blog on country evidence for Scottish immigration cases. Give practitioners a dedicated blog hub and post on reviewing COI for Scottish and UK files. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3ff3b8d37800082211fd",
+          "at": "2026-09-18T13:43:15.150Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e1b782a4b00081fe49d",
+          "at": "2026-09-18T12:27:07.959Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19c105057800080d58c0",
+          "at": "2026-09-18T11:00:17.716Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15fa1ac07a00088a2239",
+          "at": "2026-09-18T10:44:10.959Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "dispute-forensic",
+      "siteName": "dispute-forensic",
+      "siteId": "d90c34e7-e100-4eb3-8d8c-c884e1c2a0fa",
+      "url": "https://disputeforensic.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3ff8122505000709d77c",
+        "at": "2026-09-18T13:43:20.605Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aac20eaef1b5600082f5dcf",
+        "at": "2026-09-17T17:18:34.487Z",
+        "title": "Add blog section with post on assumptions in forensic expert evidence. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3ff8122505000709d77c",
+          "at": "2026-09-18T13:43:20.605Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e20fad6ef0008da9612",
+          "at": "2026-09-18T12:27:12.554Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19c6441f830008b9d999",
+          "at": "2026-09-18T11:00:22.873Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad160317259a0008958663",
+          "at": "2026-09-18T10:44:19.313Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "redd-growth",
+      "siteName": "reddgrowth",
+      "siteId": "4f7cdb8e-7ca4-4e34-86c8-2b6ba002a695",
+      "url": "https://reddgrowth.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3f47fad6ef0008d48dc6",
+        "at": "2026-09-18T13:40:23.202Z",
+        "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+      },
+      "target": {
+        "id": "6aa411cb3e41ec00088ae5aa",
+        "at": "2026-09-11T14:35:55.982Z",
+        "title": "Set footer copyright year to 2024. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad3f47fad6ef0008d48dc6",
+          "at": "2026-09-18T13:40:23.202Z",
+          "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+        },
+        {
+          "id": "6aad2c25fdfb1d00086f5eb5",
+          "at": "2026-09-18T12:18:45.960Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad16d6050bf500077eb000",
+          "at": "2026-09-18T10:47:50.749Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "warranty-claim-expert",
+      "siteName": "warranty-claim-expert",
+      "siteId": "e440de99-35b8-42ef-b52a-c44dad452aec",
+      "url": "https://warrantyclaimexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad4071b15dfa0008a6ecf8",
+        "at": "2026-09-18T13:45:21.824Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa01f77210f3c0008bd85a1",
+        "at": "2026-09-08T14:45:11.024Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad4071b15dfa0008a6ecf8",
+          "at": "2026-09-18T13:45:21.824Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e894e62a90009593418",
+          "at": "2026-09-18T12:28:57.889Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad1a491ccbf100086a1433",
+          "at": "2026-09-18T11:02:33.934Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "future-earnings-expert",
+      "siteName": "future-earnings-expert",
+      "siteId": "ace26932-b90c-4ece-af5b-ecce0738ad69",
+      "url": "https://futureearningsexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad401d1886e70008b1b96a",
+        "at": "2026-09-18T13:43:57.468Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa2edbb598e030008c2f80f",
+        "at": "2026-09-10T17:49:47.582Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad401d1886e70008b1b96a",
+          "at": "2026-09-18T13:43:57.468Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e40ee66ea0008a09166",
+          "at": "2026-09-18T12:27:44.992Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19f01ac07a00088ab9a7",
+          "at": "2026-09-18T11:01:04.982Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad16521ac07a00088a2672",
+          "at": "2026-09-18T10:45:38.262Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "juris-country-experts",
+      "siteName": "juris-country-experts",
+      "siteId": "15631671-e1a8-485c-9658-76eb59137fe6",
+      "url": "https://juriscountryexperts.com",
+      "skip": false,
+      "current": {
+        "id": "6aad4033d3a27d00080e001c",
+        "at": "2026-09-18T13:44:19.866Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa01e74ef106200081bda1e",
+        "at": "2026-09-08T14:40:52.760Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad4033d3a27d00080e001c",
+          "at": "2026-09-18T13:44:19.866Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e544e62a9000959150a",
+          "at": "2026-09-18T12:28:04.210Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad1a061d994d00082a912b",
+          "at": "2026-09-18T11:01:26.080Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "abc-expert-consultants",
+      "siteName": "abc-expert-consultants",
+      "siteId": "db8c4b56-9667-449f-bdb4-3263b07b7e9f",
+      "url": "https://abcexpertconsultants.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3f9b16931200083d5417",
+        "at": "2026-09-18T13:41:47.541Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa03f19bf90a700082af741",
+        "at": "2026-09-08T17:00:09.270Z",
+        "title": "Add a sourced blog section and publish the asylum expert-witness article. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3f9b16931200083d5417",
+          "at": "2026-09-18T13:41:47.541Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2d7abd8bb800099a4ad6",
+          "at": "2026-09-18T12:24:26.829Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad1959672f480008e5e010",
+          "at": "2026-09-18T10:58:33.286Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad1536fa3d850008d15ecb",
+          "at": "2026-09-18T10:40:54.981Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "accounting-expert-witness",
+      "siteName": "accounting-expert-witness",
+      "siteId": "9dbefb4d-afd6-484d-8ad4-d7f338707c80",
+      "url": "https://accountingexpertwitness.co.uk",
+      "skip": false,
+      "current": {
+        "id": "6ab0f4abbf99630008ba6182",
+        "at": "2026-09-21T09:11:07.879Z",
+        "title": "Fix n8n lead message delivery for canary deploy. Ensure free-text reaches outbound message and Netlify submit-lead is intact."
+      },
+      "target": {
+        "id": "6aa2ee7014b98d0008a5df9c",
+        "at": "2026-09-10T17:52:48.464Z",
+        "title": "Add app icon and blog hero image asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 6,
+      "messageDeploys": [
+        {
+          "id": "6ab0f4abbf99630008ba6182",
+          "at": "2026-09-21T09:11:07.879Z",
+          "title": "Fix n8n lead message delivery for canary deploy. Ensure free-text reaches outbound message and Netlify submit-lead is intact."
+        },
+        {
+          "id": "6aad3f907f26630008bc2f55",
+          "at": "2026-09-18T13:41:36.730Z",
+          "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+        },
+        {
+          "id": "6aad3f20721c6d0008b3e0bf",
+          "at": "2026-09-18T13:39:44.488Z",
+          "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+        },
+        {
+          "id": "6aad2dae844915000887f1fe",
+          "at": "2026-09-18T12:25:18.426Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad195f01dc1f00089783a6",
+          "at": "2026-09-18T10:58:39.390Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad153e9745060008913f9c",
+          "at": "2026-09-18T10:41:02.791Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "asylum-country-expert",
+      "siteName": "asylum-country-expert",
+      "siteId": "79f06434-2c9e-4ac3-a0d3-77e36252f01f",
+      "url": "https://asylumcountryexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad1b097336790008b90a0b",
+        "at": "2026-09-18T11:05:45.348Z",
+        "title": "Add universal message field to n8n lead webhook payloads."
+      },
+      "target": {
+        "id": "6aa2ecca685d1b0008033e39",
+        "at": "2026-09-10T17:45:46.403Z",
+        "title": "Add local blog article on briefing country experts for asylum cases. Extend the blog section with the sourced post, article component, and hero image. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 2,
+      "messageDeploys": [
+        {
+          "id": "6aad1b097336790008b90a0b",
+          "at": "2026-09-18T11:05:45.348Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad1569f9e68200086ea513",
+          "at": "2026-09-18T10:41:45.982Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "asylum-expert",
+      "siteName": "asylum-expert",
+      "siteId": "f33fca69-3f47-41aa-b1d3-304107ea4214",
+      "url": "https://asylumexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3fb3122505000709d6d7",
+        "at": "2026-09-18T13:42:11.043Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa2ed7f84f5a400081e5229",
+        "at": "2026-09-10T17:48:47.396Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 1,
+      "messageDeploys": [
+        {
+          "id": "6aad3fb3122505000709d6d7",
+          "at": "2026-09-18T13:42:11.043Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        }
+      ]
+    },
+    {
+      "repo": "asylum-expert-scot",
+      "siteName": "asylum-expert-scot",
+      "siteId": "5fa391db-b30b-4c6d-a237-9dfa60e7740e",
+      "url": "https://asylumexperts.co.uk",
+      "skip": false,
+      "current": {
+        "id": "6aad3fb716931200083d57be",
+        "at": "2026-09-18T13:42:15.862Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa441b02128bc0008b6cecb",
+        "at": "2026-09-11T18:00:16.153Z",
+        "title": "Add blog section with Scotland asylum appeal expert evidence guide. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3fb716931200083d57be",
+          "at": "2026-09-18T13:42:15.862Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2dc557e9540008d9440a",
+          "at": "2026-09-18T12:25:41.463Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad197ffeedd300084b46ef",
+          "at": "2026-09-18T10:59:11.125Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad157a1ac07a000889fc43",
+          "at": "2026-09-18T10:42:02.904Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "business-loss-expert",
+      "siteName": "business-loss-expert",
+      "siteId": "04802c83-d4c2-428e-8e5e-1bc3a3fa4f56",
+      "url": "https://businesslossexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad15ad7de4e600070b40a0",
+        "at": "2026-09-18T10:42:53.022Z",
+        "title": "Add universal message field to n8n lead webhook payloads."
+      },
+      "target": {
+        "id": "6aa2ed8b55ca34000889f366",
+        "at": "2026-09-10T17:48:59.221Z",
+        "title": "Add app icon and update lead notification setup notes. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 1,
+      "messageDeploys": [
+        {
+          "id": "6aad15ad7de4e600070b40a0",
+          "at": "2026-09-18T10:42:53.022Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "business-valuation-expert-witness",
+      "siteName": "business-valuation-expert-witness",
+      "siteId": "04f486ea-0373-47d8-b3f5-b14c10e50706",
+      "url": "https://businessvaluationexpertwitness.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3f8b84491500088ec27b",
+        "at": "2026-09-18T13:41:31.765Z",
+        "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+      },
+      "target": {
+        "id": "6aa2ed9eb08c41000970644f",
+        "at": "2026-09-10T17:49:18.818Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3f8b84491500088ec27b",
+          "at": "2026-09-18T13:41:31.765Z",
+          "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+        },
+        {
+          "id": "6aad3f3084491500088ec17b",
+          "at": "2026-09-18T13:40:00.969Z",
+          "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+        },
+        {
+          "id": "6aad2dd986b2070008ecf070",
+          "at": "2026-09-18T12:26:01.796Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad1998bc37be0008b9bbdd",
+          "at": "2026-09-18T10:59:36.588Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "coi-experts",
+      "siteName": "coi-experts",
+      "siteId": "dd14a7fc-37fa-4aa6-84ab-7bc0b2d023e6",
+      "url": "https://coiexperts.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3fd72bebc30008efaa96",
+        "at": "2026-09-18T13:42:47.108Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa447b7c392e200080b7779",
+        "at": "2026-09-11T18:25:59.067Z",
+        "title": "Add blog section explaining the difference between COI and Home Office CPINs. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3fd72bebc30008efaa96",
+          "at": "2026-09-18T13:42:47.108Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2de30a788b0007ad2e49",
+          "at": "2026-09-18T12:26:11.403Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19a2adcf550008f9c1d3",
+          "at": "2026-09-18T10:59:46.766Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15c2b24ada00089c1d3f",
+          "at": "2026-09-18T10:43:14.813Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "context-signal",
+      "siteName": "context-signal",
+      "siteId": "1c657025-12b7-41c1-b3e2-2c10c00842d4",
+      "url": "https://contextandsignal.com",
+      "skip": false,
+      "current": {
+        "id": "6aad19a7392bd500080a7a26",
+        "at": "2026-09-18T10:59:51.567Z",
+        "title": "Add universal message field to n8n lead webhook payloads."
+      },
+      "target": {
+        "id": "6aabde0515ad6b0008e56d07",
+        "at": "2026-09-17T12:33:09.472Z",
+        "title": "Improve favicon visibility with high-contrast cream background icons. Add a generate-icons script and 48px variant so the mark stays readable in browser tabs. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 2,
+      "messageDeploys": [
+        {
+          "id": "6aad19a7392bd500080a7a26",
+          "at": "2026-09-18T10:59:51.567Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15cb0b6e3a00087089a7",
+          "at": "2026-09-18T10:43:23.732Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "country-condition-reports",
+      "siteName": "country-condition-reports",
+      "siteId": "50deb644-69e2-4e6f-b484-81663ff8dd48",
+      "url": "https://countryconditionreports.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3fdef9409f0008fb23fe",
+        "at": "2026-09-18T13:42:54.278Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa9891c349a320008aaf426",
+        "at": "2026-09-15T18:06:20.418Z",
+        "title": "Add Insights blog with case-specific reports post and US location. Introduce MDX insights pipeline, featured image, nav/sitemap wiring, /blog redirects, and remove em dashes from site copy. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3fdef9409f0008fb23fe",
+          "at": "2026-09-18T13:42:54.278Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2deb782a4b00081fe41a",
+          "at": "2026-09-18T12:26:19.407Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad1b10200d520008983744",
+          "at": "2026-09-18T11:05:52.757Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15d47de4e600070b4312",
+          "at": "2026-09-18T10:43:32.427Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "country-conditions-expert",
+      "siteName": "country-conditions-expert",
+      "siteId": "242ff37d-4715-4af9-9cf9-43d6afc7fb15",
+      "url": "https://countryconditionsexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3fe1edbd3c0008df59e9",
+        "at": "2026-09-18T13:42:57.854Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa9891fb83c7b0008422606",
+        "at": "2026-09-15T18:06:23.071Z",
+        "title": "Add Insights blog with facts-vs-opinion post and US location. Introduce MDX insights pipeline, featured image, nav/sitemap/schema wiring, /blog redirects, and remove em dashes from site copy. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3fe1edbd3c0008df59e9",
+          "at": "2026-09-18T13:42:57.854Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2ded9d58a6000831f074",
+          "at": "2026-09-18T12:26:21.426Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19ac672f480008e5f214",
+          "at": "2026-09-18T10:59:56.993Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15d81ce9aa00087088ea",
+          "at": "2026-09-18T10:43:36.520Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "country-expert-insights",
+      "siteName": "country-expert-insights",
+      "siteId": "0d04e173-96a6-408d-8db2-f836b365cc49",
+      "url": "https://countryexpertinsights.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3fe35b67410007ace969",
+        "at": "2026-09-18T13:42:59.751Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa9892126658800081baa0a",
+        "at": "2026-09-15T18:06:25.432Z",
+        "title": "Add Blog section with individual-profile country conditions post. Introduce MDX blog pipeline, featured image, nav/sitemap/schema wiring, US business location, and remove em dashes from site copy. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3fe35b67410007ace969",
+          "at": "2026-09-18T13:42:59.751Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2def9d71a10008edcbb1",
+          "at": "2026-09-18T12:26:23.726Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19af001ffa00083aefed",
+          "at": "2026-09-18T10:59:59.471Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15dce7fff800081e4291",
+          "at": "2026-09-18T10:43:40.771Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "country-expert-witness-net",
+      "siteName": "country-expert-witness-net",
+      "siteId": "ef31dc3a-b9ef-499b-9014-9d8a26d45e24",
+      "url": "https://countryexpertwitness.net",
+      "skip": false,
+      "current": {
+        "id": "6aad3feb8586b600088fd292",
+        "at": "2026-09-18T13:43:07.217Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6a7dd123b48172000865266a",
+        "at": "2026-08-13T14:13:55.688Z",
+        "title": "Update Google Sheets tab names, implement secure match redirects, and enhance UI styles across various components. Added secure match API endpoint and updated documentation to reflect new routing and functionality."
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3feb8586b600088fd292",
+          "at": "2026-09-18T13:43:07.217Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e16ca653b00080ea75e",
+          "at": "2026-09-18T12:27:02.844Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19b8cfe2e8000854d7fe",
+          "at": "2026-09-18T11:00:08.421Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15e90e3ab00008c1514f",
+          "at": "2026-09-18T10:43:53.884Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "country-report-expert",
+      "siteName": "country-report-expert",
+      "siteId": "9d7e2d17-8d23-4b97-bffe-a169f0594eaa",
+      "url": "https://countryreportexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3ff016931200083d61a1",
+        "at": "2026-09-18T13:43:12.232Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aaad067dd12b700087bb62c",
+        "at": "2026-09-16T17:22:48.005Z",
+        "title": "Add blog on country evidence for Scottish immigration cases. Give practitioners a dedicated blog hub and post on reviewing COI for Scottish and UK files. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad3ff016931200083d61a1",
+          "at": "2026-09-18T13:43:12.232Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad19bedad41e000813e0a1",
+          "at": "2026-09-18T11:00:15.007Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad15f26a9ea60008e77e59",
+          "at": "2026-09-18T10:44:02.542Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "country-risk-expert",
+      "siteName": "country-risk-expert",
+      "siteId": "d8c1b098-96e8-41a6-b873-fc7340e6e4a9",
+      "url": "https://countryriskexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3f37aab4cf00085827cd",
+        "at": "2026-09-18T13:40:07.338Z",
+        "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+      },
+      "target": {
+        "id": "6aaad06996bb4700083478cf",
+        "at": "2026-09-16T17:22:49.730Z",
+        "title": "Add blog on localising country evidence to regions and cities. Remove the old /blog redirect to FAQ and publish a geographic-scope article with nav and sitemap wiring. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 2,
+      "messageDeploys": [
+        {
+          "id": "6aad3f37aab4cf00085827cd",
+          "at": "2026-09-18T13:40:07.338Z",
+          "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+        },
+        {
+          "id": "6aad15f62a6a63000880ea8a",
+          "at": "2026-09-18T10:44:06.571Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "divorce-accountant-expert",
+      "siteName": "divorce-accountant-expert",
+      "siteId": "3222c635-425a-4d36-92f3-dc06e5a78b1c",
+      "url": "https://divorceaccountantexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3ffa7f26630008bc38ea",
+        "at": "2026-09-18T13:43:22.946Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa2eda114b98d0008a5da4e",
+        "at": "2026-09-10T17:49:21.447Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3ffa7f26630008bc38ea",
+          "at": "2026-09-18T13:43:22.946Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e23df85630008caa3db",
+          "at": "2026-09-18T12:27:15.196Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19c9c7133e00082ec697",
+          "at": "2026-09-18T11:00:25.483Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad1607fb891c00086f3013",
+          "at": "2026-09-18T10:44:23.507Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "divorce-tax-expert",
+      "siteName": "divorce-tax-expert",
+      "siteId": "997b6e8d-3e8d-4480-bf94-3af65f36ecae",
+      "url": "https://divorcetaxexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad3ffcb1335e000771c8f3",
+        "at": "2026-09-18T13:43:24.923Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa01f9b0e0a9b000804fedc",
+        "at": "2026-09-08T14:45:47.383Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3ffcb1335e000771c8f3",
+          "at": "2026-09-18T13:43:24.923Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e24aab4cf000852bf99",
+          "at": "2026-09-18T12:27:17.006Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19cc03f13d0008d9c821",
+          "at": "2026-09-18T11:00:28.488Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad160c050bf500077eaf24",
+          "at": "2026-09-18T10:44:28.522Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "employee-fraud-expert",
+      "siteName": "employee-fraud-expert",
+      "siteId": "2e72e3ae-8bd1-4c1e-8d83-eba2dbc07949",
+      "url": "https://employeefraudexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6ab0f4a01b0a150008c26869",
+        "at": "2026-09-21T09:10:56.131Z",
+        "title": "Fix n8n lead message delivery for canary deploy. Ensure free-text reaches outbound message and Netlify submit-lead is intact."
+      },
+      "target": {
+        "id": "6aacf7932f5f8e0008ec91b0",
+        "at": "2026-09-18T08:34:27.776Z",
+        "title": "Harden robots.txt for Ahrefs crawl access on Employee Fraud Expert. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 5,
+      "messageDeploys": [
+        {
+          "id": "6ab0f4a01b0a150008c26869",
+          "at": "2026-09-21T09:10:56.131Z",
+          "title": "Fix n8n lead message delivery for canary deploy. Ensure free-text reaches outbound message and Netlify submit-lead is intact."
+        },
+        {
+          "id": "6aad3ffff80dd6000817b08e",
+          "at": "2026-09-18T13:43:27.687Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e2754313500083c5f78",
+          "at": "2026-09-18T12:27:19.539Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19ce05057800080d5b7a",
+          "at": "2026-09-18T11:00:30.951Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad16121d994d00082a0bca",
+          "at": "2026-09-18T10:44:34.623Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "expert-country-reports",
+      "siteName": "expert-country-reports",
+      "siteId": "b1e94d6c-91ea-44dd-9ad4-af5bf88da55a",
+      "url": "https://expertcountryreports.com",
+      "skip": false,
+      "current": {
+        "id": "6aad4007188fc000089bddf8",
+        "at": "2026-09-18T13:43:35.188Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa7c07fb0d9c300089e4793",
+        "at": "2026-09-14T09:38:07.800Z",
+        "title": "Fix sitemap host to expertcountryreports.com instead of .co.uk. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad4007188fc000089bddf8",
+          "at": "2026-09-18T13:43:35.188Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad1b138177940008d93916",
+          "at": "2026-09-18T11:05:55.308Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad1621560210000889f586",
+          "at": "2026-09-18T10:44:49.743Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "forensic-accountant-expert",
+      "siteName": "forensic-accountant-expert",
+      "siteId": "1c51d792-c276-4469-9511-4c194e65af8c",
+      "url": "https://forensicaccountant.expert",
+      "skip": false,
+      "current": {
+        "id": "6aad4013bd8bb80009a16b9a",
+        "at": "2026-09-18T13:43:47.531Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa2eda75144910008562b08",
+        "at": "2026-09-10T17:49:27.431Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad4013bd8bb80009a16b9a",
+          "at": "2026-09-18T13:43:47.531Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e3744ea520008224b64",
+          "at": "2026-09-18T12:27:35.718Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19e1dad41e000813e322",
+          "at": "2026-09-18T11:00:49.501Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad1637c6f93200081cfed3",
+          "at": "2026-09-18T10:45:11.109Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "forensic-expert-witness",
+      "siteName": "forensic-expert-witness",
+      "siteId": "6322c2fb-0e71-429d-bf7e-064284604186",
+      "url": "https://forensicexpertwitness.co.uk",
+      "skip": false,
+      "current": {
+        "id": "6aad401591c0cf0008ccbc23",
+        "at": "2026-09-18T13:43:49.860Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa2edaa70338400081261c7",
+        "at": "2026-09-10T17:49:30.503Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad401591c0cf0008ccbc23",
+          "at": "2026-09-18T13:43:49.860Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e392c006c000847ca9c",
+          "at": "2026-09-18T12:27:37.942Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19e320886a0008863ec2",
+          "at": "2026-09-18T11:00:51.767Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad163cae8bb60008263668",
+          "at": "2026-09-18T10:45:16.886Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "fraud-expert-accountant",
+      "siteName": "fraud-expert-accountant",
+      "siteId": "6c89a606-026e-435a-978c-fe6208522467",
+      "url": "https://fraudexpertaccountant.com",
+      "skip": false,
+      "current": {
+        "id": "6aad4018c1b53c0008816777",
+        "at": "2026-09-18T13:43:52.478Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa2ed85e59a7e0008f8977f",
+        "at": "2026-09-10T17:48:53.128Z",
+        "title": "Add app icon and lead notification setup notes. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad4018c1b53c0008816777",
+          "at": "2026-09-18T13:43:52.478Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e3c0ca19700087cc24c",
+          "at": "2026-09-18T12:27:40.379Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19e603f13d0008d9c85b",
+          "at": "2026-09-18T11:00:54.320Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad16406a9ea60008e788e4",
+          "at": "2026-09-18T10:45:20.107Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "fraud-expert-witness",
+      "siteName": "fraud-expert-witness",
+      "siteId": "62c45f06-cda8-4342-929b-d86ef82b132b",
+      "url": "https://fraudexpertwitness.com",
+      "skip": false,
+      "current": {
+        "id": "6aad401bb8d37800082225a3",
+        "at": "2026-09-18T13:43:55.047Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa2ed90e63f9b00083bc4f3",
+        "at": "2026-09-10T17:49:04.937Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad401bb8d37800082225a3",
+          "at": "2026-09-18T13:43:55.047Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e3e16d92f0009b0bcb7",
+          "at": "2026-09-18T12:27:42.733Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19e90d5175000837cf1f",
+          "at": "2026-09-18T11:00:57.407Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aad16446f03480008421b05",
+          "at": "2026-09-18T10:45:24.332Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "ibn-furat",
+      "siteName": "ibn-furat",
+      "siteId": "fe7bd0c1-bcce-4f62-b648-0397eb349be8",
+      "url": "https://ibnalfurat.com",
+      "skip": false,
+      "current": {
+        "id": "6aad402584491500088ee772",
+        "at": "2026-09-18T13:44:05.225Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa01fad7f8e2200080525f6",
+        "at": "2026-09-08T14:46:05.977Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad402584491500088ee772",
+          "at": "2026-09-18T13:44:05.225Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e47e74f570008b08b28",
+          "at": "2026-09-18T12:27:51.962Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad19f9a140ec00082f56e8",
+          "at": "2026-09-18T11:01:13.376Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aa2ee30432e5000076b79c1",
+          "at": "2026-09-10T17:51:44.495Z",
+          "title": "Update env example and lead webhook notes. Co-authored-by: Cursor <cursoragent@cursor.com>"
+        }
+      ]
+    },
+    {
+      "repo": "lawstone-web",
+      "siteName": "law-stone",
+      "siteId": "70c80e4b-3f86-4567-800f-2c15b068ffb7",
+      "url": "https://lawstone.co.uk",
+      "skip": false,
+      "current": {
+        "id": "6aad3f3fc225c90008a4ac13",
+        "at": "2026-09-18T13:40:15.452Z",
+        "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+      },
+      "target": {
+        "id": "6a4d2282a6a47c0008e2b563",
+        "at": "2026-07-07T16:00:02.661Z",
+        "title": "Implement blog data fetching and SSG support, update build process, and enhance Netlify configuration"
+      },
+      "rollingBackCount": 4,
+      "messageDeploys": [
+        {
+          "id": "6aad3f3fc225c90008a4ac13",
+          "at": "2026-09-18T13:40:15.452Z",
+          "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+        },
+        {
+          "id": "6aad2c21392bd500081048b4",
+          "at": "2026-09-18T12:18:41.075Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad1684392bd5000809b231",
+          "at": "2026-09-18T10:46:28.745Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        },
+        {
+          "id": "6aa2ee2aa9583b000853d4b4",
+          "at": "2026-09-10T17:51:38.739Z",
+          "title": "Add contact form lead webhook notes. Co-authored-by: Cursor <cursoragent@cursor.com>"
+        }
+      ]
+    },
+    {
+      "repo": "MENA-expert-witness",
+      "siteName": "mena-expert-witness",
+      "siteId": "b07f5ef1-8f6d-4de0-a32b-24bd6b174011",
+      "url": "https://menaexpertwitness.com",
+      "skip": false,
+      "current": {
+        "id": "6aad404998aae30009f03399",
+        "at": "2026-09-18T13:44:41.912Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa734ae0366be0008b0b28a",
+        "at": "2026-09-13T23:41:34.660Z",
+        "title": "Fix sitemap host to menaexpertwitness.com instead of .co.uk. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad404998aae30009f03399",
+          "at": "2026-09-18T13:44:41.912Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e661886e70008ab54ea",
+          "at": "2026-09-18T12:28:22.201Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad1a2017259a000896353d",
+          "at": "2026-09-18T11:01:52.688Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "middle-east-expert",
+      "siteName": "middle-east-expert",
+      "siteId": "f2b7e73f-c3d7-4e8e-8b0c-cfb8f5898271",
+      "url": "https://middleeast-expert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad404c781e0a000745f6c1",
+        "at": "2026-09-18T13:44:44.831Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa2ef30daf4af00085cee9b",
+        "at": "2026-09-10T17:56:00.548Z",
+        "title": "Add site issues audit PDF. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad404c781e0a000745f6c1",
+          "at": "2026-09-18T13:44:44.831Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e6815c6550008ceb4fa",
+          "at": "2026-09-18T12:28:24.490Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad1a24c17d30000833e081",
+          "at": "2026-09-18T11:01:56.160Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "pakistan-country-expert",
+      "siteName": "pakistan-country-expert",
+      "siteId": "effc1854-4120-407d-b428-b249a91e71e6",
+      "url": "https://pakistancountryexpert.com",
+      "skip": false,
+      "current": {
+        "id": "6aad4051b15dfa0008a6d090",
+        "at": "2026-09-18T13:44:49.881Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6a903ed3376287000821f2a6",
+        "at": "2026-08-27T13:42:43.328Z",
+        "title": "Add domain field to lead notification webhook payload. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad4051b15dfa0008a6d090",
+          "at": "2026-09-18T13:44:49.881Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e6d57ede500086bdb4b",
+          "at": "2026-09-18T12:28:29.145Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad1a2948f3d40008537300",
+          "at": "2026-09-18T11:02:01.662Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    },
+    {
+      "repo": "str-claims-web",
+      "siteName": "str-claims",
+      "siteId": "141170b7-dfe9-41f5-82cf-a56987f2d9ad",
+      "url": "https://strclaims.com",
+      "skip": false,
+      "current": {
+        "id": "6aad406821fe8300088fc681",
+        "at": "2026-09-18T13:45:12.207Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "target": {
+        "id": "6aa7326a2185aa0008bb6e45",
+        "at": "2026-09-13T23:31:54.645Z",
+        "title": "Publish static blogs from registry and remove Blog Maker. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "rollingBackCount": 3,
+      "messageDeploys": [
+        {
+          "id": "6aad406821fe8300088fc681",
+          "at": "2026-09-18T13:45:12.207Z",
+          "title": "Expand n8n message field aliases for site free-text keys."
+        },
+        {
+          "id": "6aad2e826b1b2200087aabd8",
+          "at": "2026-09-18T12:28:50.937Z",
+          "title": "Fix lead webhook ReferenceErrors from message field patch."
+        },
+        {
+          "id": "6aad1a4220886a0008866838",
+          "at": "2026-09-18T11:02:26.157Z",
+          "title": "Add universal message field to n8n lead webhook payloads."
+        }
+      ]
+    }
+  ],
+  "restored": [
+    {
+      "repo": "asylum-court-reports",
+      "siteName": "asylum-court-reports",
+      "siteId": "1db41fed-c2c6-4cde-be6c-4d5453f424fb",
+      "url": "https://asylumcourtreports.com",
+      "from": {
+        "id": "6aad3fb07071af0008f4b1d4",
+        "at": "2026-09-18T13:42:08.307Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa2ecc770338400081223d1",
+        "at": "2026-09-10T17:45:43.336Z",
+        "title": "Add blog section with country information asylum claim article. Wire /blog into nav, footer, and sitemap with the sourced post and hero image. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2ecc770338400081223d1"
+    },
+    {
+      "repo": "asylum-expert-witness-org",
+      "siteName": "asylum-expert-witness",
+      "siteId": "253a8a63-1cf3-40f1-97e8-125defbf24e1",
+      "url": "https://asylumexpertwitness.net",
+      "from": {
+        "id": "6aad3fba20a5310008269455",
+        "at": "2026-09-18T13:42:18.771Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa7c169730e8f000709abff",
+        "at": "2026-09-14T09:42:01.691Z",
+        "title": "Lock sitemap host to asylumexpertwitness.net (ignore env overrides). Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa7c169730e8f000709abff"
+    },
+    {
+      "repo": "business-interruption-expert",
+      "siteName": "business-interruption-expert",
+      "siteId": "6b190678-45da-463e-af66-619aa4e0d02f",
+      "url": "https://businessinterruptionexpert.com",
+      "from": {
+        "id": "6aad3fc9ad9db00009575c07",
+        "at": "2026-09-18T13:42:33.563Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa2ed880a444600095b22f0",
+        "at": "2026-09-10T17:48:56.238Z",
+        "title": "Add app icon and update lead notification setup notes. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2ed880a444600095b22f0"
+    },
+    {
+      "repo": "business-valuation-expert",
+      "siteName": "businessvaluationexpertuk",
+      "siteId": "004d30f6-e1b6-4340-aeaf-63b37a327701",
+      "url": "https://businessvaluationexperts.co.uk",
+      "from": {
+        "id": "6ab0f4a3fa773c000884cb3c",
+        "at": "2026-09-21T09:10:59.196Z",
+        "title": "Fix n8n lead message delivery for canary deploy. Ensure free-text reaches outbound message and Netlify submit-lead is intact."
+      },
+      "to": {
+        "id": "6aa01ec2a0aa14000804b023",
+        "at": "2026-09-08T14:42:10.748Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa01ec2a0aa14000804b023"
+    },
+    {
+      "repo": "case-boost",
+      "siteName": "caseboost",
+      "siteId": "9c7a52a1-e698-4b0c-a63d-c7e65d879780",
+      "url": "https://caseboost.io",
+      "from": {
+        "id": "6aad3fd1bf9963000812e85a",
+        "at": "2026-09-18T13:42:41.954Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aabd8a96756130008aaf647",
+        "at": "2026-09-17T12:10:17.285Z",
+        "title": "Switch public contact email to info@caseboost.io. Update footer, schema, careers, privacy, and terms so the site uses a single info@ address. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aabd8a96756130008aaf647"
+    },
+    {
+      "repo": "damages-expert-loss",
+      "siteName": "damagesexpertloss",
+      "siteId": "b8be9f12-f556-4267-ae22-a2a74a5c79a9",
+      "url": "https://damagesexpertwitness.co.uk",
+      "from": {
+        "id": "6aad3ff3b8d37800082211fd",
+        "at": "2026-09-18T13:43:15.150Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aaad03db93a4a00087a8041",
+        "at": "2026-09-16T17:22:05.211Z",
+        "title": "Add blog on country evidence for Scottish immigration cases. Give practitioners a dedicated blog hub and post on reviewing COI for Scottish and UK files. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aaad03db93a4a00087a8041"
+    },
+    {
+      "repo": "dispute-forensic",
+      "siteName": "dispute-forensic",
+      "siteId": "d90c34e7-e100-4eb3-8d8c-c884e1c2a0fa",
+      "url": "https://disputeforensic.com",
+      "from": {
+        "id": "6aad3ff8122505000709d77c",
+        "at": "2026-09-18T13:43:20.605Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aac20eaef1b5600082f5dcf",
+        "at": "2026-09-17T17:18:34.487Z",
+        "title": "Add blog section with post on assumptions in forensic expert evidence. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aac20eaef1b5600082f5dcf"
+    },
+    {
+      "repo": "redd-growth",
+      "siteName": "reddgrowth",
+      "siteId": "4f7cdb8e-7ca4-4e34-86c8-2b6ba002a695",
+      "url": "https://reddgrowth.com",
+      "from": {
+        "id": "6aad3f47fad6ef0008d48dc6",
+        "at": "2026-09-18T13:40:23.202Z",
+        "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+      },
+      "to": {
+        "id": "6aa411cb3e41ec00088ae5aa",
+        "at": "2026-09-11T14:35:55.982Z",
+        "title": "Set footer copyright year to 2024. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa411cb3e41ec00088ae5aa"
+    },
+    {
+      "repo": "warranty-claim-expert",
+      "siteName": "warranty-claim-expert",
+      "siteId": "e440de99-35b8-42ef-b52a-c44dad452aec",
+      "url": "https://warrantyclaimexpert.com",
+      "from": {
+        "id": "6aad4071b15dfa0008a6ecf8",
+        "at": "2026-09-18T13:45:21.824Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa01f77210f3c0008bd85a1",
+        "at": "2026-09-08T14:45:11.024Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa01f77210f3c0008bd85a1"
+    },
+    {
+      "repo": "future-earnings-expert",
+      "siteName": "future-earnings-expert",
+      "siteId": "ace26932-b90c-4ece-af5b-ecce0738ad69",
+      "url": "https://futureearningsexpert.com",
+      "from": {
+        "id": "6aad401d1886e70008b1b96a",
+        "at": "2026-09-18T13:43:57.468Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa2edbb598e030008c2f80f",
+        "at": "2026-09-10T17:49:47.582Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2edbb598e030008c2f80f"
+    },
+    {
+      "repo": "juris-country-experts",
+      "siteName": "juris-country-experts",
+      "siteId": "15631671-e1a8-485c-9658-76eb59137fe6",
+      "url": "https://juriscountryexperts.com",
+      "from": {
+        "id": "6aad4033d3a27d00080e001c",
+        "at": "2026-09-18T13:44:19.866Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa01e74ef106200081bda1e",
+        "at": "2026-09-08T14:40:52.760Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa01e74ef106200081bda1e"
+    },
+    {
+      "repo": "abc-expert-consultants",
+      "siteName": "abc-expert-consultants",
+      "siteId": "db8c4b56-9667-449f-bdb4-3263b07b7e9f",
+      "url": "https://abcexpertconsultants.com",
+      "from": {
+        "id": "6aad3f9b16931200083d5417",
+        "at": "2026-09-18T13:41:47.541Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa03f19bf90a700082af741",
+        "at": "2026-09-08T17:00:09.270Z",
+        "title": "Add a sourced blog section and publish the asylum expert-witness article. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa03f19bf90a700082af741"
+    },
+    {
+      "repo": "accounting-expert-witness",
+      "siteName": "accounting-expert-witness",
+      "siteId": "9dbefb4d-afd6-484d-8ad4-d7f338707c80",
+      "url": "https://accountingexpertwitness.co.uk",
+      "from": {
+        "id": "6ab0f4abbf99630008ba6182",
+        "at": "2026-09-21T09:11:07.879Z",
+        "title": "Fix n8n lead message delivery for canary deploy. Ensure free-text reaches outbound message and Netlify submit-lead is intact."
+      },
+      "to": {
+        "id": "6aa2ee7014b98d0008a5df9c",
+        "at": "2026-09-10T17:52:48.464Z",
+        "title": "Add app icon and blog hero image asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2ee7014b98d0008a5df9c"
+    },
+    {
+      "repo": "asylum-country-expert",
+      "siteName": "asylum-country-expert",
+      "siteId": "79f06434-2c9e-4ac3-a0d3-77e36252f01f",
+      "url": "https://asylumcountryexpert.com",
+      "from": {
+        "id": "6aad1b097336790008b90a0b",
+        "at": "2026-09-18T11:05:45.348Z",
+        "title": "Add universal message field to n8n lead webhook payloads."
+      },
+      "to": {
+        "id": "6aa2ecca685d1b0008033e39",
+        "at": "2026-09-10T17:45:46.403Z",
+        "title": "Add local blog article on briefing country experts for asylum cases. Extend the blog section with the sourced post, article component, and hero image. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2ecca685d1b0008033e39"
+    },
+    {
+      "repo": "asylum-expert",
+      "siteName": "asylum-expert",
+      "siteId": "f33fca69-3f47-41aa-b1d3-304107ea4214",
+      "url": "https://asylumexpert.com",
+      "from": {
+        "id": "6aad3fb3122505000709d6d7",
+        "at": "2026-09-18T13:42:11.043Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa2ed7f84f5a400081e5229",
+        "at": "2026-09-10T17:48:47.396Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2ed7f84f5a400081e5229"
+    },
+    {
+      "repo": "asylum-expert-scot",
+      "siteName": "asylum-expert-scot",
+      "siteId": "5fa391db-b30b-4c6d-a237-9dfa60e7740e",
+      "url": "https://asylumexperts.co.uk",
+      "from": {
+        "id": "6aad3fb716931200083d57be",
+        "at": "2026-09-18T13:42:15.862Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa441b02128bc0008b6cecb",
+        "at": "2026-09-11T18:00:16.153Z",
+        "title": "Add blog section with Scotland asylum appeal expert evidence guide. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa441b02128bc0008b6cecb"
+    },
+    {
+      "repo": "business-loss-expert",
+      "siteName": "business-loss-expert",
+      "siteId": "04802c83-d4c2-428e-8e5e-1bc3a3fa4f56",
+      "url": "https://businesslossexpert.com",
+      "from": {
+        "id": "6aad15ad7de4e600070b40a0",
+        "at": "2026-09-18T10:42:53.022Z",
+        "title": "Add universal message field to n8n lead webhook payloads."
+      },
+      "to": {
+        "id": "6aa2ed8b55ca34000889f366",
+        "at": "2026-09-10T17:48:59.221Z",
+        "title": "Add app icon and update lead notification setup notes. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2ed8b55ca34000889f366"
+    },
+    {
+      "repo": "business-valuation-expert-witness",
+      "siteName": "business-valuation-expert-witness",
+      "siteId": "04f486ea-0373-47d8-b3f5-b14c10e50706",
+      "url": "https://businessvaluationexpertwitness.com",
+      "from": {
+        "id": "6aad3f8b84491500088ec27b",
+        "at": "2026-09-18T13:41:31.765Z",
+        "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+      },
+      "to": {
+        "id": "6aa2ed9eb08c41000970644f",
+        "at": "2026-09-10T17:49:18.818Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2ed9eb08c41000970644f"
+    },
+    {
+      "repo": "coi-experts",
+      "siteName": "coi-experts",
+      "siteId": "dd14a7fc-37fa-4aa6-84ab-7bc0b2d023e6",
+      "url": "https://coiexperts.com",
+      "from": {
+        "id": "6aad3fd72bebc30008efaa96",
+        "at": "2026-09-18T13:42:47.108Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa447b7c392e200080b7779",
+        "at": "2026-09-11T18:25:59.067Z",
+        "title": "Add blog section explaining the difference between COI and Home Office CPINs. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa447b7c392e200080b7779"
+    },
+    {
+      "repo": "context-signal",
+      "siteName": "context-signal",
+      "siteId": "1c657025-12b7-41c1-b3e2-2c10c00842d4",
+      "url": "https://contextandsignal.com",
+      "from": {
+        "id": "6aad19a7392bd500080a7a26",
+        "at": "2026-09-18T10:59:51.567Z",
+        "title": "Add universal message field to n8n lead webhook payloads."
+      },
+      "to": {
+        "id": "6aabde0515ad6b0008e56d07",
+        "at": "2026-09-17T12:33:09.472Z",
+        "title": "Improve favicon visibility with high-contrast cream background icons. Add a generate-icons script and 48px variant so the mark stays readable in browser tabs. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aabde0515ad6b0008e56d07"
+    },
+    {
+      "repo": "country-condition-reports",
+      "siteName": "country-condition-reports",
+      "siteId": "50deb644-69e2-4e6f-b484-81663ff8dd48",
+      "url": "https://countryconditionreports.com",
+      "from": {
+        "id": "6aad3fdef9409f0008fb23fe",
+        "at": "2026-09-18T13:42:54.278Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa9891c349a320008aaf426",
+        "at": "2026-09-15T18:06:20.418Z",
+        "title": "Add Insights blog with case-specific reports post and US location. Introduce MDX insights pipeline, featured image, nav/sitemap wiring, /blog redirects, and remove em dashes from site copy. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa9891c349a320008aaf426"
+    },
+    {
+      "repo": "country-conditions-expert",
+      "siteName": "country-conditions-expert",
+      "siteId": "242ff37d-4715-4af9-9cf9-43d6afc7fb15",
+      "url": "https://countryconditionsexpert.com",
+      "from": {
+        "id": "6aad3fe1edbd3c0008df59e9",
+        "at": "2026-09-18T13:42:57.854Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa9891fb83c7b0008422606",
+        "at": "2026-09-15T18:06:23.071Z",
+        "title": "Add Insights blog with facts-vs-opinion post and US location. Introduce MDX insights pipeline, featured image, nav/sitemap/schema wiring, /blog redirects, and remove em dashes from site copy. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa9891fb83c7b0008422606"
+    },
+    {
+      "repo": "country-expert-insights",
+      "siteName": "country-expert-insights",
+      "siteId": "0d04e173-96a6-408d-8db2-f836b365cc49",
+      "url": "https://countryexpertinsights.com",
+      "from": {
+        "id": "6aad3fe35b67410007ace969",
+        "at": "2026-09-18T13:42:59.751Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa9892126658800081baa0a",
+        "at": "2026-09-15T18:06:25.432Z",
+        "title": "Add Blog section with individual-profile country conditions post. Introduce MDX blog pipeline, featured image, nav/sitemap/schema wiring, US business location, and remove em dashes from site copy. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa9892126658800081baa0a"
+    },
+    {
+      "repo": "country-expert-witness-net",
+      "siteName": "country-expert-witness-net",
+      "siteId": "ef31dc3a-b9ef-499b-9014-9d8a26d45e24",
+      "url": "https://countryexpertwitness.net",
+      "from": {
+        "id": "6aad3feb8586b600088fd292",
+        "at": "2026-09-18T13:43:07.217Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6a7dd123b48172000865266a",
+        "at": "2026-08-13T14:13:55.688Z",
+        "title": "Update Google Sheets tab names, implement secure match redirects, and enhance UI styles across various components. Added secure match API endpoint and updated documentation to reflect new routing and functionality."
+      },
+      "restoreState": "ready",
+      "restoreId": "6a7dd123b48172000865266a"
+    },
+    {
+      "repo": "country-report-expert",
+      "siteName": "country-report-expert",
+      "siteId": "9d7e2d17-8d23-4b97-bffe-a169f0594eaa",
+      "url": "https://countryreportexpert.com",
+      "from": {
+        "id": "6aad3ff016931200083d61a1",
+        "at": "2026-09-18T13:43:12.232Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aaad067dd12b700087bb62c",
+        "at": "2026-09-16T17:22:48.005Z",
+        "title": "Add blog on country evidence for Scottish immigration cases. Give practitioners a dedicated blog hub and post on reviewing COI for Scottish and UK files. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aaad067dd12b700087bb62c"
+    },
+    {
+      "repo": "country-risk-expert",
+      "siteName": "country-risk-expert",
+      "siteId": "d8c1b098-96e8-41a6-b873-fc7340e6e4a9",
+      "url": "https://countryriskexpert.com",
+      "from": {
+        "id": "6aad3f37aab4cf00085827cd",
+        "at": "2026-09-18T13:40:07.338Z",
+        "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+      },
+      "to": {
+        "id": "6aaad06996bb4700083478cf",
+        "at": "2026-09-16T17:22:49.730Z",
+        "title": "Add blog on localising country evidence to regions and cities. Remove the old /blog redirect to FAQ and publish a geographic-scope article with nav and sitemap wiring. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aaad06996bb4700083478cf"
+    },
+    {
+      "repo": "divorce-accountant-expert",
+      "siteName": "divorce-accountant-expert",
+      "siteId": "3222c635-425a-4d36-92f3-dc06e5a78b1c",
+      "url": "https://divorceaccountantexpert.com",
+      "from": {
+        "id": "6aad3ffa7f26630008bc38ea",
+        "at": "2026-09-18T13:43:22.946Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa2eda114b98d0008a5da4e",
+        "at": "2026-09-10T17:49:21.447Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2eda114b98d0008a5da4e"
+    },
+    {
+      "repo": "divorce-tax-expert",
+      "siteName": "divorce-tax-expert",
+      "siteId": "997b6e8d-3e8d-4480-bf94-3af65f36ecae",
+      "url": "https://divorcetaxexpert.com",
+      "from": {
+        "id": "6aad3ffcb1335e000771c8f3",
+        "at": "2026-09-18T13:43:24.923Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa01f9b0e0a9b000804fedc",
+        "at": "2026-09-08T14:45:47.383Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa01f9b0e0a9b000804fedc"
+    },
+    {
+      "repo": "employee-fraud-expert",
+      "siteName": "employee-fraud-expert",
+      "siteId": "2e72e3ae-8bd1-4c1e-8d83-eba2dbc07949",
+      "url": "https://employeefraudexpert.com",
+      "from": {
+        "id": "6ab0f4a01b0a150008c26869",
+        "at": "2026-09-21T09:10:56.131Z",
+        "title": "Fix n8n lead message delivery for canary deploy. Ensure free-text reaches outbound message and Netlify submit-lead is intact."
+      },
+      "to": {
+        "id": "6aacf7932f5f8e0008ec91b0",
+        "at": "2026-09-18T08:34:27.776Z",
+        "title": "Harden robots.txt for Ahrefs crawl access on Employee Fraud Expert. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aacf7932f5f8e0008ec91b0"
+    },
+    {
+      "repo": "expert-country-reports",
+      "siteName": "expert-country-reports",
+      "siteId": "b1e94d6c-91ea-44dd-9ad4-af5bf88da55a",
+      "url": "https://expertcountryreports.com",
+      "from": {
+        "id": "6aad4007188fc000089bddf8",
+        "at": "2026-09-18T13:43:35.188Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa7c07fb0d9c300089e4793",
+        "at": "2026-09-14T09:38:07.800Z",
+        "title": "Fix sitemap host to expertcountryreports.com instead of .co.uk. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa7c07fb0d9c300089e4793"
+    },
+    {
+      "repo": "forensic-accountant-expert",
+      "siteName": "forensic-accountant-expert",
+      "siteId": "1c51d792-c276-4469-9511-4c194e65af8c",
+      "url": "https://forensicaccountant.expert",
+      "from": {
+        "id": "6aad4013bd8bb80009a16b9a",
+        "at": "2026-09-18T13:43:47.531Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa2eda75144910008562b08",
+        "at": "2026-09-10T17:49:27.431Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2eda75144910008562b08"
+    },
+    {
+      "repo": "forensic-expert-witness",
+      "siteName": "forensic-expert-witness",
+      "siteId": "6322c2fb-0e71-429d-bf7e-064284604186",
+      "url": "https://forensicexpertwitness.co.uk",
+      "from": {
+        "id": "6aad401591c0cf0008ccbc23",
+        "at": "2026-09-18T13:43:49.860Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa2edaa70338400081261c7",
+        "at": "2026-09-10T17:49:30.503Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2edaa70338400081261c7"
+    },
+    {
+      "repo": "fraud-expert-accountant",
+      "siteName": "fraud-expert-accountant",
+      "siteId": "6c89a606-026e-435a-978c-fe6208522467",
+      "url": "https://fraudexpertaccountant.com",
+      "from": {
+        "id": "6aad4018c1b53c0008816777",
+        "at": "2026-09-18T13:43:52.478Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa2ed85e59a7e0008f8977f",
+        "at": "2026-09-10T17:48:53.128Z",
+        "title": "Add app icon and lead notification setup notes. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2ed85e59a7e0008f8977f"
+    },
+    {
+      "repo": "fraud-expert-witness",
+      "siteName": "fraud-expert-witness",
+      "siteId": "62c45f06-cda8-4342-929b-d86ef82b132b",
+      "url": "https://fraudexpertwitness.com",
+      "from": {
+        "id": "6aad401bb8d37800082225a3",
+        "at": "2026-09-18T13:43:55.047Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa2ed90e63f9b00083bc4f3",
+        "at": "2026-09-10T17:49:04.937Z",
+        "title": "Add app icon asset. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2ed90e63f9b00083bc4f3"
+    },
+    {
+      "repo": "ibn-furat",
+      "siteName": "ibn-furat",
+      "siteId": "fe7bd0c1-bcce-4f62-b648-0397eb349be8",
+      "url": "https://ibnalfurat.com",
+      "from": {
+        "id": "6aad402584491500088ee772",
+        "at": "2026-09-18T13:44:05.225Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa01fad7f8e2200080525f6",
+        "at": "2026-09-08T14:46:05.977Z",
+        "title": "Register enquiry forms for Netlify form detection via a static HTML blueprint. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa01fad7f8e2200080525f6"
+    },
+    {
+      "repo": "lawstone-web",
+      "siteName": "law-stone",
+      "siteId": "70c80e4b-3f86-4567-800f-2c15b068ffb7",
+      "url": "https://lawstone.co.uk",
+      "from": {
+        "id": "6aad3f3fc225c90008a4ac13",
+        "at": "2026-09-18T13:40:15.452Z",
+        "title": "Wire free-text into n8n message field (forms + webhook helpers + aliases)."
+      },
+      "to": {
+        "id": "6a4d2282a6a47c0008e2b563",
+        "at": "2026-07-07T16:00:02.661Z",
+        "title": "Implement blog data fetching and SSG support, update build process, and enhance Netlify configuration"
+      },
+      "restoreState": "ready",
+      "restoreId": "6a4d2282a6a47c0008e2b563"
+    },
+    {
+      "repo": "MENA-expert-witness",
+      "siteName": "mena-expert-witness",
+      "siteId": "b07f5ef1-8f6d-4de0-a32b-24bd6b174011",
+      "url": "https://menaexpertwitness.com",
+      "from": {
+        "id": "6aad404998aae30009f03399",
+        "at": "2026-09-18T13:44:41.912Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa734ae0366be0008b0b28a",
+        "at": "2026-09-13T23:41:34.660Z",
+        "title": "Fix sitemap host to menaexpertwitness.com instead of .co.uk. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa734ae0366be0008b0b28a"
+    },
+    {
+      "repo": "middle-east-expert",
+      "siteName": "middle-east-expert",
+      "siteId": "f2b7e73f-c3d7-4e8e-8b0c-cfb8f5898271",
+      "url": "https://middleeast-expert.com",
+      "from": {
+        "id": "6aad404c781e0a000745f6c1",
+        "at": "2026-09-18T13:44:44.831Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa2ef30daf4af00085cee9b",
+        "at": "2026-09-10T17:56:00.548Z",
+        "title": "Add site issues audit PDF. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa2ef30daf4af00085cee9b"
+    },
+    {
+      "repo": "pakistan-country-expert",
+      "siteName": "pakistan-country-expert",
+      "siteId": "effc1854-4120-407d-b428-b249a91e71e6",
+      "url": "https://pakistancountryexpert.com",
+      "from": {
+        "id": "6aad4051b15dfa0008a6d090",
+        "at": "2026-09-18T13:44:49.881Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6a903ed3376287000821f2a6",
+        "at": "2026-08-27T13:42:43.328Z",
+        "title": "Add domain field to lead notification webhook payload. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6a903ed3376287000821f2a6"
+    },
+    {
+      "repo": "str-claims-web",
+      "siteName": "str-claims",
+      "siteId": "141170b7-dfe9-41f5-82cf-a56987f2d9ad",
+      "url": "https://strclaims.com",
+      "from": {
+        "id": "6aad406821fe8300088fc681",
+        "at": "2026-09-18T13:45:12.207Z",
+        "title": "Expand n8n message field aliases for site free-text keys."
+      },
+      "to": {
+        "id": "6aa7326a2185aa0008bb6e45",
+        "at": "2026-09-13T23:31:54.645Z",
+        "title": "Publish static blogs from registry and remove Blog Maker. Co-authored-by: Cursor <cursoragent@cursor.com>"
+      },
+      "restoreState": "ready",
+      "restoreId": "6aa7326a2185aa0008bb6e45"
+    }
+  ],
+  "errors": []
+}
