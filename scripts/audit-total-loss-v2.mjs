@@ -99,7 +99,7 @@ function webhookHardBeforeSheets(t) {
 }
 
 function isTruncatedNetlify(t) {
-  if (!t || /\bimport\s|\bexport\s/.test(t)) return false; // TS/ESM routes — skip
+  if (!t || /\bimport\s|\bexport\s/.test(t)) return false; // TS/ESM routes: skip
   if (/jsonResponse\s*\(/.test(t) && !/function\s+jsonResponse|const\s+jsonResponse\s*=/.test(t))
     return true;
   if (/parseLead\s*\(/.test(t) && !/function\s+parseLead/.test(t)) return true;
@@ -222,7 +222,7 @@ for (const repo of REPOS) {
   } else if (leadGatesBeforeContact) {
     classification = "TOTAL_LOSS";
     reason =
-      "Form requires submit-lead OK before calling contact/Sheets — n8n/webhook fail = no Sheets row";
+      "Form requires submit-lead OK before calling contact/Sheets, n8n/webhook fail = no Sheets row";
   } else if ((soleLeadHardBlock || (!contactGatesBeforeLead && soleLeadHardBlock)) && hardBefore) {
     classification = "TOTAL_LOSS";
     reason = `Live handler returns error on webhook fail BEFORE Sheets write (${live?.rel})`;
@@ -346,7 +346,7 @@ const md = `# Lead TOTAL_LOSS audit (evidence)
 | SHEETS_OK | ${sheetsOk.length} | Sheets/CRM still get the lead if n8n fails |
 | NEEDS_MANUAL | ${manual.length} | pattern not auto-proven (see list) |
 
-## TOTAL_LOSS — hand-verified where marked
+## TOTAL_LOSS, hand-verified where marked
 
 ${totalLoss
   .map(
@@ -359,16 +359,16 @@ ${totalLoss
 
 ## How TOTAL_LOSS happens (code patterns)
 
-1. **Webhook-before-Sheets hard fail** — \`submit-lead\` returns 502 on n8n failure *before* appending Sheets (\`damages-expert-loss\`, \`business-valuation-expert\`).
-2. **Lead-gates-contact** — form \`await\`s \`/api/submit-lead\`, throws on \`!ok\`, only then calls \`/api/contact\` which owns Sheets (\`asylum-court-reports\`).
+1. **Webhook-before-Sheets hard fail**, \`submit-lead\` returns 502 on n8n failure *before* appending Sheets (\`damages-expert-loss\`, \`business-valuation-expert\`).
+2. **Lead-gates-contact**, form \`await\`s \`/api/submit-lead\`, throws on \`!ok\`, only then calls \`/api/contact\` which owns Sheets (\`asylum-court-reports\`).
 
 ## FORM_FAIL_SHEETS_OK
 
-${formFailSheetsOk.map((r) => `- **${r.repo}** — ${r.reason}`).join("\n") || "_None auto-classified._"}
+${formFailSheetsOk.map((r) => `- **${r.repo}**, ${r.reason}`).join("\n") || "_None auto-classified._"}
 
 ## NEEDS_MANUAL
 
-${manual.map((r) => `- **${r.repo}** — ${r.reason}`).join("\n") || "_None._"}
+${manual.map((r) => `- **${r.repo}**, ${r.reason}`).join("\n") || "_None._"}
 
 ## SHEETS_OK
 

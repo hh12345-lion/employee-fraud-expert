@@ -9,7 +9,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata = createMetadata({
   title: "Who We Help | Employee Fraud Experts for Employers & Solicitors UK",
   description:
-    "Employee fraud expert witnesses for UK employers who have discovered fraud - and for solicitors handling civil fraud recovery and criminal proceedings.",
+    "Employee fraud expert witnesses for UK employers who have discovered fraud, and for solicitors handling civil fraud recovery and criminal proceedings.",
   path: "/who-we-help",
 });
 
@@ -24,7 +24,7 @@ export default function WhoWeHelpPage() {
       />
       <PageHero
         title="Who We Help"
-        subtitle="EmployeeFraudExpert.com serves two distinct audiences - UK employers who have just discovered suspected fraud and need immediate expert help, and solicitors handling civil fraud recovery, criminal proceedings, and regulatory matters."
+        subtitle="EmployeeFraudExpert.com serves two distinct audiences, UK employers who have just discovered suspected fraud and need immediate expert help, and solicitors handling civil fraud recovery, criminal proceedings, and regulatory matters."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Who We Help" },

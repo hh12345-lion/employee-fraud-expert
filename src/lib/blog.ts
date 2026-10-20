@@ -21,7 +21,7 @@ function estimateReadingTime(text: string): string {
   return `${minutes} min read`;
 }
 
-/** Minimal frontmatter parser — avoids gray-matter Netlify install issues. */
+/** Minimal frontmatter parser: avoids gray-matter Netlify install issues. */
 function parseFrontmatter(fileContents: string): {
   data: Record<string, string>;
   content: string;

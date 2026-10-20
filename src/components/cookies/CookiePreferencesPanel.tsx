@@ -62,7 +62,7 @@ export function CookiePreferencesPanel({ onClose }: CookiePreferencesPanelProps)
         aria-describedby={descId}
         className="relative z-10 flex max-h-[90vh] w-full max-w-lg flex-col overflow-hidden rounded-t-xl border border-border bg-white shadow-2xl motion-safe:animate-[slideUp_280ms_ease-out] sm:rounded-xl"
       >
-        <div className="border-b border-border bg-gradient-to-r from-primary to-[#4a1212] px-5 py-4 sm:px-6">
+        <div className="border-b border-border bg-gradient-to-r from-primary to-[#2b3235] px-5 py-4 sm:px-6">
           <div className="flex items-start justify-between gap-4">
             <div className="min-w-0">
               <h2 id={titleId} className="text-lg font-bold text-white">
@@ -168,7 +168,7 @@ export function CookiePreferencesPanel({ onClose }: CookiePreferencesPanelProps)
             See our{" "}
             <Link
               href="/cookies"
-              className="text-highlight underline hover:text-[#b45309]"
+              className="text-sand underline hover:text-[#b67867]"
               onClick={onClose}
             >
               Cookie Policy
@@ -176,7 +176,7 @@ export function CookiePreferencesPanel({ onClose }: CookiePreferencesPanelProps)
             and{" "}
             <Link
               href="/privacy"
-              className="text-highlight underline hover:text-[#b45309]"
+              className="text-sand underline hover:text-[#b67867]"
               onClick={onClose}
             >
               Privacy Policy
@@ -196,7 +196,7 @@ export function CookiePreferencesPanel({ onClose }: CookiePreferencesPanelProps)
           <button
             type="button"
             onClick={handleSave}
-            className="min-h-[44px] rounded bg-highlight px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#b45309] focus:outline-none focus-visible:ring-2 focus-visible:ring-highlight/60"
+            className="min-h-[44px] rounded bg-highlight px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#b67867] focus:outline-none focus-visible:ring-2 focus-visible:ring-highlight/60"
           >
             Save Preferences
           </button>

@@ -10,7 +10,7 @@ export const metadata = createMetadata({
   title:
     "Types of Employee Fraud UK | Embezzlement, Payroll, Expense & Invoice Fraud Explained",
   description:
-    "The complete guide to types of employee fraud in the UK - embezzlement, payroll fraud, expense fraud, invoice fraud, procurement fraud, and data theft.",
+    "The complete guide to types of employee fraud in the UK, embezzlement, payroll fraud, expense fraud, invoice fraud, procurement fraud, and data theft.",
   path: "/fraud-types",
 });
 
@@ -26,7 +26,7 @@ export default function FraudTypesPage() {
           articleSchema({
             headline: "Types of Employee Fraud: The Complete UK Guide",
             description:
-              "The complete guide to types of employee fraud in the UK - embezzlement, payroll fraud, expense fraud, invoice fraud, procurement fraud, and data theft.",
+              "The complete guide to types of employee fraud in the UK, embezzlement, payroll fraud, expense fraud, invoice fraud, procurement fraud, and data theft.",
             path: "/fraud-types",
             aboutServiceId: "fraud-investigation",
           }),
@@ -43,7 +43,7 @@ export default function FraudTypesPage() {
       <Section>
         <div className="prose-content mx-auto max-w-3xl">
           <p>
-            Employee fraud - also called occupational fraud - is financial crime
+            Employee fraud, also called occupational fraud, is financial crime
             committed by an employee against the organisation that employs them.
             Over 50% of all fraud is committed by employees according to ACFE
             research, with a median loss exceeding £100,000 per case. Understanding
@@ -215,7 +215,7 @@ export default function FraudTypesPage() {
           <h2 id="data-ip-theft">7. Data &amp; IP Theft</h2>
           <p>
             <strong>Definition:</strong> Theft of confidential business
-            information, trade secrets, or customer data by employees - typically
+            information, trade secrets, or customer data by employees, typically
             for personal gain or to benefit a competitor. Digital forensics and
             forensic accounting often combine here.{" "}
             <Link href="/case-types/data-ip-theft">Data theft cases →</Link>
@@ -224,7 +224,7 @@ export default function FraudTypesPage() {
           <h2 id="bribery-corruption">8. Bribery &amp; Corruption</h2>
           <p>
             <strong>Definition:</strong> Receiving improper payments or benefits
-            from third parties in exchange for preferential treatment - prohibited
+            from third parties in exchange for preferential treatment, prohibited
             under Bribery Act 2010.{" "}
             <Link href="/case-types/bribery-corruption">
               Bribery &amp; corruption cases →
@@ -238,7 +238,7 @@ export default function FraudTypesPage() {
             The Failure to Prevent Fraud offence under ECCTA 2023, in force from
             1 September 2025, makes large organisations liable if employees
             commit specified fraud offences for the organisation&apos;s benefit
-            and adequate prevention procedures were not in place - with
+            and adequate prevention procedures were not in place, with
             potentially unlimited fines.
           </p>
           <p>
@@ -257,7 +257,7 @@ export default function FraudTypesPage() {
             </Link>
           </p>
 
-          <h2>Red Flags - Common Indicators of Employee Fraud</h2>
+          <h2>Red Flags, Common Indicators of Employee Fraud</h2>
           <div className="table-scroll overflow-x-auto">
             <table>
               <thead>

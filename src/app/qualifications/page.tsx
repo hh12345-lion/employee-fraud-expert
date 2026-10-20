@@ -36,17 +36,17 @@ export default function QualificationsPage() {
 
           <h3>CFE (Certified Fraud Examiner)</h3>
           <p>
-            Issued by the ACFE - the primary global credential for fraud
+            Issued by the ACFE, the primary global credential for fraud
             investigation. Covers fraud prevention, detection, and deterrence.
             Essential for employee fraud expert witnesses.
           </p>
 
           <h3>ACA / FCA (ICAEW)</h3>
-          <p>Chartered accountancy - baseline financial expertise.</p>
+          <p>Chartered accountancy, baseline financial expertise.</p>
 
           <h3>CIMA / FCMA</h3>
           <p>
-            Management accounting - relevant for payroll and management
+            Management accounting, relevant for payroll and management
             information fraud.
           </p>
 
@@ -54,7 +54,7 @@ export default function QualificationsPage() {
           <p>Widely recognised UK accounting qualification.</p>
 
           <h3>ICFA (Institute of Certified Forensic Accountants)</h3>
-          <p>CPFAacct status - specialist forensic accounting qualification.</p>
+          <p>CPFAacct status, specialist forensic accounting qualification.</p>
 
           <h3>Digital Forensics credentials (FBCS, EnCE, GCFE)</h3>
           <p>Where digital evidence is central to the fraud investigation.</p>
@@ -82,7 +82,7 @@ export default function QualificationsPage() {
           <p>
             All expert witnesses in England and Wales court proceedings must comply
             with CPR Part 35 and the accompanying Practice Direction. The expert&apos;s
-            overriding duty is to the court - established in{" "}
+            overriding duty is to the court, established in{" "}
             <em>The Ikarian Reefer</em> [1993]. Reports must contain a statement
             of truth, details of instructions, the expert&apos;s qualifications,
             methodology, findings, and conclusions. Experts must not act as
@@ -92,7 +92,7 @@ export default function QualificationsPage() {
           <h2>Legal Professional Privilege</h2>
           <p>
             Employee fraud experts must understand how to work within the LPP
-            framework - ensuring investigation reports are protected from
+            framework, ensuring investigation reports are protected from
             disclosure when instructed via solicitors.{" "}
             <Link href="/who-we-help/employers-hr">Learn about LPP →</Link>
           </p>

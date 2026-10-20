@@ -1,6 +1,6 @@
 /**
  * Lightweight Markdown → HTML for blog bodies (headings, lists, links, emphasis).
- * No leading H1 expected — page title is rendered separately.
+ * No leading H1 expected: page title is rendered separately.
  */
 export function markdownToHtml(md: string): string {
   let text = md.replace(/\r\n/g, "\n").trim();

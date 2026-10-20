@@ -11,7 +11,7 @@ export const metadata = createMetadata({
   title:
     "Guides: Employee Fraud UK | Investigation, Recovery & Expert Evidence",
   description:
-    "In-depth guides on employee fraud for UK employers and solicitors - what to do when fraud is discovered, civil recovery, POCA, and expert evidence.",
+    "In-depth guides on employee fraud for UK employers and solicitors, what to do when fraud is discovered, civil recovery, POCA, and expert evidence.",
   path: "/guides",
 });
 

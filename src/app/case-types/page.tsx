@@ -26,7 +26,7 @@ export default function CaseTypesHubPage() {
       />
       <PageHero
         title="Employee Fraud Case Types: Civil & Criminal Proceedings"
-        subtitle="Employee fraud gives rise to multiple legal proceedings - civil recovery, criminal prosecution, POCA confiscation, employment tribunal, and regulatory action. Each requires specific expert evidence."
+        subtitle="Employee fraud gives rise to multiple legal proceedings, civil recovery, criminal prosecution, POCA confiscation, employment tribunal, and regulatory action. Each requires specific expert evidence."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Case Types" },

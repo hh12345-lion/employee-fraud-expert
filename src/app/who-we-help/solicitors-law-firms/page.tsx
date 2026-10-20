@@ -53,7 +53,7 @@ export default function SolicitorsPage() {
 
           <h2>How We Support Solicitors</h2>
           <ul>
-            <li>Preliminary case assessment (under LPP - privileged report)</li>
+            <li>Preliminary case assessment (under LPP, privileged report)</li>
             <li>Expert witness report (CPR Part 35 compliant)</li>
             <li>Asset tracing evidence for freezing injunctions</li>
             <li>Loss quantification for civil recovery claims</li>
@@ -69,23 +69,23 @@ export default function SolicitorsPage() {
           </p>
           <ul>
             <li>
-              <strong>Norwich Pharmacal orders</strong> - expert analyses disclosed
+              <strong>Norwich Pharmacal orders</strong>: expert analyses disclosed
               bank records to identify wrongdoers
             </li>
             <li>
-              <strong>Freezing injunctions (Mareva)</strong> - preliminary quantum
-              and asset tracing within 24–48 hours
+              <strong>Freezing injunctions (Mareva)</strong>: preliminary quantum
+              and asset tracing at short notice
             </li>
             <li>
-              <strong>Search orders (Anton Piller)</strong> - expert identifies
+              <strong>Search orders (Anton Piller)</strong>: expert identifies
               financial records to be seized
             </li>
             <li>
-              <strong>Disclosure orders</strong> - expert advises on categories of
+              <strong>Disclosure orders</strong>: expert advises on categories of
               financial documents required
             </li>
             <li>
-              <strong>Civil recovery route</strong> - full investigation and CPR Part
+              <strong>Civil recovery route</strong>: full investigation and CPR Part
               35 expert report for trial
             </li>
           </ul>
@@ -107,7 +107,7 @@ export default function SolicitorsPage() {
           <h2>Employment Tribunal</h2>
           <p>
             Expert evidence on financial loss arising from employee misconduct in
-            ET proceedings - including investigation integrity where the dismissed
+            ET proceedings, including investigation integrity where the dismissed
             employee challenges the employer&apos;s findings.
           </p>
 

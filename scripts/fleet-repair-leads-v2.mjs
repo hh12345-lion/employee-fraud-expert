@@ -47,7 +47,7 @@ function detectParsedVar(text) {
     return "body";
   if (/\b(?:let|const|var)\s+json\b/.test(text) && /json\s*=\s*JSON\.parse/.test(text))
     return "json";
-  // parseBody(json) style — use json param name in parseBody
+  // parseBody(json) style, use json param name in parseBody
   if (/function\s+parseBody\s*\(\s*json\s*\)/.test(text)) return "json";
   if (/function\s+parseBody\s*\(\s*body\s*\)/.test(text)) return "body";
   return "body";
@@ -171,7 +171,7 @@ function fixFile(text) {
     );
   }
 
-  // Duplicate const message — keep resolveLeadMessage version
+  // Duplicate const message: keep resolveLeadMessage version
   t = t.replace(
     /(const\s+message\s*=\s*resolveLeadMessage\([^)]+\);)\s*\n\s*const\s+message\s*=\s*[\s\S]*?;/g,
     (_, keep) => {
@@ -193,7 +193,7 @@ function fixFile(text) {
 }
 
 function syntaxOk(text, file) {
-  // ESM files use export — strip export for check, or use acorn-free heuristic
+  // ESM files use export: strip export for check, or use acorn-free heuristic
   if (/\bexport\s+/.test(text) || /\bimport\s+/.test(text)) {
     // Basic bracket balance
     const opens = (text.match(/\{/g) || []).length;

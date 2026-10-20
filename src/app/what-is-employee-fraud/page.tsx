@@ -48,23 +48,23 @@ export default function WhatIsEmployeeFraudPage() {
           </p>
           <ul>
             <li>
-              <strong>Fraud by false representation (s2)</strong> - making false
+              <strong>Fraud by false representation (s2)</strong>: making false
               statements to obtain a financial advantage
             </li>
             <li>
-              <strong>Fraud by abuse of position (s4)</strong> - exploiting a
+              <strong>Fraud by abuse of position (s4)</strong>: exploiting a
               position of trust (e.g. a bookkeeper stealing funds)
             </li>
             <li>
-              <strong>Fraud by failing to disclose (s3)</strong> - concealing
+              <strong>Fraud by failing to disclose (s3)</strong>: concealing
               information that creates financial gain
             </li>
           </ul>
 
           <h3>Theft Act 1968</h3>
           <ul>
-            <li><strong>Theft (s1)</strong> - dishonest appropriation of property</li>
-            <li><strong>False accounting (s17)</strong> - falsifying financial records</li>
+            <li><strong>Theft (s1)</strong>: dishonest appropriation of property</li>
+            <li><strong>False accounting (s17)</strong>: falsifying financial records</li>
             <li>
               <strong>False statements by company directors (s19)</strong>
             </li>
@@ -72,12 +72,12 @@ export default function WhatIsEmployeeFraudPage() {
 
           <h3>Bribery Act 2010</h3>
           <p>
-            Employee bribery - receiving or giving improper payments or benefits
+            Employee bribery, receiving or giving improper payments or benefits
             from/to third parties.
           </p>
 
           <h3>
-            Economic Crime and Corporate Transparency Act 2023 - Failure to
+            Economic Crime and Corporate Transparency Act 2023, Failure to
             Prevent Fraud
           </h3>
           <p>
@@ -94,13 +94,13 @@ export default function WhatIsEmployeeFraudPage() {
           <p>The three conditions that enable employee fraud:</p>
           <ol>
             <li>
-              <strong>Opportunity</strong> - access to assets and weak controls
+              <strong>Opportunity</strong>: access to assets and weak controls
             </li>
             <li>
-              <strong>Pressure</strong> - financial stress, lifestyle demands
+              <strong>Pressure</strong>: financial stress, lifestyle demands
             </li>
             <li>
-              <strong>Rationalisation</strong> - convincing themselves it is
+              <strong>Rationalisation</strong>: convincing themselves it is
               justified
             </li>
           </ol>
@@ -117,12 +117,12 @@ export default function WhatIsEmployeeFraudPage() {
           <h2>Civil vs Criminal Proceedings</h2>
           <p>
             <strong>Civil proceedings:</strong> employer brings a claim to recover
-            losses - typically through the High Court, using freezing injunctions,
+            losses, typically through the High Court, using freezing injunctions,
             asset tracing, and civil fraud claims.
           </p>
           <p>
             <strong>Criminal proceedings:</strong> police and CPS/SFO prosecution
-            of the employee - resulting in conviction and potential confiscation
+            of the employee, resulting in conviction and potential confiscation
             under POCA.
           </p>
           <p>
@@ -134,7 +134,7 @@ export default function WhatIsEmployeeFraudPage() {
           <h2>CPR Part 35 &amp; Expert Duties</h2>
           <p>
             An employee fraud expert witness owes their primary duty to the court
-            under CPR Part 35 - not to the employer or solicitor who instructed
+            under CPR Part 35, not to the employer or solicitor who instructed
             them. This independence is particularly important in fraud cases,
             where the expert&apos;s objectivity determines whether their findings
             are credible to a court. The duties were established in{" "}

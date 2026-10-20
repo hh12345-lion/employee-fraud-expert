@@ -6,7 +6,7 @@ import { SITE_EMAIL } from "@/lib/site";
 export const metadata = createMetadata({
   title: "Terms of Use | EmployeeFraudExpert.com",
   description:
-    "Terms of use for EmployeeFraudExpert.com - referral service, not a law firm.",
+    "Terms of use for EmployeeFraudExpert.com, referral service, not a law firm.",
   path: "/terms",
   noindex: true,
   nofollow: false,

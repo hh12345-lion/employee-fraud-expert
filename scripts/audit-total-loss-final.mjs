@@ -1,5 +1,5 @@
 /**
- * Definitive TOTAL_LOSS audit — hand-verified patterns only.
+ * Definitive TOTAL_LOSS audit: hand-verified patterns only.
  * Writes LEAD-TOTAL-LOSS-AUDIT.md
  */
 import fs from "node:fs";
@@ -302,7 +302,7 @@ for (const repo of REPOS) {
     ];
   } else {
     classification = "NEEDS_MANUAL";
-    reason = `unclear — live=${live?.rel || "none"} sheets=${sheetsInLive} hardBefore=${hardBefore} sole=${forms.soleLeadHardBlock.length} contactFirst=${forms.contactFirst.length}`;
+    reason = `unclear, live=${live?.rel || "none"} sheets=${sheetsInLive} hardBefore=${hardBefore} sole=${forms.soleLeadHardBlock.length} contactFirst=${forms.contactFirst.length}`;
   }
 
   const row = {
@@ -328,12 +328,12 @@ const HAND = {
   "damages-expert-loss": {
     classification: "TOTAL_LOSS",
     reason:
-      "HAND-READ: src/app/api/submit-lead/route.ts — notifyLeadWebhook; if (!webhookOk) return 502; Sheets append only after. Form awaits + !res.ok blocks thank-you.",
+      "HAND-READ: src/app/api/submit-lead/route.ts: notifyLeadWebhook; if (!webhookOk) return 502; Sheets append only after. Form awaits + !res.ok blocks thank-you.",
   },
   "business-valuation-expert": {
     classification: "TOTAL_LOSS",
     reason:
-      "HAND-READ: app/api/submit-lead/route.ts — if (\"error\" in result) return 502/503 BEFORE softFailAppendSheet. Form awaits submit-lead for thank-you.",
+      "HAND-READ: app/api/submit-lead/route.ts: if (\"error\" in result) return 502/503 BEFORE softFailAppendSheet. Form awaits submit-lead for thank-you.",
   },
   "asylum-court-reports": {
     classification: "TOTAL_LOSS",
@@ -456,7 +456,7 @@ const md = `# Lead TOTAL_LOSS audit
 | SHEETS_OK | ${sheetsOk.length} |
 | NEEDS_MANUAL | ${needsManual.length} |
 
-## TOTAL_LOSS (${totalLoss.length}) — Sheets also empty
+## TOTAL_LOSS (${totalLoss.length}), Sheets also empty
 
 ${totalLoss
   .map(
@@ -469,21 +469,21 @@ ${totalLoss
 ## Code patterns that cause TOTAL_LOSS
 
 1. **Webhook-before-Sheets hard fail** in live \`submit-lead\` (returns 502 before append).
-2. **Form lead-gates-Sheets** — \`await /api/submit-lead\` + throw on \`!ok\` *before* \`/api/contact\` (or request) that owns Sheets.
+2. **Form lead-gates-Sheets**, \`await /api/submit-lead\` + throw on \`!ok\` *before* \`/api/contact\` (or request) that owns Sheets.
 
 ## FORM_FAIL_SHEETS_OK
 
-${formFail.map((r) => `- **${r.repo}** — ${r.reason}`).join("\n") || "_None._"}
+${formFail.map((r) => `- **${r.repo}**, ${r.reason}`).join("\n") || "_None._"}
 
 ## NEEDS_MANUAL (not auto-proven)
 
-${needsManual.map((r) => `- **${r.repo}** — ${r.reason}`).join("\n") || "_None._"}
+${needsManual.map((r) => `- **${r.repo}**, ${r.reason}`).join("\n") || "_None._"}
 
 ## SHEETS_OK (${sheetsOk.length})
 
 n8n/submit-lead can fail without losing the Sheets (or CRM) row:
 
-${sheetsOk.map((r) => `- **${r.repo}** — ${r.reason}`).join("\n")}
+${sheetsOk.map((r) => `- **${r.repo}**, ${r.reason}`).join("\n")}
 `;
 
 fs.writeFileSync(path.join(ROOT, "employee-fraud-expert", "LEAD-TOTAL-LOSS-AUDIT.md"), md);

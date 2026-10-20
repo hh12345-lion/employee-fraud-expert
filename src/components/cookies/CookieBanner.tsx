@@ -33,10 +33,10 @@ export function CookieBanner() {
           aria-live="polite"
           className="pointer-events-auto mx-auto w-full max-w-4xl motion-safe:animate-[slideUp_320ms_ease-out]"
         >
-          <div className="overflow-hidden rounded-xl border border-white/15 bg-gradient-to-br from-primary via-primary to-[#4a1212] shadow-[0_8px_40px_rgba(0,0,0,0.35)] sm:rounded-2xl">
+          <div className="overflow-hidden rounded-xl border border-white/15 bg-gradient-to-br from-primary via-primary to-[#2b3235] shadow-[0_8px_40px_rgba(0,0,0,0.35)] sm:rounded-2xl">
             <div className="grid gap-5 p-5 sm:p-6 md:grid-cols-[minmax(0,1fr)_auto] md:items-end md:gap-6">
               <div className="min-w-0">
-                <p className="text-xs font-semibold uppercase tracking-wider text-highlight sm:text-sm">
+                <p className="text-xs font-semibold uppercase tracking-wider text-sand sm:text-sm">
                   Your privacy matters
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-white/90 sm:text-[0.9375rem]">
@@ -77,7 +77,7 @@ export function CookieBanner() {
                 <button
                   type="button"
                   onClick={acceptAll}
-                  className="min-h-[44px] w-full whitespace-nowrap rounded-lg bg-highlight px-5 py-2.5 text-sm font-semibold text-white shadow-md transition-colors hover:bg-[#b45309] focus:outline-none focus-visible:ring-2 focus-visible:ring-highlight/60 sm:w-auto"
+                  className="min-h-[44px] w-full whitespace-nowrap rounded-lg bg-highlight px-5 py-2.5 text-sm font-semibold text-white shadow-md transition-colors hover:bg-[#b67867] focus:outline-none focus-visible:ring-2 focus-visible:ring-highlight/60 sm:w-auto"
                 >
                   Accept All
                 </button>

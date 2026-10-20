@@ -202,7 +202,7 @@ function ensureMessageInOpts(optsSrc) {
   let i = paren + 1;
   while (i < optsSrc.length && /\s/.test(optsSrc[i])) i++;
   if (optsSrc[i] !== "{") {
-    // JSON.stringify(lead) / JSON.stringify(payload) — leave as-is if var likely has message
+    // JSON.stringify(lead) / JSON.stringify(payload), leave as-is if var likely has message
     return optsSrc;
   }
   const end = matchBrace(optsSrc, i);
@@ -589,7 +589,7 @@ function processFile(repo, file, src) {
       "notifyLeadSubmission",
       "submitLeadNotification",
     ]);
-    // Don't touch the export definitions file wrongly — ensureCallersAwait skips function defs
+    // Don't touch the export definitions file wrongly, ensureCallersAwait skips function defs
     if (next !== out && !/export async function notifyLeadSubmission/.test(out.slice(0, 200))) {
       // Only note if we added await to call sites
       if (/await notifyLeadSubmission|await submitLeadNotification/.test(next) &&
@@ -597,7 +597,7 @@ function processFile(repo, file, src) {
         changes.push("await client notify callers");
         out = next;
       } else if (next !== out) {
-        // may have added await to already-awaited — check carefully
+        // may have added await to already-awaited, check carefully
         const added =
           (next.match(/await notifyLeadSubmission/g) || []).length >
             (out.match(/await notifyLeadSubmission/g) || []).length ||

@@ -82,6 +82,8 @@ export const organizationSchema = {
   "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
   url: SITE_URL,
+  logo: `${SITE_URL}/brand/icon-512.png`,
+  image: `${SITE_URL}/brand/og.png`,
   email: SITE_EMAIL,
   address: {
     "@type": "PostalAddress",

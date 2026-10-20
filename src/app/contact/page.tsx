@@ -24,7 +24,7 @@ export default function ContactPage() {
       />
       <PageHero
         title="Request an Expert Witness"
-        subtitle="Tell us about your matter. We respond within one business day."
+        subtitle="Tell us about your matter and we will reply by email."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Contact" },

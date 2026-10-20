@@ -3,10 +3,6 @@ import { createMetadata } from "@/lib/metadata";
 import { ContentPageTemplate } from "@/components/ContentPageTemplate";
 import { getCaseType, caseTypeSlugs } from "@/data/case-types";
 
-export function generateStaticParams() {
-  return caseTypeSlugs.map((slug) => ({ slug }));
-}
-
 export async function generateMetadata({
   params,
 }: {

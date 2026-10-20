@@ -5,23 +5,23 @@ export const services: ServiceItem[] = [
     id: "fraud-investigation",
     title: "Fraud Investigation & Evidence Gathering",
     shortDescription:
-      "Forensic investigation of suspected employee fraud - preserving evidence, identifying perpetrators, and building court-ready findings.",
+      "Forensic investigation of suspected employee fraud, preserving evidence, identifying perpetrators, and building court-ready findings.",
     description:
       "Our employee fraud expert witnesses conduct structured forensic investigations under legal professional privilege. We analyse financial records, email data, system logs, and transaction trails to establish what occurred, who was involved, and how the fraud was concealed. Every investigation produces evidence-quality workpapers suitable for civil proceedings, criminal prosecution, or employment tribunal.",
     metaTitle:
       "Employee Fraud Investigation & Evidence Gathering UK | Expert Witness",
     metaDescription:
-      "Forensic investigation of suspected employee fraud in the UK - evidence preservation, perpetrator identification, and court-ready findings under legal professional privilege.",
+      "Forensic investigation of suspected employee fraud in the UK, evidence preservation, perpetrator identification, and court-ready findings under legal professional privilege.",
     faqs: [
       {
         question: "How quickly can a forensic accountant start an employee fraud investigation?",
         answer:
-          "Emergency response is available within 24 hours for urgent cases where assets may be dissipated or evidence is at risk. A preliminary assessment can typically be completed within 48 hours, sufficient to support freezing injunction applications and inform your solicitor's immediate strategy.",
+          "Urgent cases where assets may be dissipated or evidence is at risk can be prioritised. A preliminary assessment can often be prepared at short notice to support freezing injunction applications and inform your solicitor's immediate strategy.",
       },
       {
         question: "Should the fraud investigation be conducted under legal professional privilege?",
         answer:
-          "Yes, in most cases. Forensic accountants instructed via your solicitor produce investigation reports protected by legal professional privilege - safeguarding your legal strategy from disclosure to the opposing party. Direct instruction by the employer may waive this protection.",
+          "Yes, in most cases. Forensic accountants instructed via your solicitor produce investigation reports protected by legal professional privilege, safeguarding your legal strategy from disclosure to the opposing party. Direct instruction by the employer may waive this protection.",
       },
     ],
     methodology: [
@@ -61,17 +61,17 @@ export const services: ServiceItem[] = [
       "Asset tracing follows the money from the point of misappropriation through subsequent transfers, property purchases, and connected company accounts. Our forensic accountants produce tracing schedules that support freezing injunction applications, civil recovery claims, and POCA confiscation proceedings.",
     metaTitle: "Asset Tracing & Recovery UK | Employee Fraud Expert Witness",
     metaDescription:
-      "Forensic asset tracing for employee fraud cases in the UK - follow misappropriated funds through bank accounts and property to support civil recovery and freezing injunctions.",
+      "Forensic asset tracing for employee fraud cases in the UK, follow misappropriated funds through bank accounts and property to support civil recovery and freezing injunctions.",
     faqs: [
       {
         question: "What is asset tracing in an employee fraud case?",
         answer:
-          "Asset tracing is the forensic accounting process of following misappropriated funds from the point of theft through subsequent bank transfers, property purchases, and connected entities to identify where the money is now held - enabling recovery through civil proceedings or POCA confiscation.",
+          "Asset tracing is the forensic accounting process of following misappropriated funds from the point of theft through subsequent bank transfers, property purchases, and connected entities to identify where the money is now held, enabling recovery through civil proceedings or POCA confiscation.",
       },
       {
         question: "How quickly can asset tracing evidence be prepared for a freezing injunction?",
         answer:
-          "Preliminary asset tracing and quantum assessment can be prepared within 24–48 hours for urgent without-notice freezing injunction applications. A full tracing report follows as proceedings develop.",
+          "Preliminary asset tracing and quantum assessment can often be prepared at short notice for urgent without-notice freezing injunction applications. A full tracing report follows as proceedings develop.",
       },
     ],
     methodology: [
@@ -90,7 +90,7 @@ export const services: ServiceItem[] = [
       {
         phase: "Asset identification",
         whatWeDo:
-          "Identify current location of assets - bank balances, property, vehicles, shares, and connected company accounts.",
+          "Identify current location of assets, bank balances, property, vehicles, shares, and connected company accounts.",
         deliverable: "Available assets schedule",
       },
       {
@@ -108,10 +108,10 @@ export const services: ServiceItem[] = [
     shortDescription:
       "Precise calculation of total loss from employee fraud for civil recovery, insurance claims, and expert witness reports.",
     description:
-      "Loss quantification establishes the exact financial impact of employee fraud - the figure that drives civil recovery claims, insurance notifications, and settlement negotiations. Our experts reconcile fraudulent transactions against legitimate business activity to produce defensible quantum figures.",
+      "Loss quantification establishes the exact financial impact of employee fraud, the figure that drives civil recovery claims, insurance notifications, and settlement negotiations. Our experts reconcile fraudulent transactions against legitimate business activity to produce defensible quantum figures.",
     metaTitle: "Employee Fraud Loss Quantification UK | Quantum Expert Witness",
     metaDescription:
-      "Precise loss quantification for employee fraud in the UK - total fraud quantum for civil recovery claims, insurance notifications, and CPR Part 35 expert reports.",
+      "Precise loss quantification for employee fraud in the UK, total fraud quantum for civil recovery claims, insurance notifications, and CPR Part 35 expert reports.",
     faqs: [
       {
         question: "How is the total loss from employee fraud calculated?",
@@ -121,7 +121,7 @@ export const services: ServiceItem[] = [
       {
         question: "Is the initially discovered amount usually the full loss?",
         answer:
-          "No. Systematic employee fraud often extends over years and involves more transactions than initially discovered. Forensic accountants analyse the full historical dataset to establish the true quantum - which is frequently substantially larger than the first identified amount.",
+          "No. Systematic employee fraud often extends over years and involves more transactions than initially discovered. Forensic accountants analyse the full historical dataset to establish the true quantum, which is frequently substantially larger than the first identified amount.",
       },
     ],
     methodology: [
@@ -161,12 +161,12 @@ export const services: ServiceItem[] = [
       "Payroll fraud analysis compares payroll records against HR files, bank payment data, and system access logs to identify ghost employees, inflated wages, and fraudulent commission claims. Our experts quantify total losses and identify control failures that enabled the fraud.",
     metaTitle: "Payroll Fraud Analysis UK | Ghost Employee Expert Witness",
     metaDescription:
-      "Payroll fraud analysis and ghost employee detection in the UK - forensic reconciliation of payroll against HR records, loss quantification, and expert witness reports.",
+      "Payroll fraud analysis and ghost employee detection in the UK, forensic reconciliation of payroll against HR records, loss quantification, and expert witness reports.",
     faqs: [
       {
         question: "How does a forensic accountant detect ghost employee fraud?",
         answer:
-          "Ghost employee detection involves comparing payroll records against HR employee files - identifying employees with no HR file, duplicate national insurance numbers, or bank accounts linked to existing staff. Forensic accountants also analyse when ghost employees were added and who had payroll system access.",
+          "Ghost employee detection involves comparing payroll records against HR employee files, identifying employees with no HR file, duplicate national insurance numbers, or bank accounts linked to existing staff. Forensic accountants also analyse when ghost employees were added and who had payroll system access.",
       },
       {
         question: "Does payroll fraud quantum include employer NI and pension contributions?",
@@ -208,11 +208,11 @@ export const services: ServiceItem[] = [
     shortDescription:
       "Data analytics across expense claims and procurement records to detect systematic fraud and quantify losses.",
     description:
-      "Expense and procurement fraud reviews use data analytics to identify duplicate claims, threshold manipulation, kickback arrangements, and sole-source awards without competitive tender. We analyse the full historical dataset - not just discovered instances - to establish the true scale of fraud.",
+      "Expense and procurement fraud reviews use data analytics to identify duplicate claims, threshold manipulation, kickback arrangements, and sole-source awards without competitive tender. We analyse the full historical dataset, not just discovered instances, to establish the true scale of fraud.",
     metaTitle:
       "Expense & Procurement Fraud Review UK | Forensic Analysis Expert",
     metaDescription:
-      "Expense and procurement fraud review in the UK - data analytics across expense claims and procurement records to detect systematic fraud and quantify total losses.",
+      "Expense and procurement fraud review in the UK, data analytics across expense claims and procurement records to detect systematic fraud and quantify total losses.",
     faqs: [
       {
         question: "How does forensic analysis detect expense fraud patterns?",
@@ -263,7 +263,7 @@ export const services: ServiceItem[] = [
     metaTitle:
       "Invoice & Supplier Fraud Investigation UK | Expert Witness",
     metaDescription:
-      "Invoice and supplier fraud investigation in the UK - fictitious suppliers, kickback schemes, vendor master file analysis, and payment tracing by forensic accountants.",
+      "Invoice and supplier fraud investigation in the UK, fictitious suppliers, kickback schemes, vendor master file analysis, and payment tracing by forensic accountants.",
     faqs: [
       {
         question: "How do forensic accountants investigate invoice fraud?",
@@ -273,14 +273,14 @@ export const services: ServiceItem[] = [
       {
         question: "What is a kickback scheme and how is it detected?",
         answer:
-          "In kickback arrangements, a supplier invoices at inflated rates or for work not done, then makes secret payments back to the employee. Forensic accountants trace both sides - overpayments to the supplier and secret return payments to the employee - to quantify total loss.",
+          "In kickback arrangements, a supplier invoices at inflated rates or for work not done, then makes secret payments back to the employee. Forensic accountants trace both sides, overpayments to the supplier and secret return payments to the employee, to quantify total loss.",
       },
     ],
     methodology: [
       {
         phase: "Vendor analysis",
         whatWeDo:
-          "Review vendor master file for suspicious entries - residential addresses, similar names, recently created suppliers.",
+          "Review vendor master file for suspicious entries, residential addresses, similar names, recently created suppliers.",
         deliverable: "Suspicious vendor schedule",
       },
       {
@@ -310,7 +310,7 @@ export const services: ServiceItem[] = [
     shortDescription:
       "CPR Part 35 compliant expert reports and oral evidence for civil, criminal, and tribunal proceedings.",
     description:
-      "Our employee fraud expert witnesses produce CPR Part 35 compliant reports that clearly explain the fraud, quantify the loss, and withstand cross-examination. Reports address the Ikarian Reefer duties - primary duty to the court, objectivity, and independence from the instructing party.",
+      "Our employee fraud expert witnesses produce CPR Part 35 compliant reports that clearly explain the fraud, quantify the loss, and withstand cross-examination. Reports address the Ikarian Reefer duties, primary duty to the court, objectivity, and independence from the instructing party.",
     metaTitle:
       "Employee Fraud Expert Witness Reports UK | CPR Part 35 Compliant",
     metaDescription:
@@ -365,7 +365,7 @@ export const services: ServiceItem[] = [
     metaTitle:
       "Failure to Prevent Fraud Advisory UK | ECCTA 2023 Expert Witness",
     metaDescription:
-      "FTPF advisory and fraud prevention procedures review under ECCTA 2023 - assess controls, identify gaps, and prepare the reasonable procedures defence for UK large organisations.",
+      "FTPF advisory and fraud prevention procedures review under ECCTA 2023, assess controls, identify gaps, and prepare the reasonable procedures defence for UK large organisations.",
     faqs: [
       {
         question: "What is the Failure to Prevent Fraud offence under ECCTA 2023?",

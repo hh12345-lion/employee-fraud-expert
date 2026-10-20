@@ -311,7 +311,7 @@ function fixLocalVoidNotifyHelper(src) {
       if (/function\s+$/.test(before) || /await\s+$/.test(before) || /export\s+async\s+$/.test(before)) {
         return m;
       }
-      // Only inside async handlers — assume yes in form files
+      // Only inside async handlers: assume yes in form files
       return "await notifyLeadWebhook(";
     }
   );
@@ -334,7 +334,7 @@ function fixNetlifySubmitLead(src, repo) {
   if (repo === "accounting-expert-witness") {
     // Replace soft-fail always-200 after webhook attempt with proper status handling
     if (
-      /Soft-fail — never block/.test(out) ||
+      /Soft-fail, never block/.test(out) ||
       (/webhookUrl/.test(out) &&
         /return \{ statusCode: 200, body: JSON\.stringify\(\{ success: true \}\) \};/.test(
           out
@@ -468,7 +468,7 @@ function processFile(repo, file, src) {
     }
     // Client helper that fire-and-forgets
     if (/export async function notifyLeadWebhook/.test(out) || /export function notifyLeadWebhook/.test(out)) {
-      // already async usually — ensure callers await
+      // already async usually, ensure callers await
     }
   }
 

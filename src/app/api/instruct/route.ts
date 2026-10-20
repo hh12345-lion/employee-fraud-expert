@@ -22,7 +22,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // Soft-fail Sheets — never 500/502 because Sheets failed
+    // Soft-fail Sheets: never 500/502 because Sheets failed
     await writeSubmissionToSheetSafely(
       () => appendInstructToSheet(lead),
       "instruct"

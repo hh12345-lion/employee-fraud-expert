@@ -1,20 +1,15 @@
 import Link from "next/link";
+import { PageHero } from "@/components/PageHero";
 import { CTASection } from "@/components/CTASection";
 
 export default function NotFound() {
   return (
     <>
-      <section className="bg-primary py-14 md:py-20">
-        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-6xl font-bold text-highlight md:text-8xl">404</p>
-          <h1 className="mt-4 text-2xl font-bold text-white min-[375px]:text-3xl sm:text-4xl">
-            Page Not Found
-          </h1>
-          <p className="mx-auto mt-4 max-w-xl text-base text-white/80">
-            The page you are looking for does not exist or has been moved.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Page not found"
+        subtitle="The page you are looking for does not exist or has been moved."
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Page not found" }]}
+      />
 
       <section className="py-12 md:py-16">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">

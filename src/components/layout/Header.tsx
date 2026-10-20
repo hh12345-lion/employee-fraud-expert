@@ -1,149 +1,163 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import {
+  navCaseTypeLinks,
+  navFraudTypeLinks,
+  navResourcesDropdownLinks,
+  navResourcesMenuLinks,
+  navServiceDropdownLinks,
+  whoWeHelpItems,
+} from "@/data/nav";
 
-const navLinks = [
-  { href: "/services", label: "Services" },
-  { href: "/fraud-types", label: "Fraud Types" },
-  { href: "/case-types", label: "Case Types" },
-  { href: "/who-we-help", label: "Who We Help" },
-  { href: "/investigation-process", label: "Process" },
-  { href: "/guides", label: "Guides" },
-  { href: "/blog", label: "Blog" },
-  { href: "/glossary", label: "Glossary" },
-  { href: "/qualifications", label: "Qualifications" },
+type NavLink = { href: string; label: string };
+type Group = { label: string; href: string; links: NavLink[] };
+
+const groups: Group[] = [
+  { label: "Services", href: "/services", links: navServiceDropdownLinks.slice(1) },
+  { label: "Fraud types", href: "/fraud-types", links: navFraudTypeLinks.slice(1) },
+  { label: "Case types", href: "/case-types", links: navCaseTypeLinks },
+  { label: "Who we help", href: "/who-we-help", links: whoWeHelpItems },
+  {
+    label: "Resources",
+    href: "/guides",
+    links: [...navResourcesDropdownLinks, ...navResourcesMenuLinks.slice(1)],
+  },
 ];
 
-export function Header() {
-  const [open, setOpen] = useState(false);
-  const close = () => setOpen(false);
+const simple: NavLink[] = [{ href: "/blog", label: "Blog" }];
 
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [open]);
+function isActive(pathname: string, href: string) {
+  const base = href.split("#")[0];
+  return pathname === base || pathname.startsWith(base + "/");
+}
+
+/** Client only to read the current path; the header is rendered on the server first. */
+export function Header() {
+  const pathname = usePathname() || "/";
+  const groupOn = (g: Group) => isActive(pathname, g.href) || g.links.some((l) => isActive(pathname, l.href));
+
+  const top =
+    "relative inline-flex min-h-[44px] items-center gap-1.5 whitespace-nowrap font-serif text-[0.92rem] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent";
+  /* The current section is marked by a terracotta dot, like the heads of the figures in the monogram */
+  const dot = (on: boolean) =>
+    on ? <span aria-hidden="true" className="absolute -bottom-0.5 left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-accent" /> : null;
 
   return (
-    <>
-      <header className="sticky top-0 z-50 bg-white">
-        <div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-4 sm:px-6 lg:gap-8 lg:py-5">
-          <Link
-            href="/"
-            className="flex min-w-0 shrink-0 items-center gap-3"
-            onClick={close}
-          >
-            <span
-              className="flex h-11 w-11 shrink-0 items-center justify-center bg-accent font-serif text-sm font-bold leading-none text-white"
-              aria-hidden
-            >
-              EF
-            </span>
-            <span className="min-w-0 leading-tight">
-              <span className="block truncate font-serif text-base font-semibold text-heading sm:text-lg">
-                Employee Fraud Expert
-              </span>
-              <span className="block text-[0.65rem] text-body/70 sm:text-xs">
-                Forensic referral network
-              </span>
-            </span>
-          </Link>
+    <header className="relative z-50 bg-primary text-cream">
+      <input key={pathname} id="mobile-nav-toggle" type="checkbox" className="peer sr-only" aria-hidden="true" tabIndex={-1} />
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3.5 sm:px-6">
+        <Link href="/" aria-label="Employee Fraud Expert home" className="shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/brand/logo-light.svg" alt="Employee Fraud Expert" width={744} height={120} className="h-9 w-auto sm:h-10" />
+        </Link>
 
-          <nav
-            className="ml-auto hidden flex-wrap items-center justify-end gap-x-1 gap-y-1 text-sm lg:flex"
-            aria-label="Main"
-          >
-            {navLinks.map((item, index) => (
-              <span key={item.href} className="inline-flex items-center">
-                {index > 0 && (
-                  <span className="mx-1.5 text-border select-none" aria-hidden>
-                    ·
-                  </span>
-                )}
-                <Link
-                  href={item.href}
-                  className="whitespace-nowrap text-body transition-colors hover:text-accent"
-                >
-                  {item.label}
+        <nav aria-label="Main" className="hidden items-center gap-6 xl:flex">
+          {groups.map((g) => {
+            const on = groupOn(g);
+            return (
+              <div key={g.label} className="nav-item relative">
+                <Link href={g.href} aria-current={pathname === g.href ? "page" : undefined} className={`${top} ${on ? "text-accent" : "text-cream/85 hover:text-cream"}`}>
+                  {g.label}
+                  <svg viewBox="0 0 12 12" className="h-2.5 w-2.5 opacity-60" aria-hidden="true">
+                    <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.6" />
+                  </svg>
+                  {dot(on)}
                 </Link>
-              </span>
-            ))}
-            <span className="mx-3 text-border select-none" aria-hidden>
-              |
-            </span>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-1 whitespace-nowrap font-medium text-accent transition-colors hover:text-primary"
-            >
-              Enquire
-              <span aria-hidden>→</span>
+                <div className="nav-panel absolute left-1/2 top-full z-50 w-80 -translate-x-1/2 pt-3 transition duration-150">
+                  <div className="overflow-hidden rounded-3xl border border-border bg-white text-body shadow-xl">
+                    <ul className="p-2">
+                      {g.links.map((l) => (
+                        <li key={l.href}>
+                          <Link
+                            href={l.href}
+                            aria-current={pathname === l.href ? "page" : undefined}
+                            className={`block rounded-2xl px-4 py-2.5 text-[0.95rem] transition-colors hover:bg-cream focus-visible:bg-cream focus-visible:outline-none ${
+                              pathname === l.href ? "font-semibold text-accent-ink" : ""
+                            }`}
+                          >
+                            {l.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link href={g.href} className="block border-t border-border bg-cream px-6 py-3 font-serif text-xs font-semibold uppercase tracking-[0.14em] text-accent-ink hover:text-primary">
+                      All {g.label.toLowerCase()}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+          {simple.map((l) => (
+            <Link key={l.href} href={l.href} aria-current={pathname === l.href ? "page" : undefined} className={`${top} ${isActive(pathname, l.href) ? "text-accent" : "text-cream/85 hover:text-cream"}`}>
+              {l.label}
+              {dot(isActive(pathname, l.href))}
             </Link>
-          </nav>
+          ))}
+        </nav>
 
-          <button
-            type="button"
-            className="ml-auto inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center bg-section-alt px-3 text-xs font-semibold uppercase tracking-wider text-heading lg:hidden"
-            aria-expanded={open}
-            aria-controls="site-menu"
-            aria-label={open ? "Close menu" : "Open menu"}
-            onClick={() => setOpen((value) => !value)}
+        <div className="flex items-center gap-3">
+          <Link
+            href="/contact"
+            aria-current={pathname === "/contact" ? "page" : undefined}
+            className={`hidden min-h-[44px] items-center whitespace-nowrap rounded-full px-6 font-serif text-sm font-semibold transition sm:inline-flex ${
+              pathname === "/contact" ? "bg-cream text-primary" : "bg-accent text-white hover:bg-accent-ink"
+            }`}
           >
-            {open ? "Close" : "Menu"}
-          </button>
+            Get expert help
+          </Link>
+          <label
+            htmlFor="mobile-nav-toggle"
+            className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-cream/30 text-cream xl:hidden"
+            aria-label="Open or close the menu"
+          >
+            <span className="menu-icon flex flex-col gap-[5px]">
+              <span />
+              <span />
+              <span />
+            </span>
+          </label>
         </div>
+      </div>
 
-        <div className="h-1 bg-accent" aria-hidden />
-      </header>
-
-      {open && (
-        <div
-          id="site-menu"
-          className="fixed inset-0 z-[60] flex flex-col bg-primary lg:hidden"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Site navigation"
-        >
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-4 sm:px-6">
-            <p className="font-serif text-lg text-white">Navigate</p>
-            <button
-              type="button"
-              className="min-h-11 px-3 text-sm font-medium text-accent"
-              onClick={close}
-            >
-              Close
-            </button>
-          </div>
-
-          <nav className="flex-1 overflow-y-auto px-4 py-6 sm:px-6" aria-label="Mobile">
-            <ul className="space-y-1">
-              {navLinks.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="flex min-h-14 items-center border-b border-white/10 font-serif text-2xl text-white/90 transition-colors hover:text-accent"
-                    onClick={close}
-                  >
-                    {item.label}
+      <div className="hidden max-h-[calc(100vh-72px)] overflow-y-auto border-t border-cream/10 bg-primary peer-checked:block xl:!hidden">
+        <nav aria-label="Mobile" className="mx-auto max-w-6xl px-4 pb-8 pt-2 sm:px-6">
+          {groups.map((g) => (
+            <details key={g.label} className="fold border-b border-cream/10" open={groupOn(g)}>
+              <summary className={`flex min-h-[52px] cursor-pointer items-center justify-between font-serif text-lg font-semibold ${groupOn(g) ? "text-accent" : "text-cream"}`}>
+                {g.label}
+                <span className="fold-mark text-2xl font-light leading-none text-accent transition-transform" aria-hidden="true">
+                  +
+                </span>
+              </summary>
+              <ul className="pb-4">
+                <li>
+                  <Link href={g.href} aria-current={pathname === g.href ? "page" : undefined} className="block py-2 font-serif text-sm font-semibold uppercase tracking-[0.12em] text-sand">
+                    All {g.label.toLowerCase()}
                   </Link>
                 </li>
-              ))}
-            </ul>
-          </nav>
-
-          <div className="border-t border-white/10 px-4 py-6 sm:px-6">
-            <Link
-              href="/contact"
-              className="flex min-h-14 items-center justify-between bg-accent px-5 font-medium text-primary"
-              onClick={close}
-            >
-              Start an enquiry
-              <span aria-hidden>→</span>
+                {g.links.map((l) => (
+                  <li key={l.href}>
+                    <Link href={l.href} aria-current={pathname === l.href ? "page" : undefined} className={`block py-2 ${pathname === l.href ? "font-semibold text-accent" : "text-cream/80"}`}>
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          ))}
+          {simple.map((l) => (
+            <Link key={l.href} href={l.href} aria-current={pathname === l.href ? "page" : undefined} className={`flex min-h-[52px] items-center border-b border-cream/10 font-serif text-lg font-semibold ${isActive(pathname, l.href) ? "text-accent" : "text-cream"}`}>
+              {l.label}
             </Link>
-          </div>
-        </div>
-      )}
-    </>
+          ))}
+          <Link href="/contact" className="mt-6 flex min-h-[48px] items-center justify-center rounded-full bg-accent font-serif text-sm font-semibold text-white">
+            Get expert help
+          </Link>
+        </nav>
+      </div>
+    </header>
   );
 }

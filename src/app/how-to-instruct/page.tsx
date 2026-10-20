@@ -10,7 +10,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata = createMetadata({
   title: "How to Instruct an Employee Fraud Expert UK | Step-by-Step Guide",
   description:
-    "How employers and solicitors instruct an employee fraud expert witness in the UK - investigation scope, evidence preservation, and expert reports.",
+    "How employers and solicitors instruct an employee fraud expert witness in the UK, investigation scope, evidence preservation, and expert reports.",
   path: "/how-to-instruct",
 });
 
@@ -82,7 +82,7 @@ const solicitorSteps = [
     step: 5,
     title: "Review draft report",
     detail:
-      "Review the draft expert report for factual accuracy only - not for advocacy. Raise queries via formal letter.",
+      "Review the draft expert report for factual accuracy only, not for advocacy. Raise queries via formal letter.",
   },
   {
     step: 6,
@@ -164,8 +164,7 @@ export default function HowToInstructPage() {
           <div>
             <h2 className="text-2xl font-bold text-heading">Submit an instruction</h2>
             <p className="mt-4 text-body">
-              Use the form below to send a confidential engagement brief. We respond
-              within one business day.
+              Use the form below to send a confidential engagement brief. We will reply by email.
             </p>
             <div className="mt-6 max-w-xl">
               <InstructForm />

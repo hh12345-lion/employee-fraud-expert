@@ -10,7 +10,7 @@ export const metadata = createMetadata({
   title:
     "Employee Fraud Investigation Process UK | What to Do in the First 72 Hours",
   description:
-    "Step-by-step guide to investigating employee fraud in the UK - what employers and solicitors should do in the first 24–72 hours after discovering suspected fraud.",
+    "Step-by-step guide to investigating employee fraud in the UK, what employers and solicitors should do in the first 24 to 72 hours after discovering suspected fraud.",
   path: "/investigation-process",
 });
 
@@ -22,11 +22,11 @@ const steps = [
       "Do not alert the suspect",
       "Do not access their computer or systems yourself",
       "Do not discuss with colleagues who may warn the suspect",
-      "Time is critical - assets can be moved within hours",
+      "Time is critical, assets can be moved within hours",
     ],
   },
   {
-    title: "Hour 1 - Secure the Evidence",
+    title: "Hour 1, Secure the Evidence",
     timing: "Hour 1",
     items: [
       "Do not delete, move, or access suspect's files or emails",
@@ -36,8 +36,8 @@ const steps = [
     ],
   },
   {
-    title: "Hour 2–4 - Engage Experts",
-    timing: "Hours 2–4",
+    title: "Hour 2 to 4, Engage Experts",
+    timing: "Hours 2 to 4",
     items: [
       "Instruct a forensic accountant under legal professional privilege (via your solicitor) to begin preliminary assessment",
       "The forensic accountant assesses the scale of the fraud and the evidence available",
@@ -45,7 +45,7 @@ const steps = [
     ],
   },
   {
-    title: "Day 1 - Preliminary Assessment",
+    title: "Day 1, Preliminary Assessment",
     timing: "Day 1",
     items: [
       "Forensic accountant reviews financial records",
@@ -55,8 +55,8 @@ const steps = [
     ],
   },
   {
-    title: "Day 2–3 - Legal Steps",
-    timing: "Days 2–3",
+    title: "Day 2 to 3, Legal Steps",
+    timing: "Days 2 to 3",
     items: [
       "Freezing injunction application (if assets at risk of dissipation)",
       "Search order (Anton Piller) if evidence at risk",
@@ -66,8 +66,8 @@ const steps = [
     ],
   },
   {
-    title: "Week 1–2 - Full Investigation",
-    timing: "Week 1–2",
+    title: "Week 1 to 2, Full Investigation",
+    timing: "Week 1 to 2",
     items: [
       "Forensic accountant conducts full investigation under legal professional privilege",
       "Evidence-quality workpapers prepared",
@@ -93,7 +93,7 @@ export default function InvestigationProcessPage() {
             headline:
               "Employee Fraud Investigation: What to Do in the First 72 Hours",
             description:
-              "Step-by-step guide to investigating employee fraud in the UK - what employers and solicitors should do in the first 24–72 hours after discovering suspected fraud.",
+              "Step-by-step guide to investigating employee fraud in the UK, what employers and solicitors should do in the first 24 to 72 hours after discovering suspected fraud.",
             path: "/investigation-process",
             aboutServiceId: "fraud-investigation",
           }),
@@ -101,7 +101,7 @@ export default function InvestigationProcessPage() {
       />
       <PageHero
         title="Employee Fraud Investigation: What to Do in the First 72 Hours"
-        subtitle="This is the highest-urgency guide on our site - for employers who have just discovered suspected fraud and need immediate, practical guidance on preserving evidence and engaging experts."
+        subtitle="This is the highest-urgency guide on our site, for employers who have just discovered suspected fraud and need immediate, practical guidance on preserving evidence and engaging experts."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Investigation Process" },
@@ -135,7 +135,7 @@ export default function InvestigationProcessPage() {
         </div>
 
         <div className="prose-content mx-auto mt-12 max-w-3xl">
-          <h2>Civil vs Criminal - Which Route?</h2>
+          <h2>Civil vs Criminal, Which Route?</h2>
           <div className="table-scroll overflow-x-auto">
             <table>
               <thead>

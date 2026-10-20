@@ -118,7 +118,7 @@ for (const ent of fs.readdirSync(ROOT, { withFileTypes: true })) {
   content = expandAliases(content);
   const stillBad = isTruncated(content);
   if (stillBad.length) {
-    // try parent of expand/fix commits — go one commit before first expand if needed
+    // try parent of expand/fix commits, go one commit before first expand if needed
     failed.push({ repo: ent.name, reason: "restored_still_bad", missing: stillBad });
     // still write if better than current
     if (stillBad.length < missing.length) {

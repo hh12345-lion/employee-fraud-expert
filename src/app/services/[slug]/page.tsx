@@ -3,10 +3,6 @@ import { createMetadata } from "@/lib/metadata";
 import { ServicePageTemplate } from "@/components/ServicePageTemplate";
 import { getService, serviceSlugs } from "@/data/services";
 
-export function generateStaticParams() {
-  return serviceSlugs.map((slug) => ({ slug }));
-}
-
 export async function generateMetadata({
   params,
 }: {

@@ -88,7 +88,7 @@ function fixText(text, repo) {
     }
   );
 
-  // 4) Outbound object with bare message but no const message — add resolve before outbound
+  // 4) Outbound object with bare message but no const message, add resolve before outbound
   // If we have `message,` in an object literal in handler and no `const message`
   if (/\n\s*message,\s*\n/.test(t) && !/const\s+message\s*=/.test(t)) {
     // Prefer inserting after phone extract or after validation
@@ -109,7 +109,7 @@ function fixText(text, repo) {
     }
   }
 
-  // 5) Duplicate const message declarations — keep resolveLeadMessage one, remove following duplicate
+  // 5) Duplicate const message declarations: keep resolveLeadMessage one, remove following duplicate
   const dupMsg =
     /const\s+message\s*=\s*resolveLeadMessage\([^)]+\);\s*\n\s*const\s+message\s*=\s*[\s\S]*?;\s*\n/;
   if (dupMsg.test(t)) {

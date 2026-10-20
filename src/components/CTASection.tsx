@@ -9,7 +9,7 @@ interface CTASectionProps {
 
 export function CTASection({
   title = "Need a forensic accountant for employee fraud?",
-  description = "Tell us about your matter and we will connect you with a qualified expert witness. Response within one business day.",
+  description = "Tell us about your matter and we will connect you with a qualified expert witness.",
   buttonLabel = "Request Expert",
 }: CTASectionProps) {
   return (

@@ -210,7 +210,7 @@ function webhookHardFailBeforeSheets(t) {
       t.slice(0, t.search(/503/) + 200 || 0)
     );
 
-  // Specific: business-valuation style — error in result return, THEN softFailAppendSheet later
+  // Specific: business-valuation style: error in result return, THEN softFailAppendSheet later
   const webhookThenReturnThenSheets =
     earlyReturnMatch != null &&
     sheetsIdx >= 0 &&
@@ -478,7 +478,7 @@ function analyze(repo) {
     classification = "SHEETS_OK";
     reason = `Sheets written before webhook in live handler (handler: ${liveLabel})`;
   } else if (sheets && !order.hardBeforeSheets && form.blocksOnSubmitLeadFail) {
-    // sheets attempted even on webhook fail, but form still needs 200 — if orSuccess, sheets keep row and form OK
+    // sheets attempted even on webhook fail, but form still needs 200, if orSuccess, sheets keep row and form OK
     classification = order.orSuccess
       ? "SHEETS_OK"
       : "NEEDS_MANUAL";
@@ -490,7 +490,7 @@ function analyze(repo) {
     reason = "Primary API path; submit-lead not awaited";
   } else {
     classification = "NEEDS_MANUAL";
-    reason = `Ambiguous — live=${liveLabel}; sheets=${sheets}; hardBeforeSheets=${order.hardBeforeSheets}; sole=${form.solePathSubmitLead}; blocks=${form.blocksOnSubmitLeadFail}`;
+    reason = `Ambiguous: live=${liveLabel}; sheets=${sheets}; hardBeforeSheets=${order.hardBeforeSheets}; sole=${form.solePathSubmitLead}; blocks=${form.blocksOnSubmitLeadFail}`;
   }
 
   return {
@@ -573,11 +573,11 @@ ${
 
 ## FORM_FAIL_SHEETS_OK
 
-${groups.FORM_FAIL_SHEETS_OK.map((r) => `- **${r.repo}** — ${r.reason}`).join("\n") || "_None._"}
+${groups.FORM_FAIL_SHEETS_OK.map((r) => `- **${r.repo}**, ${r.reason}`).join("\n") || "_None._"}
 
 ## NEEDS_MANUAL
 
-${groups.NEEDS_MANUAL.map((r) => `- **${r.repo}** — ${r.reason}`).join("\n") || "_None._"}
+${groups.NEEDS_MANUAL.map((r) => `- **${r.repo}**, ${r.reason}`).join("\n") || "_None._"}
 
 ## SHEETS_OK (${groups.SHEETS_OK.length})
 

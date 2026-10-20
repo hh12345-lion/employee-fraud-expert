@@ -33,7 +33,7 @@ export async function POST(request: Request) {
       "contact"
     );
 
-    // Soft-fail email: no Resend on this site — log for ops, never fail the request
+    // Soft-fail email: no Resend on this site, log for ops, never fail the request
     console.log("Contact submission received:", {
       fullName: lead.fullName,
       email: lead.email,

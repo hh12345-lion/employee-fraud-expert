@@ -221,7 +221,7 @@ function patchSubmitLeadRoute(src) {
   });
 
   // Pattern with explicit fields from parseLeadWebhookInput result already as `lead`
-  // If notifyLeadWebhook(lead, ...) — ensure parse adds message (helper patch)
+  // If notifyLeadWebhook(lead, ...), ensure parse adds message (helper patch)
 
   return changed ? out : null;
 }

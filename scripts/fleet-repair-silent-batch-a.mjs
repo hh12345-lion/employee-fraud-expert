@@ -206,7 +206,7 @@ function repairBrokenAwaitFetch(src) {
     const methodMatch = optsHead.match(/method:\s*(['"`][^'"`]+['"`])/);
     const method = methodMatch ? methodMatch[1] : '"POST"';
     const headersMatch = optsHead.match(/headers:\s*(\{[\s\S]*?\})/);
-    // headers may be truncated — use default
+    // headers may be truncated, use default
     const headers = headersMatch
       ? headersMatch[1]
       : '{ "Content-Type": "application/json" }';
@@ -298,7 +298,7 @@ function main() {
       next = repairSubmitLeadClient(next, rel);
       next = repairDuplicateMessage(next);
 
-      // Fix local notify helpers that got double-awaited incorrectly — accounting was OK
+      // Fix local notify helpers that got double-awaited incorrectly, accounting was OK
 
       if (next !== src) {
         report.push(`${repo}/${rel}`);

@@ -5,7 +5,7 @@ import { SITE_EMAIL } from "@/lib/site";
 
 export const metadata = createMetadata({
   title: "Privacy Policy | EmployeeFraudExpert.com",
-  description: "Privacy policy for EmployeeFraudExpert.com - UK GDPR compliant.",
+  description: "Privacy policy for EmployeeFraudExpert.com, UK GDPR compliant.",
   path: "/privacy",
   noindex: true,
   nofollow: false,

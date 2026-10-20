@@ -4,7 +4,7 @@ export const faqs: FAQ[] = [
   {
     question: "What is an employee fraud expert witness?",
     answer:
-      "An employee fraud expert witness is a qualified forensic accountant who investigates workplace financial crime and provides independent expert evidence to courts and tribunals. They analyse financial records, trace misappropriated funds, quantify losses, and produce CPR Part 35 compliant expert reports. Their primary duty is to the court - not to the employer or solicitor who instructed them - ensuring objectivity and credibility in fraud proceedings.",
+      "An employee fraud expert witness is a qualified forensic accountant who investigates workplace financial crime and provides independent expert evidence to courts and tribunals. They analyse financial records, trace misappropriated funds, quantify losses, and produce CPR Part 35 compliant expert reports. Their primary duty is to the court, not to the employer or solicitor who instructed them, ensuring objectivity and credibility in fraud proceedings.",
   },
   {
     question: "What types of employee fraud do expert witnesses investigate?",
@@ -25,7 +25,7 @@ export const faqs: FAQ[] = [
   {
     question: "What is legal professional privilege in fraud investigations?",
     answer:
-      "Legal professional privilege (LPP) protects communications and reports between a solicitor and their client from disclosure to the opposing party. Forensic accountants instructed via a solicitor produce investigation reports protected by LPP - safeguarding the employer's legal strategy. Direct instruction by the employer without solicitor involvement may waive this protection.",
+      "Legal professional privilege (LPP) protects communications and reports between a solicitor and their client from disclosure to the opposing party. Forensic accountants instructed via a solicitor produce investigation reports protected by LPP, safeguarding the employer's legal strategy. Direct instruction by the employer without solicitor involvement may waive this protection.",
   },
   {
     question: "How is the loss from employee fraud quantified?",
@@ -35,12 +35,12 @@ export const faqs: FAQ[] = [
   {
     question: "How long does a fraud investigation take?",
     answer:
-      "A preliminary assessment can be completed within 24–48 hours - sufficient for urgent freezing injunction applications. A full investigation typically takes 2–8 weeks depending on complexity, volume of records, and number of perpetrators. Expert witness reports for court proceedings follow the investigation and may take a further 2–4 weeks to prepare.",
+      "A preliminary assessment can often be prepared at short notice for urgent freezing injunction applications. A full investigation can take several weeks depending on complexity, volume of records, and number of perpetrators. Expert witness reports for court proceedings follow the investigation and take further time to prepare.",
   },
   {
     question: "What is POCA and how does it affect fraud recovery?",
     answer:
-      "The Proceeds of Crime Act 2002 (POCA) allows confiscation of a convicted defendant's benefit from criminal conduct following employee fraud conviction. POCA confiscation benefits the Crown, not the employer directly - but victim compensation orders can also be made. Employers typically pursue civil recovery in parallel to maximise total recovery.",
+      "The Proceeds of Crime Act 2002 (POCA) allows confiscation of a convicted defendant's benefit from criminal conduct following employee fraud conviction. POCA confiscation benefits the Crown, not the employer directly, but victim compensation orders can also be made. Employers typically pursue civil recovery in parallel to maximise total recovery.",
   },
   {
     question: "Can I pursue civil and criminal proceedings simultaneously?",
@@ -57,6 +57,6 @@ export const faqs: FAQ[] = [
     question:
       "What is a freezing injunction and how does a forensic accountant support one?",
     answer:
-      "A freezing injunction (Mareva relief) prevents a defendant from dissipating assets pending trial. Applications are typically made without notice and require urgent financial evidence. Forensic accountants provide preliminary quantum assessment and asset tracing analysis within 24–48 hours, identifying where fraud proceeds are held and supporting the application with credible financial evidence.",
+      "A freezing injunction (Mareva relief) prevents a defendant from dissipating assets pending trial. Applications are typically made without notice and require urgent financial evidence. Forensic accountants provide preliminary quantum assessment and asset tracing analysis at short notice, identifying where fraud proceeds are held and supporting the application with credible financial evidence.",
   },
 ];

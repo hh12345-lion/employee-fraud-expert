@@ -5,7 +5,7 @@ import { resolveLeadMessage } from "@/lib/resolveLeadMessage";
 export { BRAND_NAME };
 
 /**
- * Row 1 on GOOGLE_SHEET_TAB_NAME — one shared tab; Form Type distinguishes Contact/Instruct.
+ * Row 1 on GOOGLE_SHEET_TAB_NAME: one shared tab; Form Type distinguishes Contact/Instruct.
  * Timestamp | Brand | Form Type | Full Name | Email | Phone Number |
  * Organisation | You Are | Description
  */
@@ -81,7 +81,7 @@ export function parseLeadBody(body: unknown): LeadSubmission | null {
   };
 }
 
-/** Used by scripts/test-sheets.ts — same column order as sheetSubmissions. */
+/** Used by scripts/test-sheets.ts: same column order as sheetSubmissions. */
 export function buildLeadSheetRow(lead: LeadSubmission): CellValue[] {
   return [
     new Date().toISOString(),

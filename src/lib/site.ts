@@ -5,7 +5,7 @@ function resolveSiteUrl(): string {
   try {
     const u = new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`);
     if (u.hostname === "localhost" || u.hostname === "127.0.0.1") return fallback;
-    // Prefer apex — www redirects to non-www in production.
+    // Prefer apex: www redirects to non-www in production.
     u.hostname = u.hostname.replace(/^www\./i, "");
     return u.origin;
   } catch {

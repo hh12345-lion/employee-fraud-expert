@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PageHero } from "@/components/PageHero";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
@@ -12,20 +13,11 @@ export const metadata = createMetadata({
 export default function ThankYouPage() {
   return (
     <>
-      <section className="bg-primary py-14 md:py-20">
-        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-wide text-highlight">
-            Enquiry received
-          </p>
-          <h1 className="mt-2 text-2xl font-bold text-white min-[375px]:text-3xl sm:text-4xl">
-            Thank You
-          </h1>
-          <p className="mx-auto mt-4 max-w-xl text-base text-white/80">
-            Your enquiry has been received. We will respond within 1 business
-            day - or within 24 hours if you marked your enquiry as urgent.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="Thank you"
+        subtitle="Your enquiry has been received. We will reply by email, and sooner if you marked your enquiry as urgent."
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Enquiry received" }]}
+      />
 
       <section className="py-12 md:py-16">
         <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">

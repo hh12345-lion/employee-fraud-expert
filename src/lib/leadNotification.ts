@@ -6,11 +6,11 @@ export interface LeadWebhookInput {
   fullName: string;
   email: string;
   phone: string;
-  /** Free-text enquiry body — always sent to n8n as `message`. */
+  /** Free-text enquiry body: always sent to n8n as `message`. */
   message?: string;
 }
 
-/** Outbound n8n payload — shared keys across brand sites (+ message). */
+/** Outbound n8n payload: shared keys across brand sites (+ message). */
 export function buildWebhookPayload(lead: LeadWebhookInput) {
   return {
     "Full Name": lead.fullName,
@@ -37,7 +37,7 @@ export async function notifyLeadWebhook(
   const url = webhookUrl || getLeadWebhookUrl();
   if (!url) {
     console.warn(
-      "Lead_notification_url not configured — lead logged but not forwarded."
+      "Lead_notification_url not configured: lead logged but not forwarded."
     );
     console.log("Lead submission:", {
       ...lead,

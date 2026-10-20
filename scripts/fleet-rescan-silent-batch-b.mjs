@@ -145,5 +145,5 @@ for (const r of REPOS) {
 console.log(
   remaining.length
     ? JSON.stringify(remaining, null, 2)
-    : "CLEAN — no remaining fire-and-forget / missing alias / 502 issues"
+    : "CLEAN: no remaining fire-and-forget / missing alias / 502 issues"
 );

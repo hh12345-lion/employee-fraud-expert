@@ -2,15 +2,19 @@
 
 @theme inline {
   --breakpoint-xs: 30rem;
-  --color-primary: #2d3436;
-  --color-accent: #c17f59;
-  --color-highlight: #5c7a6b;
-  --color-section-alt: #f5f1eb;
-  --color-border: #e0d6cc;
-  --color-heading: #1a1f1e;
-  --color-body: #4a5568;
-  --font-sans: var(--font-dm-sans);
-  --font-serif: var(--font-source-serif);
+  /* Employee Fraud Expert: charcoal, terracotta, sand, cream and umber */
+  --color-primary: #2b3235;
+  --color-accent: #b67867;
+  --color-accent-ink: #94574a;
+  --color-highlight: #5e514b;
+  --color-sand: #d2c8c2;
+  --color-cream: #f7f2ef;
+  --color-section-alt: #f7f2ef;
+  --color-border: #e2d8d2;
+  --color-heading: #2b3235;
+  --color-body: #4a4644;
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
   --radius-card: 2px;
   --radius-sm: 2px;
   --shadow-card: 0 2px 8px rgba(45, 52, 54, 0.06);
@@ -24,16 +28,25 @@ html {
 body {
   background: #ffffff;
   color: var(--color-body);
-  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   overflow-x: hidden;
   min-width: 0;
 }
 
-img,
-video,
-svg {
-  max-width: 100%;
-  height: auto;
+@layer base {
+  img,
+  video,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading), system-ui, sans-serif;
+  }
 }
 
 @media (max-width: 639px) {
@@ -168,4 +181,67 @@ svg {
     padding-left: max(0px, env(safe-area-inset-left));
     padding-right: max(0px, env(safe-area-inset-right));
   }
+}
+
+/* Ring frame: a circular photograph with a terracotta arc, after the joined figures of the monogram */
+.ring {
+  position: relative;
+  border-radius: 9999px;
+}
+
+.ring::after {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  border-radius: 9999px;
+  border: 5px solid transparent;
+  border-top-color: #b67867;
+  border-right-color: #b67867;
+  transform: rotate(-20deg);
+  pointer-events: none;
+}
+
+.nav-item .nav-panel {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+.nav-item:hover .nav-panel,
+.nav-item:focus-within .nav-panel {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-icon span {
+  display: block;
+  height: 2px;
+  width: 22px;
+  background: currentColor;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+#mobile-nav-toggle:checked ~ div .menu-icon span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+#mobile-nav-toggle:checked ~ div .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-nav-toggle:checked ~ div .menu-icon span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+details.fold > summary {
+  list-style: none;
+}
+
+details.fold > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.fold[open] .fold-mark {
+  transform: rotate(45deg);
 }

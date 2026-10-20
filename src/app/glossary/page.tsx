@@ -10,7 +10,7 @@ import { glossaryTerms } from "@/data/glossary";
 export const metadata = createMetadata({
   title: "Employee Fraud Glossary | Key UK Legal & Forensic Terms",
   description:
-    "Definitions of key employee fraud and forensic accounting terms for UK proceedings - from embezzlement to POCA, Failure to Prevent Fraud, freezing injunctions, and CPR Part 35.",
+    "Definitions of key employee fraud and forensic accounting terms for UK proceedings, from embezzlement to POCA, Failure to Prevent Fraud, freezing injunctions, and CPR Part 35.",
   path: "/glossary",
 });
 

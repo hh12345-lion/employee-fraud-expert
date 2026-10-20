@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Source_Serif_4 } from "next/font/google";
+import localFont from "next/font/local";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ConsentDefaultsScript } from "@/components/cookies/ConsentDefaultsScript";
@@ -7,17 +7,20 @@ import { CookieConsentRoot } from "@/components/cookies/CookieConsentRoot";
 import { createMetadata } from "@/lib/metadata";
 import "./globals.css";
 
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
+const heading = localFont({
+  src: [{ path: "./fonts/maven-pro.woff2", weight: "400 900", style: "normal" }],
+  variable: "--font-heading",
   display: "swap",
 });
 
-const sourceSerif = Source_Serif_4({
-  subsets: ["latin"],
-  variable: "--font-source-serif",
+const body = localFont({
+  src: [{ path: "./fonts/pontano-sans.woff2", weight: "300 700", style: "normal" }],
+  variable: "--font-body",
   display: "swap",
 });
+
+// Every page is rendered on the server for each request.
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = createMetadata({
   title:
@@ -33,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-US" className={`${dmSans.variable} ${sourceSerif.variable} h-full`}>
+    <html lang="en-US" className={`${heading.variable} ${body.variable} h-full`}>
       <body className="flex min-h-full flex-col antialiased">
         <ConsentDefaultsScript />
         <CookieConsentRoot>

@@ -124,14 +124,14 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Invoice Fraud",
     slug: "invoice-fraud",
     definition:
-      "Creation of fictitious invoices, inflation of supplier invoices, or submission of invoices for work not performed - often with secret payments back to the employee. Investigated through vendor master file analysis and three-way matching.",
+      "Creation of fictitious invoices, inflation of supplier invoices, or submission of invoices for work not performed, often with secret payments back to the employee. Investigated through vendor master file analysis and three-way matching.",
     link: { href: "/case-types/invoice-supplier-fraud", label: "Invoice Fraud Cases" },
   },
   {
     term: "Kickback",
     slug: "kickback",
     definition:
-      "A secret payment from a supplier to an employee in return for preferential treatment - such as contract awards at inflated rates or approval of invoices for work not done. Requires tracing both overpayments and secret return payments.",
+      "A secret payment from a supplier to an employee in return for preferential treatment, such as contract awards at inflated rates or approval of invoices for work not done. Requires tracing both overpayments and secret return payments.",
     link: { href: "/case-types/invoice-supplier-fraud", label: "Invoice & Supplier Fraud" },
   },
   {
@@ -145,7 +145,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Loss Quantification",
     slug: "loss-quantification",
     definition:
-      "The forensic accounting process of calculating the total financial loss from employee fraud - identifying all fraudulent transactions, reconciling against legitimate activity, and producing a defensible quantum figure for civil recovery or insurance claims.",
+      "The forensic accounting process of calculating the total financial loss from employee fraud, identifying all fraudulent transactions, reconciling against legitimate activity, and producing a defensible quantum figure for civil recovery or insurance claims.",
     link: { href: "/services#loss-quantification", label: "Loss Quantification Service" },
   },
   {
@@ -173,7 +173,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Payroll Fraud",
     slug: "payroll-fraud",
     definition:
-      "Manipulation of the payroll system for financial gain - including ghost employees, wage inflation, commission fraud, overtime fraud, and benefits fraud. Detected by reconciling payroll against HR records and bank payments.",
+      "Manipulation of the payroll system for financial gain, including ghost employees, wage inflation, commission fraud, overtime fraud, and benefits fraud. Detected by reconciling payroll against HR records and bank payments.",
     link: { href: "/case-types/payroll-fraud-ghost-employees", label: "Payroll Fraud Cases" },
   },
   {
@@ -187,7 +187,7 @@ export const glossaryTerms: GlossaryTerm[] = [
     term: "Procurement Fraud",
     slug: "procurement-fraud",
     definition:
-      "Manipulation of the procurement process - steering contracts to favoured suppliers in exchange for personal benefit. Indicators include sole-source awards without competitive tender and split purchases to avoid approval limits.",
+      "Manipulation of the procurement process, steering contracts to favoured suppliers in exchange for personal benefit. Indicators include sole-source awards without competitive tender and split purchases to avoid approval limits.",
     link: { href: "/fraud-types", label: "Types of Employee Fraud" },
   },
   {

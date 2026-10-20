@@ -48,7 +48,7 @@ console.log(
     {
       dirtyLeadRepos: dirty.length,
       approxCreditsIfAllDeploy: dirty.length * 8, // user said 840 for ~105 → ~8/deploy
-      note: "840/105≈8 credits per deploy — adjust if your plan differs",
+      note: "840/105≈8 credits per deploy: adjust if your plan differs",
       sample: dirty.slice(0, 40).map((d) => d.name),
       all: dirty.map((d) => d.name),
     },

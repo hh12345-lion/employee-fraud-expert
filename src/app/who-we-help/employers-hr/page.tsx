@@ -50,11 +50,11 @@ export default function EmployersHRPage() {
       />
       <Section>
         <div className="prose-content mx-auto max-w-3xl">
-          <h2>You&apos;ve Just Discovered Suspected Fraud - What Now?</h2>
+          <h2>You&apos;ve Just Discovered Suspected Fraud, What Now?</h2>
           <p>
-            The first 24–72 hours after discovering suspected employee fraud are
+            The first 24 to 72 hours after discovering suspected employee fraud are
             critical. Most frauds leave both a paper trail and an electronic
-            footprint - but acting without a plan can alert the suspect, destroy
+            footprint, but acting without a plan can alert the suspect, destroy
             evidence, and prejudice any subsequent proceedings.
           </p>
           <p>
@@ -65,32 +65,31 @@ export default function EmployersHRPage() {
           <h2>What We Do for Employers</h2>
           <ul>
             <li>
-              <strong>Immediate response</strong> - forensic accountant available
-              within 24 hours
+              <strong>Prompt response</strong>: an introduction to a forensic accountant as soon as possible
             </li>
             <li>
-              <strong>Evidence preservation</strong> - securing financial records,
+              <strong>Evidence preservation</strong>: securing financial records,
               email data, and system logs before the suspect is alerted
             </li>
             <li>
-              <strong>Preliminary assessment</strong> - quantifying the potential
+              <strong>Preliminary assessment</strong>: quantifying the potential
               scale of the fraud quickly
             </li>
             <li>
-              <strong>Full fraud investigation</strong> - producing evidence-quality
+              <strong>Full fraud investigation</strong>: producing evidence-quality
               findings under legal professional privilege (working alongside your
               solicitor)
             </li>
             <li>
-              <strong>Loss quantification</strong> - exact figure for civil
+              <strong>Loss quantification</strong>: exact figure for civil
               recovery and insurance claim
             </li>
             <li>
-              <strong>Expert witness report</strong> - CPR Part 35 compliant, ready
+              <strong>Expert witness report</strong>: CPR Part 35 compliant, ready
               for court proceedings
             </li>
             <li>
-              <strong>FTPF advisory</strong> - assessing whether your fraud
+              <strong>FTPF advisory</strong>: assessing whether your fraud
               prevention procedures are adequate under the new offence
             </li>
           </ul>
@@ -98,7 +97,7 @@ export default function EmployersHRPage() {
           <h2>When to Call Us Before You Call the Police</h2>
           <p>
             Many employers instinctively want to call the police immediately. In
-            most cases, it is better to call a forensic accountant first - to
+            most cases, it is better to call a forensic accountant first, to
             secure evidence, quantify the loss, and advise on the most effective
             route to recovery (civil proceedings often recover more than criminal
             prosecution alone).

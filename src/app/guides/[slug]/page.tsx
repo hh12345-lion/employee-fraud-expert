@@ -3,10 +3,6 @@ import { createMetadata } from "@/lib/metadata";
 import { GuidePageTemplate } from "@/components/GuidePageTemplate";
 import { getGuide, guideSlugs } from "@/data/guides";
 
-export function generateStaticParams() {
-  return guideSlugs.map((slug) => ({ slug }));
-}
-
 export async function generateMetadata({
   params,
 }: {
