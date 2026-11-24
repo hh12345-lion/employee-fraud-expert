@@ -30,7 +30,7 @@ export function Footer() {
       {/* Enquiry band: three ring-framed photographs beside the call to act */}
       <div className="border-b border-cream/10">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-          <div>
+          <div className="min-w-0">
             <h2 className="max-w-xl font-serif text-3xl font-bold leading-tight text-cream md:text-[2.4rem]">
               Need a forensic accountant for employee fraud?
             </h2>
@@ -47,9 +47,11 @@ export function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex items-end justify-center gap-6 lg:justify-end">
+          {/* Smaller photos and gaps on phones: at full size the row was 432px wide, which pushed the whole
+              band past a 375px screen and cut off the heading, text and button. */}
+          <div className="flex items-end justify-center gap-3 sm:gap-6 lg:justify-end">
             {[photos.officeSafe, photos.punchClock, photos.openOffice].map((p, i) => (
-              <div key={p.src} className={`ring overflow-hidden ${i === 1 ? "h-40 w-40" : "h-28 w-28"}`}>
+              <div key={p.src} className={`ring overflow-hidden ${i === 1 ? "h-28 w-28 sm:h-40 sm:w-40" : "h-20 w-20 sm:h-28 sm:w-28"}`}>
                 <div className="relative h-full w-full overflow-hidden rounded-full">
                   <Image src={p.src} alt={p.alt} fill sizes="160px" className="object-cover" />
                 </div>

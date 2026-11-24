@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitDescription, fitTitle } from "@/lib/fit";
 import { SITE_NAME, SITE_URL } from "./site";
 
 export function buildHreflangAlternates(path: string = "") {
@@ -33,8 +34,12 @@ export function createMetadata({
   const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
   const bingVerification = process.env.BING_SITE_VERIFICATION;
 
+  // "Page | Brand" when it fits in 60 characters, otherwise shortened at a natural break (never mid-word);
+  // absolute, so a layout template cannot add the brand a second time. Descriptions fitted to 110–155.
+  title = fitTitle(title, "fit");
+  description = fitDescription(description);
   return {
-    title,
+    title: { absolute: title },
     description,
     metadataBase: new URL(SITE_URL),
     alternates: buildHreflangAlternates(path),

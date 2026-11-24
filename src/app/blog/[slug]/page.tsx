@@ -21,7 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
 
   const base = createMetadata({
-    title: post.title,
+    // Shorter search title where the headline is too long to fit (the on-page headline is unchanged).
+    title: post.seoTitle ?? post.title,
     description: post.description,
     path: `/blog/${post.slug}`,
   });

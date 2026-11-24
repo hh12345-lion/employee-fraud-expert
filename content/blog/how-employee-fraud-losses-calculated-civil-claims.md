@@ -1,4 +1,5 @@
 ---
+seoTitle: "Calculating Employee Fraud Losses for Civil Claims"
 title: "How Employee Fraud Losses Are Calculated for Civil Recovery Claims"
 description: "How forensic accountants calculate employee fraud losses for civil recovery claims, including transaction schedules, recoveries and evidence-based quantification."
 date: "2026-09-29"

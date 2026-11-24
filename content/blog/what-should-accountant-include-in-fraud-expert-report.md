@@ -1,4 +1,5 @@
 ---
+seoTitle: "What to Include in an Employee Fraud Expert Report"
 title: "What Should a Forensic Accountant Include in an Employee Fraud Expert Report"
 description: "What a forensic accountant may include in an employee fraud expert report: scope, evidence, methodology, transaction findings, loss quantification, limitations and CPR Part 35 duties."
 date: "2026-10-14"
@@ -70,7 +71,7 @@ The scope should distinguish the financial questions requiring expert considerat
 
 For solicitors, defining the questions clearly at the outset can help establish which documents are required and what work the expert is expected to undertake.
 
-For further information, visit the [How to Instruct page](/how-to-instruct/).
+For further information, visit the [How to Instruct page](/how-to-instruct).
 
 ## 3. Relevant Documents and Financial Evidence
 
@@ -216,7 +217,7 @@ A clear instruction can help the expert understand the issues in dispute and ide
 
 The scope may need to be refined as the financial records are reviewed. Any change should be managed in accordance with the instruction and applicable procedural requirements.
 
-Further information about available support can be found on the [Employee Fraud Expert services page](/services/).
+Further information about available support can be found on the [Employee Fraud Expert services page](/services).
 
 ## Conclusion
 

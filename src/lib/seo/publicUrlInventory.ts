@@ -29,6 +29,8 @@ export const APP_STATIC_PATHS = [
   "/how-to-instruct",
   "/guides",
   "/blog",
+  // Indexable but previously missing from the sitemap.
+  "/image-credits",
   "/glossary",
   "/cookies",
 ] as const;
